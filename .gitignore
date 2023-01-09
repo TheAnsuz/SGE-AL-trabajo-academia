@@ -1,1 +1,6 @@
-/.vscode/
+.alcache/
+.alpackages/
+.snapshots/
+.output/
+
+*.app
