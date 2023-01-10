@@ -4,7 +4,7 @@ table 50103 Estudiante
 
     fields
     {
-        field(1; idEstudiante; Code[20])
+        field(1; "Id Estudiante"; Code[20])
         {
             DataClassification = ToBeClassified;
 
@@ -35,7 +35,7 @@ table 50103 Estudiante
 
     keys
     {
-        key(pk; idEstudiante)
+        key(pk; "Id Estudiante")
         {
             Clustered = true;
         }
