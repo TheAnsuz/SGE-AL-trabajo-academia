@@ -31,33 +31,9 @@ table 50100 Trabajador
 
     keys
     {
-        key(Key1; MyField)
+        key(PK; "Id Trabajador")
         {
             Clustered = true;
         }
     }
-
-    var
-        myInt: Integer;
-
-    trigger OnInsert()
-    begin
-
-    end;
-
-    trigger OnModify()
-    begin
-
-    end;
-
-    trigger OnDelete()
-    begin
-
-    end;
-
-    trigger OnRename()
-    begin
-
-    end;
-
 }
