@@ -40,7 +40,8 @@
     - _Profesor_
 1. ### Departamento
     - **Nombre**
-    - _Jefe departamento_
+    - _Jefe departamento_ 
+    
 1. ### Horario??
 
 
