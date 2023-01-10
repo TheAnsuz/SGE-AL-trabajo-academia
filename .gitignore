@@ -2,5 +2,5 @@
 .alpackages/
 .snapshots/
 .output/
-
+rad.json
 *.app
