@@ -23,10 +23,13 @@ table 50101 "Tabla profesores"
         field(5; "Salario"; Decimal)
         {
             DataClassification = ToBeClassified;
-        }
-        field(6; "Puesto"; Text[100])
-        {
-            DataClassification = ToBeClassified;
+
+            trigger OnValidate()
+            begin
+                if (Salario <= 0) then
+                    FieldError("Salario", 'El salario no puede ser negativo o 0');
+            end;
+
         }
         field(7; "Departamento"; Text[100])
         {
@@ -36,6 +39,25 @@ table 50101 "Tabla profesores"
         field(8; "Despacho"; Code[20])
         {
             DataClassification = ToBeClassified;
+            trigger OnValidate()
+            var
+                Matches: Record Matches;
+                Regex: Codeunit Regex;
+                Pattern,
+                Value : Text;
+            begin
+                Pattern := '[A-Z]{3}[0-9]{2}$';
+
+                if not (Regex.IsMatch("Despacho", Pattern, 0)) then
+                    Error('No Match');
+            end;
+        }
+    }
+    keys
+    {
+        key(PK; "Id profesor")
+        {
+            Clustered = true;
         }
     }
 }

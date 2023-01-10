@@ -22,10 +22,11 @@ table 50103 Estudiante
         {
             DataClassification = ToBeClassified;
         }
-        field(5; Telefono; Text[9])
+        field(5; Telefono; Text[15])
         {
             DataClassification = ToBeClassified;
             // Verificar numero
+            ExtendedDatatype = PhoneNo;
         }
         field(6; "Fecha nacimiento"; Date)
         {

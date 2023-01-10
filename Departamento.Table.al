@@ -4,7 +4,7 @@ table 50102 "Tabla departamentos"
 
     fields
     {
-        field(1; "Despacho departamento"; CODE[20])
+        field(1; "Despacho departamento"; Code[20])
         {
             DataClassification = ToBeClassified;
         }
@@ -12,6 +12,11 @@ table 50102 "Tabla departamentos"
         {
             DataClassification = ToBeClassified;
             NotBlank = true;
+        }
+        field(3; "Jefe departamento"; Code[20])
+        {
+            DataClassification = ToBeClassified;
+            TableRelation = "Tabla profesores";
         }
     }
 

@@ -21,6 +21,11 @@ table 50100 Trabajador
         field(4; "Salario"; Decimal)
         {
             DataClassification = ToBeClassified;
+            trigger OnValidate()
+            begin
+                if (Salario <= 0) then
+                    FieldError("Salario", 'El salario no puede ser negativo o 0');
+            end;
         }
         field(5; "Puesto"; Text[100])
         {

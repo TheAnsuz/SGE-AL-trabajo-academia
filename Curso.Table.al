@@ -21,6 +21,11 @@ table 50104 Curso
         {
             DataClassification = ToBeClassified;
             // Que sea positivo
+            trigger OnValidate()
+            begin
+                if ("Horas totales" <= 0) then
+                    FieldError("Horas totales", 'No puedes tener horas totales negativas');
+            end;
         }
         field(5; "Tarifa laboratorio"; Decimal)
         {
