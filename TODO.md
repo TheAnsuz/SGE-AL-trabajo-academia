@@ -15,3 +15,4 @@
 
 ### Extra
 - Comprobar que las cosas funcionan usando datos de ejemplo
+- Solucionar el proyecto falla al publicarse (no al copilarse)
