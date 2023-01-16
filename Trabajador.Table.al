@@ -6,6 +6,7 @@ table 50100 Trabajador
     {
         field(1; "Id Trabajador"; Code[20])
         {
+            NotBlank = true;
             DataClassification = ToBeClassified;
 
         }
@@ -30,6 +31,11 @@ table 50100 Trabajador
         field(5; "Puesto"; Text[100])
         {
             DataClassification = ToBeClassified;
+        }
+        field(6; "Profesor asignado"; Code[20])
+        {
+            DataClassification = ToBeClassified;
+            TableRelation = "Tabla profesores";
         }
 
     }

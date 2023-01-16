@@ -3,7 +3,7 @@ page 50103 Estudiante
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = Estudiante;
+    SourceTable = "Tabla estudiantes";
 
     layout
     {

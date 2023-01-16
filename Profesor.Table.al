@@ -6,10 +6,12 @@ table 50101 "Tabla profesores"
     {
         field(1; "Id profesor"; Code[20])
         {
+            NotBlank = true;
             DataClassification = ToBeClassified;
         }
         field(2; "Nombre profesor"; Text[40])
         {
+            NotBlank = true;
             DataClassification = ToBeClassified;
         }
         field(3; "Direccion"; Text[100])
@@ -33,6 +35,7 @@ table 50101 "Tabla profesores"
         }
         field(7; "Departamento"; Text[100])
         {
+            NotBlank = True;
             DataClassification = ToBeClassified;
             TableRelation = "Tabla departamentos";
         }
@@ -43,14 +46,40 @@ table 50101 "Tabla profesores"
             var
                 Matches: Record Matches;
                 Regex: Codeunit Regex;
-                Pattern,
-                Value : Text;
+                Pattern: Text;
             begin
                 Pattern := '[A-Z]{3}[0-9]{2}$';
 
                 if not (Regex.IsMatch("Despacho", Pattern, 0)) then
                     Error('Formato incorrecto (XXXNN)');
             end;
+        }
+
+        field(9; "Nº Ayudantes"; Integer)
+        {
+            Editable = false;
+            FieldClass = FlowField;
+            CalcFormula = count(Trabajador WHERE("Profesor asignado" = field("Id profesor")));
+        }
+
+
+        field(10; "Nº Cursos"; Integer)
+        {
+            Editable = false;
+            FieldClass = FlowField;
+
+            CalcFormula = count("Tabla horarios" where(
+                Dia = field("Filtro dia"),
+                "Profesor encargado" = field("Id profesor")
+                ));
+
+            Caption = 'Diosito haz que funcione pls';
+        }
+
+        // Especifico filtro a partir de ID 100
+        field(100; "Filtro dia"; Enum Day)
+        {
+            FieldClass = FlowFilter;
         }
     }
     keys

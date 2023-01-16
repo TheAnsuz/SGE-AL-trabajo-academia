@@ -1,4 +1,4 @@
-table 50104 Curso
+table 50104 "Tabla cursos"
 {
     DataClassification = ToBeClassified;
 
@@ -7,10 +7,12 @@ table 50104 Curso
         field(1; "Id curso"; Code[20])
         {
             DataClassification = ToBeClassified;
+            NotBlank = true;
 
         }
         field(2; "Nombre curso"; Text[100])
         {
+            NotBlank = true;
             DataClassification = ToBeClassified;
         }
         field(3; "Descripcion curso"; Text[100])
@@ -32,12 +34,32 @@ table 50104 Curso
             DataClassification = ToBeClassified;
             // Que sea real con 2 decimales
         }
-        field(6; "Horario"; Blob)
+        field(6; "Profesor"; Code[20])
         {
+            TableRelation = "Tabla profesores";
             DataClassification = ToBeClassified;
-            // Linkear con Horario
         }
-        field(7; "Profesor"; Code[20])
+
+        field(7; "Departamento"; Code[20])
+        {
+            TableRelation = "Tabla departamentos";
+            DataClassification = ToBeClassified;
+        }
+
+        field(8; "Nº Estudiantes"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count("Tabla matriculas"
+            where(
+                "Id Curso" = field("Id curso"),
+                "Fecha matriculacion" = field("Filtro fecha")
+                )
+                );
+
+            Caption = 'Muestra el nº de estudiantes con esa fecha de matriculación exacta';
+        }
+
+        field(100; "Filtro fecha"; Date)
         {
             DataClassification = ToBeClassified;
         }
@@ -49,6 +71,8 @@ table 50104 Curso
         {
             Clustered = true;
         }
+
+
     }
 
 }

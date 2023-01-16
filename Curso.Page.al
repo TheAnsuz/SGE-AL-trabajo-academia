@@ -3,7 +3,7 @@ page 50104 Curso
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = Curso;
+    SourceTable = "Tabla cursos";
 
     layout
     {
@@ -28,10 +28,6 @@ page 50104 Curso
                     ApplicationArea = All;
                 }
                 field("Tarifa laboratorio"; Rec."Tarifa laboratorio")
-                {
-                    ApplicationArea = All;
-                }
-                field(Horario; Rec.Horario)
                 {
                     ApplicationArea = All;
                 }

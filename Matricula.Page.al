@@ -1,9 +1,9 @@
-page 50126 EstudianteCurso
+page 50126 Matricula
 {
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = EstudianteCurso;
+    SourceTable = "Tabla matriculas";
 
     layout
     {
