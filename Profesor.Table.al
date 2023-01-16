@@ -49,7 +49,7 @@ table 50101 "Tabla profesores"
                 Pattern := '[A-Z]{3}[0-9]{2}$';
 
                 if not (Regex.IsMatch("Despacho", Pattern, 0)) then
-                    Error('No Match');
+                    Error('Formato incorrecto (XXXNN)');
             end;
         }
     }
