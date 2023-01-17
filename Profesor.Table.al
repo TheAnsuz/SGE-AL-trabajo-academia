@@ -72,7 +72,7 @@ table 50101 "Tabla profesores"
             Editable = false;
             FieldClass = FlowField;
 
-            CalcFormula = count("Tabla cursos" where(Profesor = field("Id profesor")));
+            CalcFormula = count("Tabla cursos" where("Profesor curso" = field("Id profesor")));
 
             Caption = 'Diosito haz que funcione pls';
         }

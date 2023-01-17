@@ -19,47 +19,47 @@ table 50104 "Tabla cursos"
         {
             DataClassification = ToBeClassified;
         }
-        field(4; "Horas totales"; Integer)
+        field(4; "Horas totales curso"; Integer)
         {
             DataClassification = ToBeClassified;
             // Que sea positivo
             trigger OnValidate()
             begin
-                if ("Horas totales" <= 0) then
-                    FieldError("Horas totales", 'No puedes tener horas totales negativas');
+                if ("Horas totales curso" <= 0) then
+                    FieldError("Horas totales curso", 'No puedes tener horas totales negativas');
             end;
         }
-        field(5; "Tarifa laboratorio"; Decimal)
+        field(5; "Tarifa laboratorio curso"; Decimal)
         {
             DataClassification = ToBeClassified;
             // Que sea real con 2 decimales
         }
-        field(6; "Profesor"; Code[20])
+        field(6; "Profesor curso"; Code[20])
         {
             TableRelation = "Tabla profesores";
             DataClassification = ToBeClassified;
         }
 
-        field(7; "Departamento"; Code[20])
+        field(7; "Departamento curso"; Code[20])
         {
             TableRelation = "Tabla departamentos";
             DataClassification = ToBeClassified;
         }
 
-        field(8; "Nº Estudiantes"; Integer)
+        field(8; "Nº Estudiantes curso"; Integer)
         {
             FieldClass = FlowField;
             CalcFormula = count("Tabla matriculas"
             where(
                 "Id Curso" = field("Id curso"),
-                "Fecha matriculacion" = field("Filtro fecha")
+                "Fecha matriculacion" = field("Filtro fecha curso")
                 )
                 );
 
             Caption = 'Muestra el nº de estudiantes con esa fecha de matriculación exacta';
         }
 
-        field(100; "Filtro fecha"; Date)
+        field(100; "Filtro fecha curso"; Date)
         {
             DataClassification = ToBeClassified;
         }

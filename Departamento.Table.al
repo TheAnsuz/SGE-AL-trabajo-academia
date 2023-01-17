@@ -34,8 +34,8 @@ table 50102 "Tabla departamentos"
         field(4; "Promedio tarifa"; Integer)
         {
             FieldClass = FlowField;
-            CalcFormula = average("Tabla cursos"."Tarifa laboratorio"
-                         where(Departamento = field("Despacho departamento")));
+            CalcFormula = average("Tabla cursos"."Tarifa laboratorio curso"
+                         where("Departamento curso" = field("Despacho departamento")));
 
             Caption = 'Promedio de tarifas de los cursos pertenecientes al actual departamento';
         }

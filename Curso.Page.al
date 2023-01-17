@@ -1,4 +1,4 @@
-page 50104 Curso
+page 50104 "Pagina cursos"
 {
     PageType = List;
     ApplicationArea = All;
@@ -23,15 +23,15 @@ page 50104 Curso
                 {
                     ApplicationArea = All;
                 }
-                field("Horas totales"; Rec."Horas totales")
+                field("Horas totales"; Rec."Horas totales curso")
                 {
                     ApplicationArea = All;
                 }
-                field("Tarifa laboratorio"; Rec."Tarifa laboratorio")
+                field("Tarifa laboratorio"; Rec."Tarifa laboratorio curso")
                 {
                     ApplicationArea = All;
                 }
-                field(Profesor; Rec.Profesor)
+                field(Profesor; Rec."Profesor curso")
                 {
                     ApplicationArea = All;
                 }
