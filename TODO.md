@@ -9,7 +9,7 @@
 
 ### Apartado 2
 - ~~Asignar "ayudantes". Profesor tiene "Num.ayudantes"~~
-- Nº Cursos impartidos por cada profesor (con filtrado por día de la semana) [preguntar a macarena como se podria hacer] **Problemas**
+- ~~Nº Cursos impartidos por cada profesor~~ **Problemas**
 - ~~Promedio tarifa de laboratorio de departamento~~
 - ~~Nuevo campo calculado que user Flow Filter~~ ***Más o menos***
 

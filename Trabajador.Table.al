@@ -1,7 +1,6 @@
 table 50100 Trabajador
 {
     DataClassification = ToBeClassified;
-
     fields
     {
         field(1; "Id Trabajador"; Code[20])
@@ -31,11 +30,32 @@ table 50100 Trabajador
         field(5; "Puesto"; Text[100])
         {
             DataClassification = ToBeClassified;
+
+            trigger OnValidate()
+            var
+                length: Integer;
+            begin
+                length := STRLEN("puesto");
+
+                if (length > 1) then
+                    "Puesto" := "Puesto".Substring(1, 1).ToUpper()
+                    + "Puesto".Substring(2).ToLower()
+                else
+                    "Puesto" := "Puesto".ToUpper();
+
+
+            end;
         }
         field(6; "Profesor asignado"; Code[20])
         {
             DataClassification = ToBeClassified;
-            TableRelation = "Tabla profesores";
+            TableRelation = "Tabla profesores"."Id profesor";
+
+            trigger OnValidate()
+            begin
+                if (StrLen("Profesor asignado") > 0) and not (Puesto = 'Ayudante') then
+                    Error('Solo los ayudantes pueden tener un profesor asignado');
+            end;
         }
 
     }

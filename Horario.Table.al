@@ -34,11 +34,13 @@ table 50105 "Tabla horarios"
             DataClassification = ToBeClassified;
         }
 
+        /*
         field(6; "Profesor encargado"; Code[20])
         {
             FieldClass = FlowField;
             CalcFormula = lookup("Tabla cursos".Profesor where("Id curso" = field("Id curso")));
         }
+        */
     }
 
     keys
