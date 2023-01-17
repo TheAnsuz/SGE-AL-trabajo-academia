@@ -36,6 +36,10 @@ page 50100 Trabajador
                     ApplicationArea = All;
 
                 }
+                field("Profesor asignado"; Rec."Profesor asignado")
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }

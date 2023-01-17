@@ -43,13 +43,12 @@ table 50100 Trabajador
                 else
                     "Puesto" := "Puesto".ToUpper();
 
-
             end;
         }
         field(6; "Profesor asignado"; Code[20])
         {
             DataClassification = ToBeClassified;
-            TableRelation = "Tabla profesores"."Id profesor";
+            TableRelation = "Tabla profesores";
 
             trigger OnValidate()
             begin
