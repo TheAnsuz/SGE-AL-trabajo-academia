@@ -46,20 +46,20 @@ table 50104 "Tabla cursos"
             DataClassification = ToBeClassified;
         }
 
-        field(8; "Nº Estudiantes curso"; Integer)
+        field(8; "Nº Minutos"; Integer)
         {
             FieldClass = FlowField;
-            CalcFormula = count("Tabla matriculas"
+            CalcFormula = sum("Tabla horarios".Duracion
             where(
-                "Id Curso" = field("Id curso"),
-                "Fecha matriculacion" = field("Filtro fecha curso")
+                "Id Curso" = field("Id curso")/*
+                ,
+                Dia = field("Filtro fecha dia")*/
                 )
                 );
 
-            Caption = 'Muestra el nº de estudiantes con esa fecha de matriculación exacta';
         }
 
-        field(100; "Filtro fecha curso"; Date)
+        field(100; "Filtro fecha dia"; Enum Day)
         {
             DataClassification = ToBeClassified;
         }

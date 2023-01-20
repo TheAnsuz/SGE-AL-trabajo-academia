@@ -35,6 +35,15 @@ page 50104 "Pagina cursos"
                 {
                     ApplicationArea = All;
                 }
+                field("Departamento curso"; Rec."Departamento curso")
+                {
+                    ApplicationArea = All;
+                }
+                field("Nº Minutos"; Rec."Nº Minutos")
+                {
+                    ApplicationArea = All;
+                    Caption = 'Tiempo dedicado';
+                }
             }
         }
         area(Factboxes)

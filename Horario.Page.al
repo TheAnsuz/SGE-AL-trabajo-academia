@@ -1,9 +1,9 @@
-page 50126 Matricula
+page 50105 Horario
 {
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = "Tabla matriculas";
+    SourceTable = "Tabla horarios";
 
     layout
     {
@@ -11,26 +11,43 @@ page 50126 Matricula
         {
             repeater(GroupName)
             {
-                field("Id Estudiante"; Rec."Id Estudiante")
+                field("Id horario"; Rec."Id horario")
                 {
                     ApplicationArea = All;
 
                 }
 
-                field("Id Curso"; Rec."Id Curso")
+                field("Id curso"; Rec."Id curso")
                 {
                     ApplicationArea = All;
 
                 }
 
-                field("Fecha matriculacion"; Rec."Fecha matriculacion")
+                field(Dia; Rec.Dia)
                 {
                     ApplicationArea = All;
+
                 }
-                field("Hora matriculacion"; Rec."Hora matriculacion")
+
+                field("Hora inicio"; Rec."Hora inicio")
                 {
                     ApplicationArea = All;
+
                 }
+
+                field("Hora final"; Rec."Hora final")
+                {
+                    ApplicationArea = All;
+
+                }
+
+                field(Duracion; Rec.Duracion)
+                {
+                    ApplicationArea = All;
+
+                }
+
+
             }
         }
         area(Factboxes)
@@ -39,19 +56,4 @@ page 50126 Matricula
         }
     }
 
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                ApplicationArea = All;
-
-                trigger OnAction();
-                begin
-
-                end;
-            }
-        }
-    }
 }
