@@ -34,7 +34,6 @@ page 50100 Trabajador
                 field(Puesto; Rec.Puesto)
                 {
                     ApplicationArea = All;
-
                 }
                 field("Profesor asignado"; Rec."Profesor asignado")
                 {

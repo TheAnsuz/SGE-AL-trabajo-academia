@@ -42,14 +42,12 @@ table 50100 Trabajador
                     + "Puesto".Substring(2).ToLower()
                 else
                     "Puesto" := "Puesto".ToUpper();
-
             end;
         }
         field(6; "Profesor asignado"; Code[20])
         {
             DataClassification = ToBeClassified;
             TableRelation = "Tabla profesores";
-
             trigger OnValidate()
             begin
                 if (StrLen("Profesor asignado") > 0) and not (Puesto = 'Ayudante') then

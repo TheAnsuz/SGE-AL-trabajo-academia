@@ -12,8 +12,7 @@ table 50102 "Tabla departamentos"
             var
                 Matches: Record Matches;
                 Regex: Codeunit Regex;
-                Pattern,
-                Value : Text;
+                Pattern: Text;
             begin
                 Pattern := '[A-Z]{3}[0-9]{2}$';
 
@@ -37,7 +36,7 @@ table 50102 "Tabla departamentos"
             CalcFormula = average("Tabla cursos"."Tarifa laboratorio curso"
                          where("Departamento curso" = field("Despacho departamento")));
 
-            Caption = 'Promedio de tarifas de los cursos pertenecientes al actual departamento';
+            Caption = 'Promedio de tarifas';
         }
     }
 
