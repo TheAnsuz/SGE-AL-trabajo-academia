@@ -4,26 +4,29 @@ table 50103 "Tabla estudiantes"
 
     fields
     {
-        field(1; "Id Estudiante"; Code[20])
+        field(1; "Id estudiante"; Code[20])
+        {
+            NotBlank = true;
+            DataClassification = ToBeClassified;
+
+
+
+        }
+        field(2; "Nombre estudiante"; Text[100])
         {
             NotBlank = true;
             DataClassification = ToBeClassified;
 
         }
-        field(2; Nombre; Text[100])
-        {
-            NotBlank = true;
-            DataClassification = ToBeClassified;
-        }
-        field(3; Genero; Enum Gender)
+        field(3; "Genero estudiante"; Enum "Genero enumeracion")
         {
             DataClassification = ToBeClassified;
         }
-        field(4; Direccion; Text[100])
+        field(4; "Direccion estudiante"; Text[100])
         {
             DataClassification = ToBeClassified;
         }
-        field(5; Telefono; Text[16])
+        field(5; "Telefono estudiante"; Text[16])
         {
             DataClassification = ToBeClassified;
             // Verificar numero
@@ -34,19 +37,19 @@ table 50103 "Tabla estudiantes"
                 Written: Text;
                 Domestic: Text;
             begin
-                Written := Telefono;
-                Telefono := Telefono.Replace(' ', '').Replace('-', '');
+                Written := "Telefono estudiante";
+                "Telefono estudiante" := "Telefono estudiante".Replace(' ', '').Replace('-', '');
 
-                if (Telefono.StartsWith('+34')) then
-                    Telefono := Telefono.Replace('+34', '');
+                if ("Telefono estudiante".StartsWith('+34')) then
+                    "Telefono estudiante" := "Telefono estudiante".Replace('+34', '');
 
                 Domestic := '[6-9]\d{8}';
 
                 if not (
-                    Regex.IsMatch(Telefono, Domestic, 0)
+                    Regex.IsMatch("Telefono estudiante", Domestic, 0)
                 ) then begin
                     Error('No es un formato de numero de telefono Español');
-                    Telefono := Written;
+                    "Telefono estudiante" := Written;
                 end;
             end;
         }
@@ -58,7 +61,7 @@ table 50103 "Tabla estudiantes"
 
     keys
     {
-        key(pk; "Id Estudiante")
+        key(pk; "Id estudiante")
         {
             Clustered = true;
         }

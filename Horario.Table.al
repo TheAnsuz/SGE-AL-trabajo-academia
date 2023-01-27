@@ -19,38 +19,13 @@ table 50105 "Tabla horarios"
             DataClassification = ToBeClassified;
         }
 
-        field(3; "Dia"; Enum Day)
+        field(3; "Día horario"; Enum "Dia enumerador")
         {
             DataClassification = ToBeClassified;
         }
 
 
-        field(4; "Hora inicio"; Time)
-        {
-            DataClassification = ToBeClassified;
-
-            trigger OnValidate()
-            var
-                TiempoTranscurrido: Integer;
-
-            begin
-                TiempoTranscurrido := "Hora final" - "Hora inicio";
-                if TiempoTranscurrido < 0 then
-                    Error('La hora de inicio no puede superar a la hora de fin')
-                else
-                    if System.Abs(TiempoTranscurrido) < 60000 then
-                        Error('Una clase no puede durar menos de 1 minuto')
-                    else begin
-                        TiempoTranscurrido := TiempoTranscurrido / 60000;
-                        Duracion := TiempoTranscurrido
-                    end;
-
-
-            end;
-
-        }
-
-        field(5; "Hora final"; Time)
+        field(4; "inicio horario"; Time)
         {
             DataClassification = ToBeClassified;
 
@@ -59,7 +34,7 @@ table 50105 "Tabla horarios"
                 TiempoTranscurrido: Integer;
 
             begin
-                TiempoTranscurrido := "Hora final" - "Hora inicio";
+                TiempoTranscurrido := "Hora final horario" - "inicio horario";
                 if TiempoTranscurrido < 0 then
                     Error('La hora de inicio no puede superar a la hora de fin')
                 else
@@ -67,7 +42,7 @@ table 50105 "Tabla horarios"
                         Error('Una clase no puede durar menos de 1 minuto')
                     else begin
                         TiempoTranscurrido := TiempoTranscurrido / 60000;
-                        Duracion := TiempoTranscurrido
+                        "Duracion horario" := TiempoTranscurrido
                     end;
 
 
@@ -75,19 +50,36 @@ table 50105 "Tabla horarios"
 
         }
 
-        field(6; "Duracion"; Integer)
+        field(5; "Hora final horario"; Time)
+        {
+            DataClassification = ToBeClassified;
+
+            trigger OnValidate()
+            var
+                TiempoTranscurrido: Integer;
+
+            begin
+                TiempoTranscurrido := "Hora final horario" - "inicio horario";
+                if TiempoTranscurrido < 0 then
+                    Error('La hora de inicio no puede superar a la hora de fin')
+                else
+                    if System.Abs(TiempoTranscurrido) < 60000 then
+                        Error('Una clase no puede durar menos de 1 minuto')
+                    else begin
+                        TiempoTranscurrido := TiempoTranscurrido / 60000;
+                        "Duracion horario" := TiempoTranscurrido
+                    end;
+
+
+            end;
+
+        }
+
+        field(6; "Duracion horario"; Integer)
         {
             Editable = false;
 
         }
-
-        /*
-        field(6; "Profesor encargado"; Code[20])
-        {
-            FieldClass = FlowField;
-            CalcFormula = lookup("Tabla cursos".Profesor where("Id curso" = field("Id curso")));
-        }
-        */
     }
 
     keys

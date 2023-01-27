@@ -8,7 +8,6 @@ table 50104 "Tabla cursos"
         {
             DataClassification = ToBeClassified;
             NotBlank = true;
-
         }
         field(2; "Nombre curso"; Text[100])
         {
@@ -46,20 +45,20 @@ table 50104 "Tabla cursos"
             DataClassification = ToBeClassified;
         }
 
-        field(8; "Nº Minutos"; Integer)
+        field(8; "Nº Minutos curso"; Integer)
         {
             FieldClass = FlowField;
-            CalcFormula = sum("Tabla horarios".Duracion
+            CalcFormula = sum("Tabla horarios"."Duracion horario"
             where(
                 "Id Curso" = field("Id curso")/*
-                ,
+                , No se puede hacer (o algo asi)
                 Dia = field("Filtro fecha dia")*/
                 )
                 );
 
         }
 
-        field(100; "Filtro fecha dia"; Enum Day)
+        field(100; "Filtro fecha dia curso"; Enum "Dia enumerador")
         {
             DataClassification = ToBeClassified;
         }

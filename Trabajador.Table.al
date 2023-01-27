@@ -1,4 +1,4 @@
-table 50100 Trabajador
+table 50100 "Tabla trabajador"
 {
     DataClassification = ToBeClassified;
     fields
@@ -9,25 +9,25 @@ table 50100 Trabajador
             DataClassification = ToBeClassified;
 
         }
-        field(2; Nombre; Text[100])
+        field(2; "Nombre trabajador"; Text[100])
         {
             NotBlank = true;
             DataClassification = ToBeClassified;
         }
-        field(3; Direccion; Text[100])
+        field(3; "Direccion trabajador"; Text[100])
         {
             DataClassification = ToBeClassified;
         }
-        field(4; "Salario"; Decimal)
+        field(4; "Salario trabajador"; Decimal)
         {
             DataClassification = ToBeClassified;
             trigger OnValidate()
             begin
-                if (Salario <= 0) then
-                    FieldError("Salario", 'El salario no puede ser negativo o 0');
+                if ("Salario trabajador" <= 0) then
+                    FieldError("Salario trabajador", 'El salario no puede ser negativo o 0');
             end;
         }
-        field(5; "Puesto"; Text[100])
+        field(5; "Puesto trabajador"; Text[100])
         {
             DataClassification = ToBeClassified;
 
@@ -35,13 +35,13 @@ table 50100 Trabajador
             var
                 length: Integer;
             begin
-                length := STRLEN("puesto");
+                length := STRLEN("Puesto trabajador");
 
                 if (length > 1) then
-                    "Puesto" := "Puesto".Substring(1, 1).ToUpper()
-                    + "Puesto".Substring(2).ToLower()
+                    "Puesto trabajador" := "Puesto trabajador".Substring(1, 1).ToUpper()
+                    + "Puesto trabajador".Substring(2).ToLower()
                 else
-                    "Puesto" := "Puesto".ToUpper();
+                    "Puesto trabajador" := "Puesto trabajador".ToUpper();
             end;
         }
         field(6; "Profesor asignado"; Code[20])
@@ -50,7 +50,7 @@ table 50100 Trabajador
             TableRelation = "Tabla profesores";
             trigger OnValidate()
             begin
-                if (StrLen("Profesor asignado") > 0) and not (Puesto = 'Ayudante') then
+                if (StrLen("Profesor asignado") > 0) and not ("Puesto trabajador" = 'Ayudante') then
                     Error('Solo los ayudantes pueden tener un profesor asignado');
             end;
         }

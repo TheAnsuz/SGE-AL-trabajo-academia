@@ -4,67 +4,64 @@ page 50104 "Pagina cursos"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "Tabla cursos";
-
+    Caption = 'Cursos';
     layout
     {
         area(Content)
         {
-            repeater(GroupName)
+            repeater("Contenido pagina cursos")
             {
                 field("Id curso"; Rec."Id curso")
                 {
                     ApplicationArea = All;
+                    Caption = 'ID';
+                    ToolTip = 'ID del curso';
                 }
                 field("Nombre curso"; Rec."Nombre curso")
                 {
                     ApplicationArea = All;
+                    Caption = 'Nombre';
+                    ToolTip = 'Nombre del curso';
                 }
                 field("Descripcion curso"; Rec."Descripcion curso")
                 {
                     ApplicationArea = All;
+                    Caption = 'Descripción';
+                    ToolTip = 'Pequeña descripción del curso';
                 }
-                field("Horas totales"; Rec."Horas totales curso")
+                field("Horas totales curso"; Rec."Horas totales curso")
                 {
                     ApplicationArea = All;
+                    Caption = 'Horas totales';
+                    ToolTip = 'Horas totales que se imparten en el curso';
                 }
-                field("Tarifa laboratorio"; Rec."Tarifa laboratorio curso")
+                field("Tarifa laboratorio curso"; Rec."Tarifa laboratorio curso")
                 {
                     ApplicationArea = All;
+                    Caption = 'Tarifa laboratorio';
+                    ToolTip = 'Cantidad monetaria disponible en el laboratorio';
                 }
-                field(Profesor; Rec."Profesor curso")
+                field("Profesor curso"; Rec."Profesor curso")
                 {
                     ApplicationArea = All;
+                    Caption = 'Profesor';
+                    ToolTip = 'Profesor asignado al curso';
                 }
                 field("Departamento curso"; Rec."Departamento curso")
                 {
                     ApplicationArea = All;
+                    Caption = 'Departamento';
+                    ToolTip = 'Departamento en el que se impartirá el curso';
                 }
-                field("Nº Minutos"; Rec."Nº Minutos")
+                field("Nº Minutos curso"; Rec."Nº Minutos curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Tiempo dedicado';
+                    Caption = 'Minutos totales';
+                    ToolTip = 'Tiempo total dedicado al curso en minutos';
                 }
             }
-        }
-        area(Factboxes)
-        {
 
         }
-    }
 
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                ApplicationArea = All;
-
-                trigger OnAction();
-                begin
-
-                end;
-            }
-        }
     }
 }

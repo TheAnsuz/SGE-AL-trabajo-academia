@@ -1,66 +1,59 @@
-page 50103 Estudiante
+page 50103 "Pagina estudiantes"
 {
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "Tabla estudiantes";
+    Caption = 'Estudiantes';
 
     layout
     {
         area(Content)
         {
-            repeater(GroupName)
+            repeater("Contenido pagina estudiantes")
             {
-                field("Id Estudiante"; Rec."Id Estudiante")
+                field("Id Estudiante"; Rec."Id estudiante")
                 {
                     ApplicationArea = All;
+                    Caption = 'ID';
+                    ToolTip = 'ID del estudiante';
 
                 }
-                field(Nombre; Rec.Nombre)
+                field("Nombre estudiante"; Rec."Nombre estudiante")
                 {
                     ApplicationArea = All;
+                    Caption = 'Nombre';
+                    ToolTip = 'Nombre del estudiante';
 
                 }
-                field(Genero; Rec.Genero)
+                field("Genero estudiante"; Rec."Genero estudiante")
                 {
                     ApplicationArea = All;
+                    Caption = 'Género';
+                    ToolTip = 'Género del estudiante (Masculino / Femenino)';
 
                 }
-                field(Direccion; Rec.Direccion)
+                field("Direccion estudiante"; Rec."Direccion estudiante")
                 {
                     ApplicationArea = All;
+                    Caption = 'Dirección';
+                    ToolTip = 'Dirección de residencia del estudiante';
+
 
                 }
-                field(Telefono; Rec.Telefono)
+                field("Telefono estudiante"; Rec."Telefono estudiante")
                 {
                     ApplicationArea = All;
+                    Caption = 'Telefono';
+                    ToolTip = 'Telefono del estudiante';
 
                 }
                 field("Fecha nacimiento"; Rec."Fecha nacimiento")
                 {
                     ApplicationArea = All;
-
+                    Caption = 'Fecha de nacimiento';
+                    ToolTip = 'Fecha de nacimiento del estudiante';
                 }
-            }
-        }
-        area(Factboxes)
-        {
-
-        }
-    }
-
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                ApplicationArea = All;
-
-                trigger OnAction();
-                begin
-
-                end;
             }
         }
     }

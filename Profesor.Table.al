@@ -14,32 +14,32 @@ table 50101 "Tabla profesores"
             NotBlank = true;
             DataClassification = ToBeClassified;
         }
-        field(3; "Direccion"; Text[100])
+        field(3; "Direccion profesor"; Text[100])
         {
             DataClassification = ToBeClassified;
         }
-        field(4; "Fecha contratacion"; Date)
+        field(4; "Fecha contratacion profesor"; Date)
         {
             DataClassification = ToBeClassified;
         }
-        field(5; "Salario"; Decimal)
+        field(5; "Salario profesor"; Decimal)
         {
             DataClassification = ToBeClassified;
 
             trigger OnValidate()
             begin
-                if (Salario <= 0) then
-                    FieldError("Salario", 'El salario no puede ser negativo o 0');
+                if ("Salario profesor" <= 0) then
+                    FieldError("Salario profesor", 'El salario no puede ser negativo o 0');
             end;
 
         }
-        field(7; "Departamento"; Text[100])
+        field(7; "Departamento profesor"; Text[100])
         {
             NotBlank = True;
             DataClassification = ToBeClassified;
             TableRelation = "Tabla departamentos";
         }
-        field(8; "Despacho"; Code[20])
+        field(8; "Despacho profesor"; Code[20])
         {
             DataClassification = ToBeClassified;
             trigger OnValidate()
@@ -50,7 +50,7 @@ table 50101 "Tabla profesores"
             begin
                 Pattern := '[A-Z]{3}[0-9]{2}$';
 
-                if not (Regex.IsMatch("Despacho", Pattern, 0)) then
+                if not (Regex.IsMatch("Despacho profesor", Pattern, 0)) then
                     Error('Formato incorrecto (XXXNN)');
             end;
         }
@@ -59,9 +59,9 @@ table 50101 "Tabla profesores"
         {
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = count(Trabajador WHERE(
+            CalcFormula = count("Tabla trabajador" WHERE(
                 "Profesor asignado" = field("Id profesor"),
-                Puesto = const('Ayudante')
+                "Puesto trabajador" = const('Ayudante')
                 ));
             // Trabajador WHERE("Profesor asignado" = field("Id profesor"))
         }
