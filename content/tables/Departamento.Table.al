@@ -35,7 +35,7 @@ table 50102 "Tabla departamentos"
             DataClassification = ToBeClassified;
             TableRelation = "Tabla profesores";
         }
-        field(5; "Promedio tarifa departamento"; Integer)
+        field(5; "Promedio tarifa departamento"; Decimal)
         {
             FieldClass = FlowField;
             CalcFormula = average("Tabla cursos"."Tarifa laboratorio curso"
