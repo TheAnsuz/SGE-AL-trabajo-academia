@@ -12,6 +12,12 @@ page 50102 "Pagina departamentos"
         {
             repeater("Contenido pagina departamentos")
             {
+                field("Id departamento"; Rec."Id departamento")
+                {
+                    ApplicationArea = All;
+                    Caption = 'ID';
+                    ToolTip = 'ID del departamento';
+                }
                 field("Despacho departamento"; Rec."Despacho departamento")
                 {
                     ApplicationArea = All;

@@ -4,7 +4,12 @@ table 50102 "Tabla departamentos"
 
     fields
     {
-        field(1; "Despacho departamento"; Code[20])
+        field(1; "Id departamento"; Code[20])
+        {
+            DataClassification = ToBeClassified;
+            NotBlank = true;
+        }
+        field(2; "Despacho departamento"; Code[5])
         {
             DataClassification = ToBeClassified;
             NotBlank = true;
@@ -20,17 +25,17 @@ table 50102 "Tabla departamentos"
                     Error('Formato incorrecto (XXXNN)');
             end;
         }
-        field(2; "Nombre departamento"; Text[40])
+        field(3; "Nombre departamento"; Text[40])
         {
             DataClassification = ToBeClassified;
             NotBlank = true;
         }
-        field(3; "Jefe departamento"; Code[20])
+        field(4; "Jefe departamento"; Code[20])
         {
             DataClassification = ToBeClassified;
             TableRelation = "Tabla profesores";
         }
-        field(4; "Promedio tarifa departamento"; Integer)
+        field(5; "Promedio tarifa departamento"; Integer)
         {
             FieldClass = FlowField;
             CalcFormula = average("Tabla cursos"."Tarifa laboratorio curso"
@@ -41,7 +46,7 @@ table 50102 "Tabla departamentos"
 
     keys
     {
-        key(pk; "Despacho departamento")
+        key(pk; "Id departamento")
         {
             Clustered = true;
         }
