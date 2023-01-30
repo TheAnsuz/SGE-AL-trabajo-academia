@@ -19,9 +19,9 @@
 
 ### Apartado 3: Matrículas 
 - - -
-1. Página de tipo ficha que permita gestionar las matriculaciones de los estudiantes en cursos.
+~~ 1. Página de tipo ficha que permita gestionar las matriculaciones de los estudiantes en cursos. ~~
 
-1. Configura los FastTab asignando a los campos las importancias adecuadas.
+~~ 1. Configura los FastTab asignando a los campos las importancias adecuadas. ~~
 
 1. Los campos vinculados a otras tablas, mostrarán en sus desplegables además de los campos PK, aquellos campos que sean descriptivos de la información a seleccionar.
 Además, estos desplegables, cuando se expandan mostrarán las páginas de tipo lista asociadas, que permitirán mostrar la ficha correspondiente al registro activo.
