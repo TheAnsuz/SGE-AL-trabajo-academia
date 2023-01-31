@@ -36,7 +36,7 @@ registro activo.
 
 ### Apartado 4: Cursos
 - - -
-1. Página de tipo ficha que permita gestionar los diferentes cursos.
+~~ 1. Página de tipo ficha que permita gestionar los diferentes cursos. ~~
 
 1. Organiza la información en al menos los siguientes FastTab: “General” y “Profesor”, y configuralos los FastTab asignando a los campos las importancias adecuadas.
 
