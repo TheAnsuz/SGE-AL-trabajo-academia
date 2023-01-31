@@ -1,6 +1,7 @@
 table 50126 "Tabla matriculas"
 {
     DataClassification = ToBeClassified;
+    LookupPageId = "Pagina matriculas";
 
     fields
     {
@@ -21,6 +22,7 @@ table 50126 "Tabla matriculas"
         field(3; "Fecha matriculacion"; Date)
         {
             DataClassification = ToBeClassified;
+
             Editable = false;
 
         }
@@ -37,6 +39,14 @@ table 50126 "Tabla matriculas"
         key(pk; "Id Estudiante", "Id Curso")
         {
             Clustered = true;
+        }
+    }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Id Estudiante", "Id Curso")
+        {
+
         }
     }
 

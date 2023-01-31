@@ -1,6 +1,7 @@
 table 50103 "Tabla estudiantes"
 {
     DataClassification = ToBeClassified;
+    LookupPageId = "Pagina estudiantes";
 
     fields
     {
@@ -67,6 +68,12 @@ table 50103 "Tabla estudiantes"
         }
     }
 
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Id estudiante", "Nombre estudiante", "Direccion estudiante")
+        {
 
+        }
+    }
 
 }

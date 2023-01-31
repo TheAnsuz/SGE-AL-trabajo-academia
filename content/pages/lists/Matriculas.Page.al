@@ -42,4 +42,32 @@ page 50126 "Pagina matriculas"
             }
         }
     }
+    actions
+    {
+        area(Navigation)
+        {
+            action("Accion navegacion informacion curso")
+            {
+                Caption = 'Información curso';
+                ApplicationArea = All;
+                RunObject = page "Ficha cursos";
+                RunPageLink = "Id curso" = field("Id Curso");
+            }
+            action("Accion navegacion datos estudiante")
+            {
+                Caption = 'Datos estudiante';
+                ApplicationArea = All;
+                RunObject = page "Ficha estudiantes";
+                RunPageLink = "Id estudiante" = field("Id Estudiante");
+            }
+            action("Accion navegacion matriculas estudiante")
+            {
+                Caption = 'Matriculas estudiante';
+                ApplicationArea = All;
+                RunObject = page "Pagina matriculas";
+                RunPageLink = "Id Estudiante" = field("Id Estudiante");
+                RunPageMode = View;
+            }
+        }
+    }
 }

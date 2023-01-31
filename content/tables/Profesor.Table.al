@@ -1,6 +1,7 @@
 table 50101 "Tabla profesores"
 {
     DataClassification = ToBeClassified;
+    LookupPageId = "Pagina profesores";
 
     fields
     {
@@ -59,7 +60,7 @@ table 50101 "Tabla profesores"
         {
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = count("Tabla trabajador" WHERE(
+            CalcFormula = count("Tabla trabajadores" WHERE(
                 "Profesor asignado" = field("Id profesor"),
                 "Puesto trabajador" = const('Ayudante')
                 ));
@@ -90,6 +91,14 @@ table 50101 "Tabla profesores"
         key(PK; "Id profesor")
         {
             Clustered = true;
+        }
+    }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Id profesor", "Nombre profesor", "Departamento profesor")
+        {
+
         }
     }
 }

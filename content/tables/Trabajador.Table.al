@@ -1,6 +1,7 @@
-table 50100 "Tabla trabajador"
+table 50100 "Tabla trabajadores"
 {
     DataClassification = ToBeClassified;
+    LookupPageId = "Pagina trabajadores";
     fields
     {
         field(1; "Id Trabajador"; Code[20])
@@ -56,7 +57,6 @@ table 50100 "Tabla trabajador"
         }
 
     }
-
     keys
     {
         key(PK; "Id Trabajador")
@@ -64,4 +64,14 @@ table 50100 "Tabla trabajador"
             Clustered = true;
         }
     }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Id Trabajador", "Nombre trabajador")
+        {
+
+        }
+    }
+
+
 }

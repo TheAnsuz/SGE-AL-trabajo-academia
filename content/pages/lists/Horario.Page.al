@@ -35,7 +35,7 @@ page 50105 "Pagina horarios"
 
                 }
 
-                field("Hora inicio horario"; Rec."inicio horario")
+                field("Hora inicio horario"; Rec."Hora inicio horario")
                 {
                     ApplicationArea = All;
                     Caption = 'Hora inicio';

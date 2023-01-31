@@ -1,6 +1,7 @@
 table 50102 "Tabla departamentos"
 {
     DataClassification = ToBeClassified;
+    LookupPageId = "Pagina departamentos";
 
     fields
     {
@@ -15,13 +16,12 @@ table 50102 "Tabla departamentos"
             NotBlank = true;
             trigger OnValidate()
             var
-                Matches: Record Matches;
                 Regex: Codeunit Regex;
                 Pattern: Text;
             begin
                 Pattern := '[A-Z]{3}[0-9]{2}$';
 
-                if not (Regex.IsMatch("Despacho departamento", Pattern, 0)) then
+                if not (Regex.IsMatch("Despacho departamento", Pattern)) then
                     Error('Formato incorrecto (XXXNN)');
             end;
         }
@@ -49,6 +49,14 @@ table 50102 "Tabla departamentos"
         key(pk; "Id departamento")
         {
             Clustered = true;
+        }
+    }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Id departamento", "Nombre departamento", "Jefe departamento")
+        {
+
         }
     }
 

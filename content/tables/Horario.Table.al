@@ -1,8 +1,7 @@
 table 50105 "Tabla horarios"
 {
-    // ARREGLAR LAS HORAS Y EL COMO COGE LA ID CURSO
     DataClassification = ToBeClassified;
-
+    LookupPageId = "Pagina horarios";
     fields
     {
         field(1; "Id horario"; Code[20])
@@ -25,7 +24,7 @@ table 50105 "Tabla horarios"
         }
 
 
-        field(4; "inicio horario"; Time)
+        field(4; "Hora inicio horario"; Time)
         {
             DataClassification = ToBeClassified;
 
@@ -34,7 +33,7 @@ table 50105 "Tabla horarios"
                 TiempoTranscurrido: Integer;
 
             begin
-                TiempoTranscurrido := "Hora final horario" - "inicio horario";
+                TiempoTranscurrido := "Hora final horario" - "Hora inicio horario";
                 if TiempoTranscurrido < 0 then
                     Error('La hora de inicio no puede superar a la hora de fin')
                 else
@@ -59,7 +58,7 @@ table 50105 "Tabla horarios"
                 TiempoTranscurrido: Integer;
 
             begin
-                TiempoTranscurrido := "Hora final horario" - "inicio horario";
+                TiempoTranscurrido := "Hora final horario" - "Hora inicio horario";
                 if TiempoTranscurrido < 0 then
                     Error('La hora de inicio no puede superar a la hora de fin')
                 else
@@ -87,6 +86,14 @@ table 50105 "Tabla horarios"
         key(pk; "Id horario", "Id curso")
         {
             Clustered = true;
+        }
+    }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Id horario", "Id curso", "Hora inicio horario", "Día horario")
+        {
+
         }
     }
 }

@@ -1,6 +1,7 @@
 table 50104 "Tabla cursos"
 {
     DataClassification = ToBeClassified;
+    LookupPageId = "Pagina cursos";
 
     fields
     {
@@ -55,6 +56,7 @@ table 50104 "Tabla cursos"
                 Dia = field("Filtro fecha dia")*/
                 )
                 );
+            Editable = false;
 
         }
 
@@ -72,6 +74,13 @@ table 50104 "Tabla cursos"
         }
 
 
+    }
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Id curso", "Nombre curso", "Departamento curso")
+        {
+
+        }
     }
 
 }

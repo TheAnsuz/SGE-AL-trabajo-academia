@@ -1,9 +1,9 @@
-page 50100 "Pagina trabajador"
+page 50100 "Pagina trabajadores"
 {
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = "Tabla trabajador";
+    SourceTable = "Tabla trabajadores";
     Caption = 'Trabajadores';
 
     layout

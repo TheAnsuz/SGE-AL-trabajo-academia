@@ -23,22 +23,22 @@
 
 ~~ 1. Configura los FastTab asignando a los campos las importancias adecuadas. ~~
 
-1. Los campos vinculados a otras tablas, mostrarán en sus desplegables además de los campos PK, aquellos campos que sean descriptivos de la información a seleccionar.
-Además, estos desplegables, cuando se expandan mostrarán las páginas de tipo lista asociadas, que permitirán mostrar la ficha correspondiente al registro activo.
+~~ 1. Los campos vinculados a otras tablas, mostrarán en sus desplegables además de los campos PK, aquellos campos que sean descriptivos de la información a seleccionar. ~~
+~~ Además, estos desplegables, cuando se expandan mostrarán las páginas de tipo lista asociadas, que permitirán mostrar la ficha correspondiente al registro activo. ~~
 
-1. Incluye acciones que permitan “navegar” por los cursos, así como por los datos del estudiante y las matrículas disponible para el estudiante.
+~~ 1. Incluye acciones que permitan “navegar” por los cursos, así como por los datos del estudiante y las matrículas disponible para el estudiante. ~~
 
-    - Información – Curso: muestra información completa sobre el curso actual a través de su página ficha.
-    - Estudiante – Datos: muestra información completa del estudiante actual a través de su página ficha.
-    - Estudiante – Matrículas: muestra información de las matrículas del estudiante actual a través de una página de tipo lista.
-Será posible mostrar la página ficha asociada (“Ficha matrícula”), correspondiente al
-registro activo. 
+    - (HECHO) Información Curso: muestra información completa sobre el curso actual a través de su página ficha.
+    - (HECHO) Estudiante – Datos: muestra información completa del estudiante actual a través de su página ficha.
+    - (HECHO) Estudiante – Matrículas: muestra información de las matrículas del estudiante actual a través de una página de tipo lista.
+
+~~Será posible mostrar la página ficha asociada(“Ficha matrícula”), correspondiente al registro activo.~~ 
 
 ### Apartado 4: Cursos
 - - -
 ~~ 1. Página de tipo ficha que permita gestionar los diferentes cursos. ~~
 
-1. Organiza la información en al menos los siguientes FastTab: “General” y “Profesor”, y configuralos los FastTab asignando a los campos las importancias adecuadas.
+~~ 1. Organiza la información en al menos los siguientes FastTab: “General” y “Profesor”, y configuralos los FastTab asignando a los campos las importancias adecuadas. ~~
 
 1. Los campos vinculados a otras tablas, mostrarán en sus desplegables además de los campos PK, aquellos campos que sean descriptivos de la información a seleccionar. Además, estos desplegables, cuando se expandan mostrarán las páginas de tipo lista asociadas, que permitirán mostrar la ficha correspondiente al registro activo.
 
@@ -48,9 +48,9 @@ registro activo.
 
 ### Apartado 5: Estudiantes
 - - -
-1. Página de tipo ficha que permita gestionar los alumnos.
+~~ 1. Página de tipo ficha que permita gestionar los alumnos. ~~
 
-1. Organiza la información en al menos los siguientes FastTab: “General” y “Comunicación”. Y configúralos asignando a los campos las importancias adecuadas.
+~~ 1. Organiza la información en al menos los siguientes FastTab: “General” y “Comunicación”. Y configúralos asignando a los campos las importancias adecuadas.~~ 
 
 1. Los campos vinculados a otras tablas, mostrarán en sus desplegables además de los campos PK, aquellos campos que sean descriptivos de la información a seleccionar.
 Además, estos desplegables, cuando se expandan mostrarán las páginas de tipo lista asociadas, que permitirán mostrar la ficha correspondiente al registro activo.
@@ -89,7 +89,7 @@ asociadas, que permitirán mostrar la ficha correspondiente al registro activo.
 
     - Curso – Matrículas: muestra la lista de matrículas del curso activo. Además, se podrá mostrar información detallada de una matrícula en particular, a través de su página asociada “Ficha matrícula”.
 
-    - Curso – Datos: muestra los datos del curso activo a través del formulario “Ficha estudiante”.
+    - Curso – Datos: muestra los datos del curso activo a través del formulario “Ficha curso".
 
 ### Apartado 7: Secretaría/Admón. 
 - - -
