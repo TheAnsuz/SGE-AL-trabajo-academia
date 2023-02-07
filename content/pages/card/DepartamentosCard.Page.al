@@ -1,24 +1,24 @@
-page 50102 "Pagina departamentos"
+page 50110 "Ficha departamentos"
 {
-    PageType = List;
-    ApplicationArea = All;
-    UsageCategory = Lists;
+    PageType = Card;
+    UsageCategory = None;
     SourceTable = "Tabla departamentos";
-    CardPageId = "Ficha departamentos";
-    Caption = 'Departamentos';
 
     layout
     {
         area(Content)
         {
-            repeater("Contenido pagina departamentos")
+            group(General)
             {
+                Caption = 'General',
+                Comment = 'es = "General"';
                 field("Id departamento"; Rec."Id departamento")
                 {
                     ApplicationArea = All;
                     Caption = 'ID';
                     ToolTip = 'ID del departamento';
                 }
+
                 field("Despacho departamento"; Rec."Despacho departamento")
                 {
                     ApplicationArea = All;
@@ -31,9 +31,16 @@ page 50102 "Pagina departamentos"
                 {
                     ApplicationArea = All;
                     Caption = 'Nombre';
-                    ToolTip = 'Nombre que recive el departamento';
+                    ToolTip = 'Nombre que recibe el departamento';
 
                 }
+            }
+            group(Comunicacion)
+            {
+                Caption = 'Contact',
+                Comment = 'es = "Comunicacion"';
+
+
                 field("Jefe departamento"; Rec."Jefe departamento")
                 {
                     ApplicationArea = All;
@@ -50,4 +57,21 @@ page 50102 "Pagina departamentos"
             }
         }
     }
+
+    actions
+    {
+        area(Processing)
+        {
+            action(ActionName)
+            {
+                ApplicationArea = All;
+
+                trigger OnAction()
+                begin
+
+                end;
+            }
+        }
+    }
+
 }

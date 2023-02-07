@@ -1,17 +1,14 @@
-page 50100 "Pagina trabajadores"
+page 50112 "Ficha trabajadores"
 {
-    PageType = List;
-    ApplicationArea = All;
-    UsageCategory = Lists;
+    PageType = Card;
+    UsageCategory = None;
     SourceTable = "Tabla trabajadores";
-    CardPageId = "Ficha trabajadores";
-    Caption = 'Trabajadores';
 
     layout
     {
         area(Content)
         {
-            repeater("Contenido pagina trabjador")
+            group(GroupName)
             {
                 field("Id trabajador"; Rec."Id Trabajador")
                 {
@@ -56,4 +53,21 @@ page 50100 "Pagina trabajadores"
             }
         }
     }
+
+    actions
+    {
+        area(Processing)
+        {
+            action(ActionName)
+            {
+                ApplicationArea = All;
+
+                trigger OnAction()
+                begin
+
+                end;
+            }
+        }
+    }
+
 }

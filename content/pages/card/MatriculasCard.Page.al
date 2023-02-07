@@ -4,6 +4,9 @@ page 50106 "Ficha matriculas"
     UsageCategory = None;
     SourceTable = "Tabla matriculas";
 
+    PromotedActionCategories = 'Information,Student,null,null',
+    Comment = 'es="Información,Estudiante,null,null"';
+
     layout
     {
         area(Content)
@@ -44,6 +47,57 @@ page 50106 "Ficha matriculas"
                     ToolTip = 'Hora en la que se realizó la matriculación';
                     Importance = Standard;
                 }
+            }
+        }
+    }
+
+    actions
+    {
+        area(Navigation)
+        {
+            action(Curso)
+            {
+                Caption = 'Course',
+                Comment = 'es="Curso"';
+
+                ApplicationArea = All;
+
+                PromotedCategory = New;
+                Promoted = True;
+
+                RunObject = page "Ficha cursos";
+                RunPageLink = "Id curso" = field("Id Curso");
+                RunPageMode = View;
+            }
+
+            action(Datos)
+            {
+                Caption = 'Data',
+                Comment = 'es="Datos"';
+
+                ApplicationArea = All;
+
+                PromotedCategory = Process;
+                Promoted = True;
+
+                RunObject = page "Ficha estudiantes";
+                RunPageLink = "Id estudiante" = field("Id Estudiante");
+                RunPageMode = View;
+            }
+
+            action(Matricula)
+            {
+                Caption = 'Enrollment',
+                Comment = 'es="Matrícula"';
+
+                ApplicationArea = all;
+
+                PromotedCategory = Process;
+                Promoted = True;
+
+                RunObject = page "Pagina matriculas";
+                RunPageLink = "Id Estudiante" = field("Id Estudiante");
+                RunPageMode = View;
             }
         }
     }

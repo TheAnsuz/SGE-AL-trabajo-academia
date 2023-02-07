@@ -3,6 +3,8 @@ page 50108 "Ficha estudiantes"
     PageType = Card;
     UsageCategory = None;
     SourceTable = "Tabla estudiantes";
+    PromotedActionCategories = 'Actions,Navigate,null,null',
+    Comment = 'Acciones,Navegar,null,null';
 
     layout
     {
@@ -72,11 +74,18 @@ page 50108 "Ficha estudiantes"
 
     actions
     {
-        area(Processing)
+        area(Navigation)
         {
-            action(ActionName)
+            action("Nueva matricula")
             {
-                ApplicationArea = All;
+                Caption = 'New enrollment',
+                Comment = 'es="Nueva matrícula"';
+
+                Promoted = true;
+                PromotedCategory = New;
+
+                RunObject = page "Ficha matriculas";
+                
 
                 trigger OnAction()
                 begin

@@ -26,7 +26,7 @@
 ~~ 1. Los campos vinculados a otras tablas, mostrarán en sus desplegables además de los campos PK, aquellos campos que sean descriptivos de la información a seleccionar. ~~
 ~~ Además, estos desplegables, cuando se expandan mostrarán las páginas de tipo lista asociadas, que permitirán mostrar la ficha correspondiente al registro activo. ~~
 
-~~ 1. Incluye acciones que permitan “navegar” por los cursos, así como por los datos del estudiante y las matrículas disponible para el estudiante. ~~
+ ~~ 1. Incluye acciones que permitan “navegar” por los cursos, así como por los datos del estudiante y las matrículas disponible para el estudiante. ~~  
 
     - (HECHO) Información Curso: muestra información completa sobre el curso actual a través de su página ficha.
     - (HECHO) Estudiante – Datos: muestra información completa del estudiante actual a través de su página ficha.
@@ -40,9 +40,9 @@
 
 ~~ 1. Organiza la información en al menos los siguientes FastTab: “General” y “Profesor”, y configuralos los FastTab asignando a los campos las importancias adecuadas. ~~
 
-1. Los campos vinculados a otras tablas, mostrarán en sus desplegables además de los campos PK, aquellos campos que sean descriptivos de la información a seleccionar. Además, estos desplegables, cuando se expandan mostrarán las páginas de tipo lista asociadas, que permitirán mostrar la ficha correspondiente al registro activo.
+~~ 1. Los campos vinculados a otras tablas, mostrarán en sus desplegables además de los campos PK, aquellos campos que sean descriptivos de la información a seleccionar. Además, estos desplegables, cuando se expandan mostrarán las páginas de tipo lista asociadas, que permitirán mostrar la ficha correspondiente al registro activo. ~~
 
-1. Dispondrá de un FactBox “Estadísticas” que muestre al menos el nº de alumnos matriculados y algún otro dato relevante que consideres interesante incluirlo.
+~~ 1. Dispondrá de un FactBox “Estadísticas” que muestre al menos el nº de alumnos matriculados y algún otro dato relevante que consideres interesante incluirlo. ~~ 
 
 1. A través de una subpágina se mostrarán el horario del curso.
 
@@ -52,8 +52,7 @@
 
 ~~ 1. Organiza la información en al menos los siguientes FastTab: “General” y “Comunicación”. Y configúralos asignando a los campos las importancias adecuadas.~~ 
 
-1. Los campos vinculados a otras tablas, mostrarán en sus desplegables además de los campos PK, aquellos campos que sean descriptivos de la información a seleccionar.
-Además, estos desplegables, cuando se expandan mostrarán las páginas de tipo lista asociadas, que permitirán mostrar la ficha correspondiente al registro activo.
+~~ 1. Los campos vinculados a otras tablas, mostrarán en sus desplegables además de los campos PK, aquellos campos que sean descriptivos de la información a seleccionar.                                           Además, estos desplegables, cuando se expandan mostrarán las páginas de tipo lista asociadas, que permitirán mostrar la ficha correspondiente al registro activo. ~~
 
 1. Incluye al menos en la página, las siguientes acciones:
 
@@ -69,10 +68,9 @@ página asociada “Ficha matrícula”.
 
 ### Apartado 6: Departamentos
 - - -
-1. Página de tipo ficha que permita gestionar los departamentos.
+~~ 1. Página de tipo ficha que permita gestionar los departamentos. ~~
 
-1. Organiza la información en al menos los siguientes FastTab: “General” y “Comunicación”. Y
-configúralos asignando a los campos las importancias adecuadas.
+~~ 1. Organiza la información en al menos los siguientes FastTab: “General” y “Comunicación”. Y configúralos asignando a los campos las importancias adecuadas. ~~
 
 1. Los campos vinculados a otras tablas, mostrarán en sus desplegables además de los campos
 PK, aquellos campos que sean descriptivos de la información a seleccionar.
@@ -98,4 +96,4 @@ asociadas, que permitirán mostrar la ficha correspondiente al registro activo.
 ### Extra
 - - -
 - Comprobar que las cosas funcionan usando datos de ejemplo
-- Solucionar el proyecto falla al publicarse (no al copilarse)
+- ~~Solucionar el proyecto falla al publicarse (no al copilarse)~~

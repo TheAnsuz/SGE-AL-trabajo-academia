@@ -5,6 +5,7 @@ page 50104 "Pagina cursos"
     UsageCategory = Lists;
     SourceTable = "Tabla cursos";
     Caption = 'Cursos';
+    CardPageId = "Ficha cursos";
     layout
     {
         area(Content)

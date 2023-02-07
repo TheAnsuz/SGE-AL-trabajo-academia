@@ -59,6 +59,23 @@ table 50104 "Tabla cursos"
             Editable = false;
 
         }
+        // Usado en CursosEstadisticasFactBox Muestra las matriculaciones que tiene el curso
+
+        field(1000; "Matriculaciones curso"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count("Tabla matriculas" where(
+                "Id Curso" = field("Id curso")
+            ));
+        }
+
+        field(1001; "Profesores curso"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count("Tabla profesores" where(
+                "Departamento profesor" = field("Departamento curso")
+            ));
+        }
 
         field(100; "Filtro fecha dia curso"; Enum "Dia enumerador")
         {

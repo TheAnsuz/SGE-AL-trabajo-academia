@@ -5,6 +5,7 @@ page 50107 "Ficha cursos"
     SourceTable = "Tabla cursos";
 
 
+
     layout
     {
         area(Content)
@@ -16,81 +17,113 @@ page 50107 "Ficha cursos"
                 {
                     ApplicationArea = All;
                     Caption = 'ID';
-                    ToolTip = 'ID del curso';
+
+                    ToolTip = 'ID of the course',
+                    Comment = 'es="ID del curso"';
+
                     Importance = Promoted;
                 }
                 field("Nombre curso"; Rec."Nombre curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Nombre';
-                    ToolTip = 'Nombre del curso';
+                    Caption = 'Name',
+                    Comment = 'es="Name"';
+
+                    ToolTip = 'Name of the course',
+                    Comment = 'es="Nombre del curso"';
+
                     Importance = Promoted;
                 }
                 field("Descripcion curso"; Rec."Descripcion curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Descripción';
-                    ToolTip = 'Pequeña descripción del curso';
+                    Caption = 'Description',
+                    Comment = 'es="Descripción"';
+
+                    ToolTip = 'Brief description of the course',
+                    Comment = 'es="Pequeña descripción del curso"';
+
                     Importance = Standard;
                 }
                 field("Horas totales curso"; Rec."Horas totales curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Horas totales';
-                    ToolTip = 'Horas totales que se imparten en el curso';
+                    Caption = 'Total hours',
+                    Comment = 'es="Horas totales"';
+
+                    ToolTip = 'Total of hours during the course',
+                    Comment = 'es="Horas totales que se imparten en el curso"';
+                    ;
                     Importance = Standard;
                 }
 
             }
             group("Profesor")
             {
-                Caption = 'Profesor';
+                Caption = 'Professor',
+                Comment = 'es="Profesor"';
                 field("Profesor curso"; Rec."Profesor curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Profesor';
-                    ToolTip = 'Profesor asignado al curso';
+                    Caption = 'Professor',
+                    Comment = 'es="Profesor"';
+
+                    ToolTip = 'Course''s assigned professor',
+                    Comment = 'es="Profesor asignado al curso"';
                     Importance = Promoted;
                 }
                 field("Departamento curso"; Rec."Departamento curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Departamento';
-                    ToolTip = 'Departamento en el que se impartirá el curso';
+                    Caption = 'Department',
+                    Comment = 'es="Departamento"';
+
+                    ToolTip = 'Department wich the course belongs',
+                    Comment = 'es="Departamento en el que se impartirá el curso"';
                     Importance = Standard;
                 }
                 field("Tarifa laboratorio curso"; Rec."Tarifa laboratorio curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Tarifa laboratorio';
-                    ToolTip = 'Cantidad monetaria disponible en el laboratorio';
+                    Caption = 'Laboratory tariff',
+                    Comment = 'es="Tarifa laboratorio"';
+
+                    ToolTip = 'Lab'' tariff',
+                    Comment = 'es="Tarifa del laboratorio"';
+
                     Importance = Standard;
                 }
                 field("Nº Minutos curso"; Rec."Nº Minutos curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Minutos totales';
-                    ToolTip = 'Tiempo total dedicado al curso en minutos';
+                    Caption = 'Total minutes',
+                    Comment = 'es="Minutos totales"';
+
+                    ToolTip = 'Total time in minutes of the course',
+                    Comment = 'es="Tiempo total dedicado al curso en minutos"';
+
                     Importance = Standard;
                 }
             }
         }
+
+        area(FactBoxes)
+        {
+
+            part("Matriculaciones"; "Estadisticas Cursos FactBox")
+            {
+                Caption = 'Total matriculations',
+                Comment = 'es="Matriculaciones"';
+                SubPageView = sorting("Id curso");
+            }
+        }
     }
+
+
 
     actions
     {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                ApplicationArea = All;
-
-                trigger OnAction()
-                begin
-
-                end;
-            }
-        }
+       
     }
 
     var
