@@ -13,9 +13,9 @@
 ### Apartado 2
 - - -
 - ~~Asignar "ayudantes". Profesor tiene "Num.ayudantes"~~
-- ~~Nº Cursos impartidos por cada profesor~~ **Problemas**
+- ~~Nº Cursos impartidos por cada profesor~~ 
 - ~~Promedio tarifa de laboratorio de departamento~~
-- ~~Nuevo campo calculado que user Flow Filter~~ ***Más o menos***
+- ~~Nuevo campo calculado que user Flow Filter~~ 
 
 ### Apartado 3: Matrículas 
 - - -
@@ -72,10 +72,7 @@ página asociada “Ficha matrícula”.
 
 ~~ 1. Organiza la información en al menos los siguientes FastTab: “General” y “Comunicación”. Y configúralos asignando a los campos las importancias adecuadas. ~~
 
-1. Los campos vinculados a otras tablas, mostrarán en sus desplegables además de los campos
-PK, aquellos campos que sean descriptivos de la información a seleccionar.
-Además, estos desplegables, cuando se expandan mostrarán las páginas de tipo lista
-asociadas, que permitirán mostrar la ficha correspondiente al registro activo.
+~~ 1. Los campos vinculados a otras tablas, mostrarán en sus desplegables además de los campos PK, aquellos campos que sean descriptivos de la información a seleccionar. Además, estos desplegables, cuando se expandan mostrarán las páginas de tipo lista asociadas, que permitirán mostrar la ficha correspondiente al registro activo. ~~
 
 1. Incluye al menos en la página, las siguientes acciones:
 
