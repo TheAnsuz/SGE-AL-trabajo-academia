@@ -33,7 +33,6 @@ table 50103 "Tabla estudiantes"
             // Verificar numero
             trigger OnValidate()
             var
-                Matches: Record Matches;
                 Regex: Codeunit Regex;
                 Written: Text;
                 Domestic: Text;

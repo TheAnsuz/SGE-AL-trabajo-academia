@@ -62,10 +62,6 @@ page 50106 "Ficha matriculas"
                     Importance = Standard;
                 }
             }
-
-            part(Horarios; Pagina){
-
-            }
         }
     }
 

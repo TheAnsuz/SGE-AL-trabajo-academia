@@ -554,7 +554,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Ficha matriculas - Action Curso - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 954994170 - Action 4090056727 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Data</source>
+          <source>Info</source>
           <note from="Developer" annotates="general" priority="2">es="Datos"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Ficha matriculas - Action Datos - Property Caption</note>
         </trans-unit>
@@ -1162,6 +1162,11 @@
           <source>Salario</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Pagina trabajadores - Control Salario trabajador - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4043861665 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course's schedule</source>
+          <note from="Developer" annotates="general" priority="2">es="Horario curso"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Subpagina Horarios - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2614113988 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Días lectivos</source>
