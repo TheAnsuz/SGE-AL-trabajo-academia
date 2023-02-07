@@ -86,7 +86,7 @@ page 50106 "Ficha matriculas"
 
             action(Datos)
             {
-                Caption = 'Data',
+                Caption = 'Info',
                 Comment = 'es="Datos"';
 
                 ApplicationArea = All;
