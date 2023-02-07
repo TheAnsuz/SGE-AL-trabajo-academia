@@ -2,12 +2,13 @@ page 50106 "Ficha matriculas"
 {
     PageType = Card;
     UsageCategory = None;
+    DataCaptionExpression = 'Matricula ' + Rec."Id estudiante" + ' -' + Rec."Id Curso";
     SourceTable = "Tabla matriculas";
     Caption = 'Enrollments',
     Comment = 'es="Matriculas"';
 
-    PromotedActionCategories = 'Information,Student,null,null',
-    Comment = 'es="Información,Estudiante,null,null"';
+    PromotedActionCategories = 'Information,Student',
+    Comment = 'es="Información,Estudiante"';
 
     layout
     {
