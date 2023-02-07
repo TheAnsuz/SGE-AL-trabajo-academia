@@ -3,8 +3,8 @@ page 50107 "Ficha cursos"
     PageType = Card;
     UsageCategory = None;
     SourceTable = "Tabla cursos";
-
-
+    Caption = 'Course',
+    Comment = 'es="Curso"';
 
     layout
     {
@@ -12,26 +12,24 @@ page 50107 "Ficha cursos"
         {
             group("General")
             {
-                Caption = 'General';
+                Caption = 'General',
+                Comment = 'es="General"';
                 field("Id curso"; Rec."Id curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'ID';
-
-                    ToolTip = 'ID of the course',
-                    Comment = 'es="ID del curso"';
-
+                    Caption = 'ID',
+                    Comment = 'es="ID"';
+                    ToolTip = 'Course ID',
+                    Comment = 'es="Id del curso"';
                     Importance = Promoted;
                 }
                 field("Nombre curso"; Rec."Nombre curso")
                 {
                     ApplicationArea = All;
                     Caption = 'Name',
-                    Comment = 'es="Name"';
-
-                    ToolTip = 'Name of the course',
+                    Comment = 'es="Nombre"';
+                    ToolTip = 'Course''s name',
                     Comment = 'es="Nombre del curso"';
-
                     Importance = Promoted;
                 }
                 field("Descripcion curso"; Rec."Descripcion curso")
@@ -50,25 +48,23 @@ page 50107 "Ficha cursos"
                     ApplicationArea = All;
                     Caption = 'Total hours',
                     Comment = 'es="Horas totales"';
-
-                    ToolTip = 'Total of hours during the course',
+                    ToolTip = 'The amount of hours that the course ues',
                     Comment = 'es="Horas totales que se imparten en el curso"';
-                    ;
                     Importance = Standard;
                 }
 
             }
             group("Profesor")
             {
-                Caption = 'Professor',
+                Caption = 'Teacher',
                 Comment = 'es="Profesor"';
+
                 field("Profesor curso"; Rec."Profesor curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Professor',
+                    Caption = 'Teacher',
                     Comment = 'es="Profesor"';
-
-                    ToolTip = 'Course''s assigned professor',
+                    ToolTip = 'Assigned teacher',
                     Comment = 'es="Profesor asignado al curso"';
                     Importance = Promoted;
                 }
@@ -85,23 +81,19 @@ page 50107 "Ficha cursos"
                 field("Tarifa laboratorio curso"; Rec."Tarifa laboratorio curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Laboratory tariff',
+                    Caption = 'Laboratory fee',
                     Comment = 'es="Tarifa laboratorio"';
-
-                    ToolTip = 'Lab'' tariff',
-                    Comment = 'es="Tarifa del laboratorio"';
-
+                    ToolTip = 'Balance that this laboratory is holding',
+                    Comment = 'es="Cantidad monetaria disponible en el laboratorio"';
                     Importance = Standard;
                 }
                 field("Nº Minutos curso"; Rec."Nº Minutos curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Total minutes',
-                    Comment = 'es="Minutos totales"';
-
-                    ToolTip = 'Total time in minutes of the course',
-                    Comment = 'es="Tiempo total dedicado al curso en minutos"';
-
+                    Caption = 'Total time (minutes)',
+                    Comment = 'Minutos totales';
+                    ToolTip = 'Total time in minutes dedicated to this course alone',
+                    Comment = 'es="Tiempo total en minutos dedicado al curso en minutos"';
                     Importance = Standard;
                 }
             }

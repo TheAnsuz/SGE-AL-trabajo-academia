@@ -3,6 +3,8 @@ page 50108 "Ficha estudiantes"
     PageType = Card;
     UsageCategory = None;
     SourceTable = "Tabla estudiantes";
+    Caption = 'Studients',
+    Comment = 'es="Estudantes"';
     PromotedActionCategories = 'Actions,Navigate,null,null',
     Comment = 'Acciones,Navegar,null,null';
 
@@ -12,28 +14,35 @@ page 50108 "Ficha estudiantes"
         {
             group(General)
             {
-                Caption = 'General';
+                Caption = 'General',
+                Comment = 'es="General"';
                 field("Id Estudiante"; Rec."Id estudiante")
                 {
                     ApplicationArea = All;
-                    Caption = 'ID';
-                    ToolTip = 'ID del estudiante';
+                    Caption = 'ID',
+                    Comment = 'es="ID"';
+                    ToolTip = 'Studient ID',
+                    Comment = 'es="ID del estudiante"';
                     Importance = Promoted;
 
                 }
                 field("Nombre estudiante"; Rec."Nombre estudiante")
                 {
                     ApplicationArea = All;
-                    Caption = 'Nombre';
-                    ToolTip = 'Nombre del estudiante';
+                    Caption = 'Name',
+                    Comment = 'es="Nombre"';
+                    ToolTip = 'Studient name',
+                    Comment = 'es="Nombre del estudiante"';
                     Importance = Standard;
 
                 }
                 field("Genero estudiante"; Rec."Genero estudiante")
                 {
                     ApplicationArea = All;
-                    Caption = 'Género';
-                    ToolTip = 'Género del estudiante (Masculino / Femenino)';
+                    Caption = 'Gender',
+                    Comment = 'es="Género"';
+                    ToolTip = 'Studient''s gender',
+                    Comment = 'es="Género del estudiante"';
                     Importance = Additional;
 
                 }
@@ -41,29 +50,34 @@ page 50108 "Ficha estudiantes"
                 field("Fecha nacimiento"; Rec."Fecha nacimiento")
                 {
                     ApplicationArea = All;
-                    Caption = 'Fecha de nacimiento';
-                    ToolTip = 'Fecha de nacimiento del estudiante';
+                    Caption = 'Born date',
+                    Comment = 'es="Fecha de nacimiento"';
+                    ToolTip = 'Studient''s born date',
+                    Comment = 'es="Fecha de nacimiento del estudiante"';
                     Importance = Standard;
                 }
             }
             group(Comunicacion)
             {
-                Caption = 'Comunicación';
+                Caption = 'Comunication',
+                Comment = 'es="Comunicación"';
 
                 field("Direccion estudiante"; Rec."Direccion estudiante")
                 {
                     ApplicationArea = All;
-                    Caption = 'Dirección';
-                    ToolTip = 'Dirección de residencia del estudiante';
+                    Caption = 'Address',
+                    Comment = 'es="Dirección"';
+                    ToolTip = 'Studient'' residential address',
+                    Comment = 'es="Dirección de residencia del estudiante"';
                     Importance = Standard;
-
-
                 }
                 field("Telefono estudiante"; Rec."Telefono estudiante")
                 {
                     ApplicationArea = All;
-                    Caption = 'Telefono';
-                    ToolTip = 'Telefono del estudiante';
+                    Caption = 'Phone no.',
+                    Comment = 'es="Teléfono"';
+                    ToolTip = 'Studient''s phone number',
+                    Comment = 'es="Telefono del estudiante"';
                     Importance = Standard;
 
                 }

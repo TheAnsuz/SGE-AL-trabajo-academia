@@ -1,6 +1,7 @@
 enum 50100 "Genero enumeracion"
 {
-    Caption = 'Género enumeración';
+    Caption = 'Gender',
+    Comment = 'es="Género"';
     Extensible = false;
 
     value(0; "")
@@ -10,11 +11,13 @@ enum 50100 "Genero enumeracion"
 
     value(1; "Masculino genero")
     {
-        Caption = 'Hombre';
+        Caption = 'Male',
+        Comment = 'es="Hombre"';
     }
 
     value(2; "Femenino genero")
     {
-        Caption = 'Mujer';
+        Caption = 'Female',
+        Comment = 'es="Mujer"';
     }
 }
