@@ -6,8 +6,8 @@ page 50106 "Ficha matriculas"
     Caption = 'Enrollments',
     Comment = 'es="Matriculas"';
 
-    PromotedActionCategories = 'Information,Student,null,null',
-    Comment = 'es="Información,Estudiante,null,null"';
+    PromotedActionCategories = 'Information,Student',
+    Comment = 'es="Información,Estudiante"';
 
     layout
     {
@@ -60,6 +60,10 @@ page 50106 "Ficha matriculas"
                     Comment = 'es="Hora en la que se realizó la matriculación"';
                     Importance = Standard;
                 }
+            }
+
+            part(Horarios; Pagina){
+
             }
         }
     }
