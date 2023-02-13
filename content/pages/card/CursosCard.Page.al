@@ -115,7 +115,7 @@ page 50107 "Ficha cursos"
 
     actions
     {
-       
+
     }
 
     var
