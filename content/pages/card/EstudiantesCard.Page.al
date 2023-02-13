@@ -5,8 +5,8 @@ page 50108 "Ficha estudiantes"
     SourceTable = "Tabla estudiantes";
     Caption = 'Studients',
     Comment = 'es="Estudantes"';
-    PromotedActionCategories = 'Actions,Navigate,null,null',
-    Comment = 'Acciones,Navegar,null,null';
+    PromotedActionCategories = 'Actions,Navigate',
+    Comment = 'es="Acciones,Navegar"';
 
     layout
     {
@@ -96,19 +96,28 @@ page 50108 "Ficha estudiantes"
                 Comment = 'es="Nueva matrícula"';
 
                 Promoted = true;
+                PromotedOnly = true;
                 PromotedCategory = New;
 
                 RunObject = page "Ficha matriculas";
-                
+                RunPageMode = Create;
 
-                trigger OnAction()
-                begin
+                Image = CreateForm;
 
-                end;
+            }
+            action("Ver matriculas")
+            {
+                Caption = 'View enrollments',
+                Comment = 'es="Ver matriculas"';
+                Promoted = true;
+                PromotedCategory = Process;
+
+                RunObject = page "Pagina matriculas";
+                RunPageLink = "Id Estudiante" = field("Id estudiante");
+                RunPageMode = View;
+
+                Image = Accounts;
             }
         }
     }
-
-    var
-        myInt: Integer;
 }

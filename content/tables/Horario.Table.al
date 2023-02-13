@@ -35,7 +35,6 @@ table 50105 "Tabla horarios"
 
             begin
                 TiempoTranscurrido := "Hora final horario" - "Hora inicio horario";
-                Message('%1', TiempoTranscurrido);
                 if TiempoTranscurrido < 0 then
                     Error('La hora de inicio no puede superar a la hora de fin')
                 else
@@ -61,7 +60,6 @@ table 50105 "Tabla horarios"
 
             begin
                 TiempoTranscurrido := "Hora final horario" - "Hora inicio horario";
-                Message('%1', TiempoTranscurrido);
                 if TiempoTranscurrido < 0 then
                     Error('La hora de inicio no puede superar a la hora de fin')
                 else

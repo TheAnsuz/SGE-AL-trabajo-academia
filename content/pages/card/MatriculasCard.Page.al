@@ -78,10 +78,12 @@ page 50106 "Ficha matriculas"
 
                 PromotedCategory = New;
                 Promoted = True;
+                PromotedOnly = true;
 
                 RunObject = page "Ficha cursos";
                 RunPageLink = "Id curso" = field("Id Curso");
                 RunPageMode = View;
+
             }
 
             action(Datos)
@@ -93,6 +95,7 @@ page 50106 "Ficha matriculas"
 
                 PromotedCategory = Process;
                 Promoted = True;
+                PromotedOnly = true;
 
                 RunObject = page "Ficha estudiantes";
                 RunPageLink = "Id estudiante" = field("Id Estudiante");
@@ -108,6 +111,7 @@ page 50106 "Ficha matriculas"
 
                 PromotedCategory = Process;
                 Promoted = True;
+                PromotedOnly = true;
 
                 RunObject = page "Pagina matriculas";
                 RunPageLink = "Id Estudiante" = field("Id Estudiante");

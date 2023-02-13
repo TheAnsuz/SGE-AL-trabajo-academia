@@ -10,7 +10,7 @@ page 50113 "Subpagina Horarios"
     {
         area(Content)
         {
-            group(General)
+            repeater(General)
             {
                 field("Id horario"; Rec."Id horario")
                 {

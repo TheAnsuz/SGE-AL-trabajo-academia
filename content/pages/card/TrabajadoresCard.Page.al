@@ -1,4 +1,4 @@
-page 50112 "Ficha trabajadores"
+page 50114 "Ficha trabajadores"
 {
     PageType = Card;
     UsageCategory = None;
