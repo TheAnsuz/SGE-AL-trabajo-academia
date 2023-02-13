@@ -97,6 +97,16 @@ page 50107 "Ficha cursos"
                     Importance = Standard;
                 }
             }
+
+            part("Lista Horario"; "Subpagina horarios")
+            {
+
+                ApplicationArea = All;
+                Editable = true;
+                SubPageLink = "Id curso" = field("Id curso");
+                UpdatePropagation = Both;
+
+            }
         }
 
         area(FactBoxes)
@@ -110,14 +120,4 @@ page 50107 "Ficha cursos"
             }
         }
     }
-
-
-
-    actions
-    {
-
-    }
-
-    var
-        myInt: Integer;
 }

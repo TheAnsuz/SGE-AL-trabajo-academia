@@ -27,6 +27,7 @@ table 50105 "Tabla horarios"
         field(4; "Hora inicio horario"; Time)
         {
             DataClassification = ToBeClassified;
+            InitValue = 0T;
 
             trigger OnValidate()
             var
@@ -46,12 +47,12 @@ table 50105 "Tabla horarios"
 
 
             end;
-
         }
 
         field(5; "Hora final horario"; Time)
         {
             DataClassification = ToBeClassified;
+            InitValue = 0T;
 
             trigger OnValidate()
             var
@@ -71,13 +72,11 @@ table 50105 "Tabla horarios"
 
 
             end;
-
         }
 
         field(6; "Duracion horario"; Integer)
         {
             Editable = false;
-
         }
     }
 
@@ -96,4 +95,5 @@ table 50105 "Tabla horarios"
 
         }
     }
+
 }

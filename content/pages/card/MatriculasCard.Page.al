@@ -2,6 +2,7 @@ page 50106 "Ficha matriculas"
 {
     PageType = Card;
     UsageCategory = None;
+    DataCaptionExpression = 'Matricula ' + Rec."Id estudiante" + ' -' + Rec."Id Curso";
     SourceTable = "Tabla matriculas";
     Caption = 'Enrollments',
     Comment = 'es="Matriculas"';
@@ -65,10 +66,6 @@ page 50106 "Ficha matriculas"
                     Importance = Standard;
                 }
             }
-
-            part(Horarios; Pagina){
-
-            }
         }
     }
 
@@ -85,21 +82,24 @@ page 50106 "Ficha matriculas"
 
                 PromotedCategory = New;
                 Promoted = True;
+                PromotedOnly = true;
 
                 RunObject = page "Ficha cursos";
                 RunPageLink = "Id curso" = field("Id Curso");
                 RunPageMode = View;
+
             }
 
             action(Datos)
             {
-                Caption = 'Data',
+                Caption = 'Info',
                 Comment = 'es="Datos"';
 
                 ApplicationArea = All;
 
                 PromotedCategory = Process;
                 Promoted = True;
+                PromotedOnly = true;
 
                 RunObject = page "Ficha estudiantes";
                 RunPageLink = "Id estudiante" = field("Id Estudiante");
@@ -115,6 +115,7 @@ page 50106 "Ficha matriculas"
 
                 PromotedCategory = Process;
                 Promoted = True;
+                PromotedOnly = true;
 
                 RunObject = page "Pagina matriculas";
                 RunPageLink = "Id Estudiante" = field("Id Estudiante");

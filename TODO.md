@@ -44,7 +44,7 @@
 
 ~~ 1. Dispondrá de un FactBox “Estadísticas” que muestre al menos el nº de alumnos matriculados y algún otro dato relevante que consideres interesante incluirlo. ~~ 
 
-1. A través de una subpágina se mostrarán el horario del curso.
+~~1. A través de una subpágina se mostrarán el horario del curso.~~
 
 ### Apartado 5: Estudiantes
 - - -
@@ -56,12 +56,12 @@
 
 1. Incluye al menos en la página, las siguientes acciones:
 
-    - Acciones – Nueva matrícula: permite introducir una nueva matrícula en la base de
+    (HECHO) - Acciones – Nueva matrícula: permite introducir una nueva matrícula en la base de
 datos, asociada al estudiante actual, a través de la página “Ficha matrícula” (modo
 creación).
 La acción se encuentra también promocionada.
 
-    - Navegar – Matrículas: muestra las matrículas existentes del estudiante actual, a través
+    (HECHO) - Navegar – Matrículas: muestra las matrículas existentes del estudiante actual, a través
 de una página de tipo lista.
 Se podrá mostrar información detallada de una matrícula en particular, a través de su
 página asociada “Ficha matrícula”.
@@ -76,9 +76,9 @@ página asociada “Ficha matrícula”.
 
 1. Incluye al menos en la página, las siguientes acciones:
 
-    - Navegar – Profesores: muestra la lista de profesores pertenecientes al departamento activo. Además se podrá mostrar la página ficha asociada, correspondiente al registro activo.
+    (HECHO)- Navegar – Profesores: muestra la lista de profesores pertenecientes al departamento activo. Además se podrá mostrar la página ficha asociada, correspondiente al registro activo.
 
-    - Navegar – Coordenador: muestra el profesor jefe del departamento activo.
+    (HECHO)- Navegar – Coordenador: muestra el profesor jefe del departamento activo.
 
 1. A través de una subpágina, se mostrarán los cursos ofertados (información resumida) por cada departamento. Dispondrá de las siguientes acciones:
 
@@ -88,7 +88,7 @@ página asociada “Ficha matrícula”.
 
 ### Apartado 7: Secretaría/Admón. 
 - - -
-1. Soon...
+1. TODO LO QUE ESTA EN EL PDF
 
 ### Extra
 - - -

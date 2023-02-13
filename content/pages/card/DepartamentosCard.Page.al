@@ -3,6 +3,8 @@ page 50110 "Ficha departamentos"
     PageType = Card;
     UsageCategory = None;
     SourceTable = "Tabla departamentos";
+    PromotedActionCategories = 'Navigate',
+    Comment = 'es="Navegar"';
 
     layout
     {
@@ -60,16 +62,41 @@ page 50110 "Ficha departamentos"
 
     actions
     {
-        area(Processing)
+        area(Navigation)
         {
-            action(ActionName)
+            action(Profesores)
             {
-                ApplicationArea = All;
+                Caption = 'Teachers',
+                Comment = 'es="Profesores"';
+
+                Promoted = True;
+                PromotedCategory = New;
+                PromotedOnly = True;
+
+                Image = DepreciationBooks;
+
+                RunObject = page "Pagina profesores";
+                RunPageLink = "Departamento profesor" = field("Id departamento");
+                RunPageMode = View;
 
                 trigger OnAction()
                 begin
 
                 end;
+            }
+
+            action(Coordenador)
+            {
+                Caption = 'Coordination',
+                Comment = 'es="Coordenador"';
+
+                Promoted = True;
+                PromotedCategory = New;
+                PromotedOnly = True;
+
+                RunObject = page "Ficha profesores";
+                RunPageLink = "Id profesor" = field("Jefe departamento");
+                RunPageMode = View;
             }
         }
     }
