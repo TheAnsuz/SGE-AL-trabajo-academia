@@ -57,6 +57,14 @@ page 50110 "Ficha departamentos"
                     ToolTip = 'El promedio de la tarifa del departamento';
                 }
             }
+
+            part("Lista Cursos"; "Subpagina cursos")
+            {
+                ApplicationArea = All;
+                Editable = true;
+                SubPageLink = "Departamento curso" = field("Id departamento");
+                UpdatePropagation = Both;
+            }
         }
     }
 

@@ -48,8 +48,10 @@ page 50106 "Ficha matriculas"
                     ApplicationArea = All;
                     Caption = 'Date of enrollment',
                     Comment = 'es="Fecha de matriculación"';
+
                     ToolTip = 'Date in wich the enrollment was registered',
                     Comment = 'es="Fecha en la que se realizó la matriculación"';
+                    
                     Importance = Standard;
                 }
                 field("Hora matriculacion"; Rec."Hora matriculacion")
@@ -57,8 +59,10 @@ page 50106 "Ficha matriculas"
                     ApplicationArea = All;
                     Caption = 'Hour of enrollment',
                     Comment = 'es="Hora de matriculación"';
+
                     ToolTip = 'Hour of day in wich the enrollment was registered',
                     Comment = 'es="Hora en la que se realizó la matriculación"';
+                    
                     Importance = Standard;
                 }
             }
