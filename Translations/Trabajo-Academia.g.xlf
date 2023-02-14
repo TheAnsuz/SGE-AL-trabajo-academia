@@ -433,6 +433,16 @@
           <note from="Developer" annotates="general" priority="2">es="Profesores"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Ficha departamentos - Action Profesores - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1544889048 - Action 1728353258 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Coordination</source>
+          <note from="Developer" annotates="general" priority="2">es="Coordenador"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Ficha departamentos - Action Coordenador - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1544889048 - Action 610025218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Teachers</source>
+          <note from="Developer" annotates="general" priority="2">es="Profesores"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Ficha departamentos - Action Profesores - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2528598582 - Property 2019332006" size-unit="char" translate="yes" xml:space="preserve">
           <source>Actions,Navigate</source>
           <note from="Developer" annotates="general" priority="2">es="Acciones,Navegar"</note>

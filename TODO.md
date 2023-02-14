@@ -101,6 +101,10 @@ página asociada “Ficha matrícula”.
 **Se valorará la utilidad y complejidad de la programación realizada.**
 
 
+### Apartado 8:
+- - -
+1. Añadir algo que use codeunits al proyecto
+
 ### Extra
 - - -
 - Comprobar que las cosas funcionan usando datos de ejemplo
