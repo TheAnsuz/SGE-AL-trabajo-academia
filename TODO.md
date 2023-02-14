@@ -85,7 +85,7 @@ página asociada “Ficha matrícula”.
 
 ### Apartado 7: Secretaría/Admón. 
 - - -
-1. Diseña una página de tipo “Role Center”, vinculada a un nuevo perfil de usuario para el personal de secretaría/administración de la academia.
+1. ~~Diseña una página de tipo “Role Center”, vinculada a un nuevo perfil de usuario para el personal de secretaría/administración de la academia.~~
 
 1. Esta página deberá incluir CUE’s con información de interés para el perfil de usuario. Al clicar sobre cualquiera de ellos, se visualizarán las listas filtradas subyacentes. Agrupa los CUE’s adecuadamente, y habilita en ellos acciones que permitan dar de alta registros en las tablas correspondientes a través de las páginas de tipo ficha asociadas.
 
