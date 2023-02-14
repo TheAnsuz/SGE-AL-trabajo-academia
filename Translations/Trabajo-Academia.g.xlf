@@ -248,6 +248,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - NamedType headline1</note>
         </trans-unit>
+        <trans-unit id="Page 757987171 - NamedType 3471628560" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Una pulga puede saltar une distancia equivalente a 30 veces la longitud de su cuerpo. Para un humano, supondría la longitud de un terreno de fútbol.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - NamedType headline2</note>
+        </trans-unit>
         <trans-unit id="Page 426982401 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Statistics</source>
           <note from="Developer" annotates="general" priority="2">es="Estadísticas"</note>
@@ -1242,6 +1247,16 @@
           <source>Course's schedule</source>
           <note from="Developer" annotates="general" priority="2">es="Horario curso"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Subpagina Horarios - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Profile 741752195 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Secretary</source>
+          <note from="Developer" annotates="general" priority="2">es="Secretaría"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile Secretaria perfil - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Profile 741752195 - Property 4111922599" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Personal working in secretary</source>
+          <note from="Developer" annotates="general" priority="2">es="Personal trabajando en secretaría"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile Secretaria perfil - Property ProfileDescription</note>
         </trans-unit>
         <trans-unit id="Enum 2614113988 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Días lectivos</source>
