@@ -238,6 +238,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Tabla trabajadores - Field Salario trabajador - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 757987171 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Headline secretary</source>
+          <note from="Developer" annotates="general" priority="2">es="Cabecera secretaría"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 757987171 - NamedType 4109325177" size-unit="char" translate="yes" xml:space="preserve">
+          <source>¡Bienvenido/a a secretaría!</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - NamedType headline1</note>
+        </trans-unit>
         <trans-unit id="Page 426982401 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Statistics</source>
           <note from="Developer" annotates="general" priority="2">es="Estadísticas"</note>
@@ -1182,6 +1192,16 @@
           <source>Salario</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Pagina trabajadores - Control Salario trabajador - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1444743758 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Secretary</source>
+          <note from="Developer" annotates="general" priority="2">es="Secretaría"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Secretaria Role Center - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1444743758 - Control 4068002371 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Welcome</source>
+          <note from="Developer" annotates="general" priority="2">es="Bienvenid@"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Secretaria Role Center - Control Bienvenida - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2053859969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Courses</source>
