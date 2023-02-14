@@ -43,32 +43,32 @@ page 50112 "Subpagina Departamentos"
     {
         area(Processing)
         {
-            action(Matriculas)
+
+            group(Curso)
             {
-                Caption = 'Enrollments',
-                Comment = 'es="Matrículas"';
-
-                Promoted = True;
-                PromotedCategory = New;
-                PromotedOnly = True;
-
-                RunObject = page ("Pagina matriculas");
-                // RunPageLink = ARREGLAR 
-                RunPageMode = View;
+                action(Matriculas)
+                {
+                    Caption = 'Enrollments',
+                    Comment = 'es="Matrículas"';
 
 
+                    RunObject = page "Pagina matriculas";
+                    RunPageLink = "Id Curso" = field("Id curso");
+                    RunPageMode = View;
+
+
+                }
+                action(Datos)
+                {
+                    Caption = 'Open card',
+                    Comment = 'es="Abrir ficha"';
+
+                    RunObject = page "Ficha cursos";
+                    RunPageLink = "Id Curso" = field("Id curso");
+                    RunPageMode = View;
+                }
             }
-            action(Datos)
-            {
-                Caption = 'Open card',
-                Comment = 'es="Abrir ficha"';
 
-                Promoted = true;
-                PromotedCategory = New;
-                PromotedOnly = true;
-
-                RunObject = page "Ficha cursos";
-            }
         }
     }
 }
