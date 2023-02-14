@@ -90,6 +90,10 @@ página asociada “Ficha matrícula”.
 - - -
 1. TODO LO QUE ESTA EN EL PDF
 
+### Apartado 8:
+- - -
+1. Añadir algo que use codeunits al proyecto
+
 ### Extra
 - - -
 - Comprobar que las cosas funcionan usando datos de ejemplo

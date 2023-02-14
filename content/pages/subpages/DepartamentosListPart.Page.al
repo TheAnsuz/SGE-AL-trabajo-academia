@@ -48,11 +48,12 @@ page 50112 "Subpagina Departamentos"
                 Caption = 'Enrollments',
                 Comment = 'es="Matrículas"';
 
-                Promoted = True;
-                PromotedCategory = New;
-                PromotedOnly = True;
-
-                RunObject = page ("Pagina matriculas");
+                /*
+                                Promoted = True;
+                                PromotedCategory = New;
+                                PromotedOnly = True;
+                */
+                RunObject = page "Pagina matriculas";
                 // RunPageLink = ARREGLAR 
                 RunPageMode = View;
 
@@ -62,11 +63,11 @@ page 50112 "Subpagina Departamentos"
             {
                 Caption = 'Open card',
                 Comment = 'es="Abrir ficha"';
-
-                Promoted = true;
-                PromotedCategory = New;
-                PromotedOnly = true;
-
+                /*
+                                Promoted = true;
+                                PromotedCategory = New;
+                                PromotedOnly = true;
+                */
                 RunObject = page "Ficha cursos";
             }
         }
