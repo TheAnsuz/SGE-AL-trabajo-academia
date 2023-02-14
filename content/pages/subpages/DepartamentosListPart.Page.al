@@ -1,4 +1,4 @@
-page 50112 "Subpagina Departamentos"
+page 50112 "Subpagina cursos"
 {
     PageType = ListPart;
     UsageCategory = None;
