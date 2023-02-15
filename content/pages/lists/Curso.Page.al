@@ -21,43 +21,50 @@ page 50104 "Pagina cursos"
                 field("Nombre curso"; Rec."Nombre curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Nombre';
+                    Caption = 'Name',
+                    comment = 'es="Nombre"';
                     ToolTip = 'Nombre del curso';
                 }
                 field("Descripcion curso"; Rec."Descripcion curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Descripción';
+                    Caption = 'Description',
+                    comment = 'es="Descripción"';
                     ToolTip = 'Pequeña descripción del curso';
                 }
                 field("Horas totales curso"; Rec."Horas totales curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Horas totales';
+                    Caption = 'Total hours',
+                    comment = 'es="Horas totales"';
                     ToolTip = 'Horas totales que se imparten en el curso';
                 }
                 field("Tarifa laboratorio curso"; Rec."Tarifa laboratorio curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Tarifa laboratorio';
+                    Caption = 'Lab fee',
+                    comment = 'es="Tarifa laboratorio"';
                     ToolTip = 'Cantidad monetaria disponible en el laboratorio';
                 }
                 field("Profesor curso"; Rec."Profesor curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Profesor';
+                    Caption = 'Assigned teacher',
+                    comment = 'es="Profesor asignado"';
                     ToolTip = 'Profesor asignado al curso';
                 }
                 field("Departamento curso"; Rec."Departamento curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Departamento';
+                    Caption = 'Department',
+                    comment = 'es="Departamento"';
                     ToolTip = 'Departamento en el que se impartirá el curso';
                 }
                 field("Nº Minutos curso"; Rec."Nº Minutos curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Minutos totales';
+                    Caption = 'Total minutes',
+                    comment = 'es="Minutos totales"';
                     ToolTip = 'Tiempo total dedicado al curso en minutos';
                 }
             }

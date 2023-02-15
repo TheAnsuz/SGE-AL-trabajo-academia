@@ -23,21 +23,24 @@ page 50103 "Pagina estudiantes"
                 field("Nombre estudiante"; Rec."Nombre estudiante")
                 {
                     ApplicationArea = All;
-                    Caption = 'Nombre';
+                    Caption = 'Name',
+                    comment = 'es="Nombre"';
                     ToolTip = 'Nombre del estudiante';
 
                 }
                 field("Genero estudiante"; Rec."Genero estudiante")
                 {
                     ApplicationArea = All;
-                    Caption = 'Género';
+                    Caption = 'Genre',
+                    comment = 'es="Género"';
                     ToolTip = 'Género del estudiante (Masculino / Femenino)';
 
                 }
                 field("Direccion estudiante"; Rec."Direccion estudiante")
                 {
                     ApplicationArea = All;
-                    Caption = 'Dirección';
+                    Caption = 'Address',
+                    comment = 'es="Dirección"';
                     ToolTip = 'Dirección de residencia del estudiante';
 
 
@@ -45,14 +48,17 @@ page 50103 "Pagina estudiantes"
                 field("Telefono estudiante"; Rec."Telefono estudiante")
                 {
                     ApplicationArea = All;
-                    Caption = 'Telefono';
+                    Caption = 'Phone',
+                    comment = 'es="Teléfono"';
+
                     ToolTip = 'Telefono del estudiante';
 
                 }
                 field("Fecha nacimiento"; Rec."Fecha nacimiento")
                 {
                     ApplicationArea = All;
-                    Caption = 'Fecha de nacimiento';
+                    Caption = 'Birthdate',
+                    comment = 'es="Fecha de nacimiento"';
                     ToolTip = 'Fecha de nacimiento del estudiante';
                 }
             }

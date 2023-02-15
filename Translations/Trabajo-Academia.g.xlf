@@ -1198,6 +1198,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Pagina profesores - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2854804850 - NamedType 1720702668" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Average salary: %1 €</source>
+          <note from="Developer" annotates="general" priority="2">es="El salario promedio es de %1 €"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Pagina profesores - NamedType Msg1</note>
+        </trans-unit>
         <trans-unit id="Page 2854804850 - Control 1957676366 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Departamento en el que trabaja el profesor</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1267,6 +1272,11 @@
           <source>Salario</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Pagina profesores - Control Salario profesor - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2854804850 - Action 2635959403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check average salary</source>
+          <note from="Developer" annotates="general" priority="2">es="Ver salario promedio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Pagina profesores - Action Salario medio - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3687830380 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Trabajadores</source>

@@ -16,27 +16,33 @@ page 50126 "Pagina matriculas"
                 field("Id Estudiante"; Rec."Id Estudiante")
                 {
                     ApplicationArea = All;
-                    Caption = 'ID Estudiante';
+                    Caption = 'Studient''s ID',
+                    Comment = 'es="ID del estudiante"';
                     ToolTip = 'ID del estudiante matriculado';
                 }
 
                 field("Id Curso"; Rec."Id Curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'ID Curso';
+                    Caption = 'Course ID',
+                    comment = 'es="ID Curso"';
                     ToolTip = 'ID del curso en el que esta matriculado el alumno';
                 }
 
                 field("Fecha matriculacion"; Rec."Fecha matriculacion")
                 {
                     ApplicationArea = All;
-                    Caption = 'Fecha de matriculación';
+                    Caption = 'Enrollment date',
+                    comment = 'es="Fecha de matriculación"';
+
                     ToolTip = 'Fecha en la que se realizó la matriculación';
                 }
                 field("Hora matriculacion"; Rec."Hora matriculacion")
                 {
                     ApplicationArea = All;
-                    Caption = 'Hora de matriculación';
+                    Caption = 'Enrollment time',
+                    comment = 'es="Hora de matriculación"';
+
                     ToolTip = 'Hora en la que se realizó la matriculación';
                 }
             }

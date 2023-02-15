@@ -20,40 +20,48 @@ page 50111 "Ficha profesores"
                 field("Nombre profesor"; Rec."Nombre profesor")
                 {
                     ApplicationArea = All;
-                    Caption = 'Nombre';
+                    Caption = 'Name',
+                    comment = 'es="Nombre"';
                     ToolTip = 'Nombre del profesor';
 
                 }
                 field("Direccion profesor"; Rec."Direccion profesor")
                 {
                     ApplicationArea = All;
-                    Caption = 'Dirección';
+                    Caption = 'Direction',
+                    comment = 'es="Dirección"';
                     ToolTip = 'Dirección del profesor';
                 }
                 field("Fecha contratacion profesor"; Rec."Fecha contratacion profesor")
                 {
                     ApplicationArea = All;
-                    Caption = 'Fecha de contratación';
+                    Caption = 'Hiring date',
+                    comment = 'es="Fecha de contratación"';
                     ToolTip = 'Fecha de contratación del profesor';
                 }
                 field("Salario profesor"; Rec."Salario profesor")
                 {
                     ApplicationArea = All;
-                    Caption = 'Salario';
-                    ToolTip = 'Salario que recive el profesor';
+                    Caption = 'Salary',
+                    comment = 'es="Salario"';
+
+                    ToolTip = 'Salario que recibe el profesor';
 
                 }
                 field("Departamento profesor"; Rec."Departamento profesor")
                 {
                     ApplicationArea = All;
-                    Caption = 'Departamento';
+                    Caption = 'Department',
+                    comment = 'es="Departamento"';
                     ToolTip = 'Departamento en el que trabaja el profesor';
 
                 }
                 field("Despacho profesor"; Rec."Despacho profesor")
                 {
                     ApplicationArea = All;
-                    Caption = 'Despacho';
+                    Caption = 'Office',
+                    comment = 'es="Despacho"';
+
                     ToolTip = 'Despacho del profesor';
                 }
             }

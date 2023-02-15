@@ -75,6 +75,13 @@ table 50101 "Tabla profesores"
 
             CalcFormula = count("Tabla cursos" where("Profesor curso" = field("Id profesor")));
         }
+
+        /*
+        // Especifico filtro a partir de ID 100
+        field(100; "Filtro dia"; Enum Day)
+        {
+            FieldClass = FlowFilter;
+        }
     }
     keys
     {
@@ -92,3 +99,4 @@ table 50101 "Tabla profesores"
         }
     }
 }
+ 

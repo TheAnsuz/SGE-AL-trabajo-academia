@@ -22,7 +22,8 @@ page 50105 "Pagina horarios"
                 field("Id curso"; Rec."Id curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'ID Curso';
+                    Caption = 'Course ID',
+                    comment = 'es="ID Curso"';
                     ToolTip = 'ID del curso poseedor de este horario';
 
                 }
@@ -30,7 +31,9 @@ page 50105 "Pagina horarios"
                 field("Dia horario"; Rec."Día horario")
                 {
                     ApplicationArea = All;
-                    Caption = 'Día';
+                    Caption = 'Day',
+                    comment = 'es="Día"';
+
                     ToolTip = 'Día de la semana en que se desarrolla el horario';
 
                 }
@@ -38,7 +41,9 @@ page 50105 "Pagina horarios"
                 field("Hora inicio horario"; Rec."Hora inicio horario")
                 {
                     ApplicationArea = All;
-                    Caption = 'Hora inicio';
+                    Caption = 'Begin hour',
+                    comment = 'es="Hora inicio"';
+
                     ToolTip = 'Hora a la que inicia el horario';
 
                 }
@@ -46,7 +51,9 @@ page 50105 "Pagina horarios"
                 field("Hora final horario"; Rec."Hora final horario")
                 {
                     ApplicationArea = All;
-                    Caption = 'Hora final';
+                    Caption = 'Final hour',
+                    comment = 'es="Hora final"';
+
                     ToolTip = 'Hora a la que finaliza el horario';
 
                 }
@@ -54,7 +61,8 @@ page 50105 "Pagina horarios"
                 field("Duracion horario"; Rec."Duracion horario")
                 {
                     ApplicationArea = All;
-                    Caption = 'Duracion';
+                    Caption = 'Time span',
+                    comment = 'es="Duración"';
                     ToolTip = 'Duracion en minutos del horario';
 
                 }
