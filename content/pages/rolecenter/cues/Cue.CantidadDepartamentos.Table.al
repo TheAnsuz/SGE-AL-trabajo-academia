@@ -50,7 +50,14 @@ table 50106 "Cue secretaria table"
             FieldClass = FlowField;
             CalcFormula = count("Tabla trabajadores");
         }
-
+        field(9; "Estudiantes hombre"; Integer)
+        {
+            InitValue = 0;
+        }
+        field(10; "Estudiantes mujer"; Integer)
+        {
+            InitValue = 0;
+        }
 
     }
 

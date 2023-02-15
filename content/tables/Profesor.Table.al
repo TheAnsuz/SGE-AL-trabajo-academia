@@ -74,17 +74,7 @@ table 50101 "Tabla profesores"
             FieldClass = FlowField;
 
             CalcFormula = count("Tabla cursos" where("Profesor curso" = field("Id profesor")));
-
-            Caption = 'Diosito haz que funcione pls';
         }
-
-        /*
-        // Especifico filtro a partir de ID 100
-        field(100; "Filtro dia"; Enum Day)
-        {
-            FieldClass = FlowFilter;
-        }
-        */
     }
     keys
     {

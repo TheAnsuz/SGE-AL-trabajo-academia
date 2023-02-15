@@ -32,25 +32,8 @@ table 50103 "Tabla estudiantes"
             DataClassification = ToBeClassified;
             // Verificar numero
             trigger OnValidate()
-            var
-                Regex: Codeunit Regex;
-                Written: Text;
-                Domestic: Text;
             begin
-                Written := "Telefono estudiante";
-                "Telefono estudiante" := "Telefono estudiante".Replace(' ', '').Replace('-', '');
-
-                if ("Telefono estudiante".StartsWith('+34')) then
-                    "Telefono estudiante" := "Telefono estudiante".Replace('+34', '');
-
-                Domestic := '[6-9]\d{8}';
-
-                if not (
-                    Regex.IsMatch("Telefono estudiante", Domestic, 0)
-                ) then begin
-                    Error('No es un formato de numero de telefono Español');
-                    "Telefono estudiante" := Written;
-                end;
+                checkPhone("Telefono estudiante");
             end;
         }
         field(6; "Fecha nacimiento"; Date)
@@ -74,5 +57,26 @@ table 50103 "Tabla estudiantes"
 
         }
     }
+
+    local procedure formatPhone(Input: Text[16]) Formatted: Text[16]
+    begin
+        Formatted := Input.Replace(' ', '').Replace('-', '').ToUpper();
+    end;
+
+    local procedure checkPhone(Input: Text[16])
+    var
+        Regex: Codeunit Regex;
+        Domestic: Text;
+    begin
+        Domestic := '[6-9]\d{8}';
+
+        if not (
+            Regex.IsMatch(formatPhone(Input), Domestic)
+        ) then begin
+            Error('No es un formato de numero de telefono Español');
+        end;
+
+        Input := formatPhone(Input);
+    end;
 
 }
