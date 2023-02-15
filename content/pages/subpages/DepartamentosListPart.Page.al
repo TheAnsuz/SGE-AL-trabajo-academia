@@ -1,10 +1,10 @@
-page 50112 "Subpagina cursos"
+page 50118 "Subpagina departamentos"
 {
     PageType = ListPart;
     UsageCategory = None;
-    SourceTable = "Tabla cursos";
-    Caption = 'Courses',
-    Comment = 'es="Cursos"';
+    SourceTable = "Tabla departamentos";
+    Caption = 'Departments',
+    Comment = 'es="Departamentos"';
 
     layout
     {
@@ -12,63 +12,25 @@ page 50112 "Subpagina cursos"
         {
             repeater(General)
             {
-                field("Id curso"; Rec."Id curso")
+                field("Id departamento"; Rec."Id departamento")
                 {
-                    Caption = 'Course''s ID',
-                    Comment = 'es="ID Curso"';
+                    Caption = 'Department''s ID',
+                    Comment = 'es="ID Departamento"';
                     ApplicationArea = All;
                 }
-                field("Dia horario"; Rec."Nombre curso")
+                field("Nombre departamento"; Rec."Nombre departamento")
                 {
-                    Caption = 'Course''s name',
-                    Comment = 'es="Nombre Curso"';
+                    Caption = 'Name',
+                    Comment = 'es="Nombre"';
                     ApplicationArea = All;
                 }
-                field("Hora inicio horario"; Rec."Departamento curso")
+                field("Despacho departamento"; Rec."Despacho departamento")
                 {
-                    Caption = 'Course''s Description',
-                    Comment = 'es="Descripcion del curso"';
-                    ApplicationArea = All;
-                }
-                field("Hora final horario"; Rec."Profesor curso")
-                {
-                    Caption = 'Course''s Techer',
-                    Comment = 'es="Profesor Curso"';
+                    Caption = 'Office',
+                    Comment = 'es="Despacho"';
                     ApplicationArea = All;
                 }
             }
-        }
-    }
-    actions
-    {
-        area(Processing)
-        {
-
-            group(Curso)
-            {
-                action(Matriculas)
-                {
-                    Caption = 'Enrollments',
-                    Comment = 'es="Matrículas"';
-
-
-                    RunObject = page "Pagina matriculas";
-                    RunPageLink = "Id Curso" = field("Id curso");
-                    RunPageMode = View;
-
-
-                }
-                action(Datos)
-                {
-                    Caption = 'Open card',
-                    Comment = 'es="Abrir ficha"';
-
-                    RunObject = page "Ficha cursos";
-                    RunPageLink = "Id Curso" = field("Id curso");
-                    RunPageMode = View;
-                }
-            }
-
         }
     }
 }

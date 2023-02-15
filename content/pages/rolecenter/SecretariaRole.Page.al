@@ -31,6 +31,13 @@ page 50115 "Secretaria Role Center"
                     Caption = 'Courses',
                     Comment = 'es="Cursos"';
                 }
+
+                part("Lista departamentos"; "Subpagina departamentos")
+                {
+                    Editable = false;
+                    Caption = 'Departments',
+                    Comment = 'es="Departamentos"';
+                }
             }
 
         }
