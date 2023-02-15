@@ -83,15 +83,18 @@ page 50107 "Ficha cursos"
                     ApplicationArea = All;
                     Caption = 'Laboratory fee',
                     Comment = 'es="Tarifa laboratorio"';
+
                     ToolTip = 'Balance that this laboratory is holding',
                     Comment = 'es="Cantidad monetaria disponible en el laboratorio"';
+
                     Importance = Standard;
                 }
                 field("Nº Minutos curso"; Rec."Nº Minutos curso")
                 {
                     ApplicationArea = All;
                     Caption = 'Total time (minutes)',
-                    Comment = 'Minutos totales';
+                    Comment = 'es ="Minutos totales"';
+
                     ToolTip = 'Total time in minutes dedicated to this course alone',
                     Comment = 'es="Tiempo total en minutos dedicado al curso en minutos"';
                     Importance = Standard;
@@ -116,6 +119,7 @@ page 50107 "Ficha cursos"
             {
                 Caption = 'Total matriculations',
                 Comment = 'es="Matriculaciones"';
+
                 SubPageView = sorting("Id curso");
             }
         }

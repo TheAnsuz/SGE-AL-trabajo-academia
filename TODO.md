@@ -95,9 +95,11 @@ página asociada “Ficha matrícula”.
 
 ### Apartado 8: Programación en AL.
 - - -
-1. Una vez diseñadas las tablas y páginas, implementa lógica de negocio que consideres de utilidad en la academia. Al menos deberás crear procedures:
+1. Una vez diseñadas las tablas y páginas, implementa lógica de negocio que consideres de utilidad en la academia.
+ Al menos deberás crear procedures:
 - A nivel de tabla.
 - A nivel de página.
+    - - Lista profesores mostrar en mensaje salario promedio
 - En una o varias codeunit.
 
 **Se valorará la utilidad y complejidad de la programación realizada.**

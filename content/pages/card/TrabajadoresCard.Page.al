@@ -20,34 +20,39 @@ page 50114 "Ficha trabajadores"
                 field("Nombre trabajador"; Rec."Nombre trabajador")
                 {
                     ApplicationArea = All;
-                    Caption = 'Nombre';
+                    Caption = 'Name',
+                    comment = 'es="Nombre"';
                     ToolTip = 'Nombre del trabajador';
 
                 }
                 field("Direccion trabajador"; Rec."Direccion trabajador")
                 {
                     ApplicationArea = All;
-                    Caption = 'Dirección';
+                    Caption = 'Direction',
+                    comment = 'es="Dirección"';
                     ToolTip = 'Dirección del trabajador';
 
                 }
                 field("Salario trabajador"; Rec."Salario trabajador")
                 {
                     ApplicationArea = All;
-                    Caption = 'Salario';
+                    Caption = 'Salary',
+                    comment = 'es="Salario"';
                     ToolTip = 'Salario del profesor';
 
                 }
                 field("Puesto trabajador"; Rec."Puesto trabajador")
                 {
                     ApplicationArea = All;
-                    Caption = 'Puesto';
+                    Caption = 'Role',
+                    comment = 'es="Puesto"';
                     ToolTip = 'Puesto en el que trabaja el trabajador';
                 }
                 field("Profesor asignado"; Rec."Profesor asignado")
                 {
                     ApplicationArea = All;
-                    Caption = 'Profesor asignado';
+                    Caption = 'Assigned teacher',
+                    comment = 'es="Profesor asignado"';
                     ToolTip = 'El profesor que tiene asignado en caso de que este trabajador sea un ayudante de profesor';
                 }
             }

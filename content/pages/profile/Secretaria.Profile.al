@@ -4,7 +4,7 @@ profile "Secretaria perfil"
     Comment = 'es="Secretaría"';
 
     RoleCenter = "Secretaria Role Center";
-    
-    ProfileDescription = 'Personal working in secretary',
+
+    ProfileDescription = 'Personnel working in secretary',
     Comment = 'es="Personal trabajando en secretaría"';
 }

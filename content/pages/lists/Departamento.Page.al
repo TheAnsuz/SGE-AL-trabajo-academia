@@ -22,7 +22,8 @@ page 50102 "Pagina departamentos"
                 field("Despacho departamento"; Rec."Despacho departamento")
                 {
                     ApplicationArea = All;
-                    Caption = 'Despacho';
+                    Caption = 'Office',
+                    comment = 'es="Oficina"';
                     ToolTip = 'Despacho asignado para el departamento';
 
                 }
@@ -30,21 +31,25 @@ page 50102 "Pagina departamentos"
                 field("Nombre departamento"; Rec."Nombre departamento")
                 {
                     ApplicationArea = All;
-                    Caption = 'Nombre';
-                    ToolTip = 'Nombre que recive el departamento';
+                    Caption = 'Name',
+                    comment = 'es="Nombre"';
+                    ToolTip = 'Nombre que recibe el departamento';
 
                 }
                 field("Jefe departamento"; Rec."Jefe departamento")
                 {
                     ApplicationArea = All;
-                    Caption = 'Jefe';
+                    Caption = 'Boss',
+                    comment = 'es="Jefe"';
                     ToolTip = 'Profesor encargado del departamento';
 
                 }
                 field("Promedio tarifa departamento"; Rec."Promedio tarifa departamento")
                 {
                     ApplicationArea = All;
-                    Caption = 'Tarifa promedio';
+                    Caption = 'Average fee',
+                    comment = 'es="Tarifa promedio"';
+
                     ToolTip = 'El promedio de la tarifa del departamento';
                 }
             }

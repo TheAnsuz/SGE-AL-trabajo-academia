@@ -23,34 +23,43 @@ page 50100 "Pagina trabajadores"
                 field("Nombre trabajador"; Rec."Nombre trabajador")
                 {
                     ApplicationArea = All;
-                    Caption = 'Nombre';
+                    Caption = 'Name',
+                    Comment = 'es="Name"';
+
                     ToolTip = 'Nombre del trabajador';
 
                 }
                 field("Direccion trabajador"; Rec."Direccion trabajador")
                 {
                     ApplicationArea = All;
-                    Caption = 'Dirección';
+                    Caption = 'Address',
+                    Comment = 'es="Dirección"';
+
                     ToolTip = 'Dirección del trabajador';
 
                 }
                 field("Salario trabajador"; Rec."Salario trabajador")
                 {
                     ApplicationArea = All;
-                    Caption = 'Salario';
+                    Caption = 'Salary',
+                    Comment = 'es="Salario"';
+
                     ToolTip = 'Salario del profesor';
 
                 }
                 field("Puesto trabajador"; Rec."Puesto trabajador")
                 {
                     ApplicationArea = All;
-                    Caption = 'Puesto';
+                    Caption = 'Role',
+                    Comment = 'es="Puesto"';
                     ToolTip = 'Puesto en el que trabaja el trabajador';
                 }
                 field("Profesor asignado"; Rec."Profesor asignado")
                 {
                     ApplicationArea = All;
-                    Caption = 'Profesor asignado';
+                    Caption = 'Assigned teacher',
+                    Comment = 'es="Profesor asignado"';
+
                     ToolTip = 'El profesor que tiene asignado en caso de que este trabajador sea un ayudante de profesor';
                 }
             }

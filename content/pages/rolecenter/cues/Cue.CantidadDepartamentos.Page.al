@@ -105,7 +105,7 @@ page 50117 "Cue secretaria pagina"
             action("Create Studients")
             {
                 RunObject = page "Pagina estudiantes";
-                RunPageMode = View;
+                RunPageMode = Create;
                 Image = Add;
             }
 

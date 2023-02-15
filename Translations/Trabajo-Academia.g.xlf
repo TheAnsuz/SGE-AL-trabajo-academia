@@ -239,7 +239,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Tabla profesores - Field Nº Ayudantes - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1545279392 - Field 2125416825 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Diosito haz que funcione pls</source>
+          <source>Nº Cursos</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Tabla profesores - Field Nº Cursos - Property Caption</note>
         </trans-unit>
@@ -334,8 +334,8 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Cue secretaria pagina - Control Ayudantes - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1986346482 - Control 610025218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Studients</source>
-          <note from="Developer" annotates="general" priority="2">es="Estudiantes"</note>
+          <source>Teachers</source>
+          <note from="Developer" annotates="general" priority="2">es="Profesores"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Cue secretaria pagina - Control Profesores - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1986346482 - Control 2025712796 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -1153,6 +1153,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Pagina profesores - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2854804850 - NamedType 1720702668" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Average salary: %1 €</source>
+          <note from="Developer" annotates="general" priority="2">es="El salario promedio es de %1 €"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Pagina profesores - NamedType Msg1</note>
+        </trans-unit>
         <trans-unit id="Page 2854804850 - Control 1957676366 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Departamento en el que trabaja el profesor</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1222,6 +1227,11 @@
           <source>Salario</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Pagina profesores - Control Salario profesor - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2854804850 - Action 2635959403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check average salary</source>
+          <note from="Developer" annotates="general" priority="2">es="Ver salario promedio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Pagina profesores - Action Salario medio - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3687830380 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Trabajadores</source>
@@ -1309,7 +1319,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Secretaria Role Center - Control Lista cursos - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1444743758 - Action 4066510410 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Departmen</source>
+          <source>Department</source>
           <note from="Developer" annotates="general" priority="2">es="Departamentos"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Secretaria Role Center - Action CrearDepartamentos - Property Caption</note>
         </trans-unit>

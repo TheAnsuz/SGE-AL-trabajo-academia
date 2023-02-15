@@ -75,7 +75,6 @@ table 50101 "Tabla profesores"
 
             CalcFormula = count("Tabla cursos" where("Profesor curso" = field("Id profesor")));
 
-            Caption = 'Diosito haz que funcione pls';
         }
 
         /*
