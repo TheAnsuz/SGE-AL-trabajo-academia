@@ -89,6 +89,8 @@ página asociada “Ficha matrícula”.
 
 1. Esta página deberá incluir CUE’s con información de interés para el perfil de usuario. Al clicar sobre cualquiera de ellos, se visualizarán las listas filtradas subyacentes. Agrupa los CUE’s adecuadamente, y habilita en ellos acciones que permitan dar de alta registros en las tablas correspondientes a través de las páginas de tipo ficha asociadas.
 
+    - CUE para ver departamentos.
+
 1. Asimismo, la página incluirá las listas más consultadas en el trabajo diario.
 
 ### Apartado 8: Programación en AL.
