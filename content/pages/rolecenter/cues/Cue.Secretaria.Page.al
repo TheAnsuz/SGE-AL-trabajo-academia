@@ -1,8 +1,6 @@
 page 50117 "Cue secretaria pagina"
 {
     PageType = CardPart;
-    ApplicationArea = All;
-    UsageCategory = Lists;
     SourceTable = "Cue secretaria table";
 
     layout
@@ -52,23 +50,24 @@ page 50117 "Cue secretaria pagina"
                     DrillDownPageId = "Pagina estudiantes";
 
                 }
+                /*
+                                field("Estudiantes mujer"; Rec."Estudiantes mujer")
+                                {
+                                    Caption = 'Female',
+                                    Comment = 'es="Mujeres"';
 
-                field("Estudiantes mujer"; Rec."Estudiantes mujer")
-                {
-                    Caption = 'Female',
-                    Comment = 'es="Mujeres"';
+                                    DrillDownPageId = "Pagina estudiantes";
 
-                    DrillDownPageId = "Pagina estudiantes";
+                                }
+                                field("Estudiantes hombre"; Rec."Estudiantes hombre")
+                                {
+                                    Caption = 'Male',
+                                    Comment = 'es="Hombres"';
 
-                }
-                field("Estudiantes hombre"; Rec."Estudiantes hombre")
-                {
-                    Caption = 'Studients',
-                    Comment = 'es="Estudiantes"';
+                                    DrillDownPageId = "Pagina estudiantes";
 
-                    DrillDownPageId = "Pagina estudiantes";
-
-                }
+                                }
+                */
             }
 
             cuegroup("Trabajadores grupo")

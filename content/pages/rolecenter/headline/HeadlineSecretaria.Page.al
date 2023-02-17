@@ -58,8 +58,8 @@ page 50116 "Cabecera secretaría"
         studientsText := formatText(StrSubstNo(studientsHeadline, 0), Estudiantes.Count);
         coursesText := formatText(StrSubstNo(coursesHeadline, 0), Cursos.Count);
         loadAmount();
-        femaleText := formatText(StrSubstNo(genderFemaleHeadline, 0), "Estudiantes hombre");
-        maleText := formatText(StrSubstNo(genderMaleHeadline, 0), "Estudiantes mujer");
+        femaleText := formatText(StrSubstNo(genderFemaleHeadline, 0), "Estudiantes mujer");
+        maleText := formatText(StrSubstNo(genderMaleHeadline, 0), "Estudiantes hombre");
         otherText := formatText(StrSubstNo(genderOtherHeadline, 0), "Estudiantes otro");
     end;
 
@@ -89,7 +89,7 @@ page 50116 "Cabecera secretaría"
         Masculino := "Genero enumeracion"::"Masculino genero";
         Femenino := "Genero enumeracion"::"Femenino genero";
 
-        "Estudiantes hombre" := Information.estudiantesPorGenero(Masculino);
-        "Estudiantes mujer" := Information.estudiantesPorGenero(Femenino);
+        "Estudiantes hombre" := Information.cantidadEstudiantesPorGenero(Masculino);
+        "Estudiantes mujer" := Information.cantidadEstudiantesPorGenero(Femenino);
     end;
 }
