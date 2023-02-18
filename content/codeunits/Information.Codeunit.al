@@ -26,14 +26,4 @@ codeunit 50103 "Information codeunit"
 
         Cantidad := Studients.Count;
     end;
-
-    /*
-
-            if Studients.FindSet() then
-                repeat begin
-                    if (Studients."Genero estudiante" = Gender) then begin
-                        Cantidad := Cantidad + 1;
-                    end;
-                end until Studients.Next() = 0;
-    */
 }

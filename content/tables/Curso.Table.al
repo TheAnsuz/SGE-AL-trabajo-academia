@@ -51,9 +51,7 @@ table 50104 "Tabla cursos"
             FieldClass = FlowField;
             CalcFormula = sum("Tabla horarios"."Duracion horario"
             where(
-                "Id Curso" = field("Id curso")/*
-                , No se puede hacer (o algo asi)
-                Dia = field("Filtro fecha dia")*/
+                "Id Curso" = field("Id curso")
                 )
                 );
             Editable = false;

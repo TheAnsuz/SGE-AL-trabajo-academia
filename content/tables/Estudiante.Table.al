@@ -9,15 +9,11 @@ table 50103 "Tabla estudiantes"
         {
             NotBlank = true;
             DataClassification = ToBeClassified;
-
-
-
         }
         field(2; "Nombre estudiante"; Text[100])
         {
             NotBlank = true;
             DataClassification = ToBeClassified;
-
         }
         field(3; "Genero estudiante"; Enum "Genero enumeracion")
         {
