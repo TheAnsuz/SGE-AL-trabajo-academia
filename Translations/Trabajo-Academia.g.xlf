@@ -68,6 +68,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Tabla cursos - Field Filtro fecha dia curso - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3564391363 - Field 4073700345 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Horas curso</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Tabla cursos - Field Horas curso - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3564391363 - Field 1239911589 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Horas totales curso</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -358,11 +363,6 @@
           <note from="Developer" annotates="general" priority="2">es="Estudiantes"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Cue secretaria pagina - Control Estudiantes - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1986346482 - Control 2198244493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Female</source>
-          <note from="Developer" annotates="general" priority="2">es="Mujeres"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Cue secretaria pagina - Control Mujeres - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Page 1986346482 - Control 3774414985 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Workers</source>
           <note from="Developer" annotates="general" priority="2">es="Trabajadores"</note>
@@ -432,6 +432,16 @@
           <source>Description</source>
           <note from="Developer" annotates="general" priority="2">es="Descripción"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Ficha cursos - Control Descripcion curso - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 508169914 - Control 1647778637 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The amount of hours that are counted towards the course' weekly progression</source>
+          <note from="Developer" annotates="general" priority="2">es="Horas reales que tiene el curso respecto su progresion durante la semana"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Ficha cursos - Control Horas reales - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 508169914 - Control 1647778637 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Real hours</source>
+          <note from="Developer" annotates="general" priority="2">es="Horas reales"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Ficha cursos - Control Horas reales - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 508169914 - Control 1239911589 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>The amount of hours that the course ues</source>

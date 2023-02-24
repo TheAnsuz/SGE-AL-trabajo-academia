@@ -53,6 +53,16 @@ page 50107 "Ficha cursos"
                     Importance = Standard;
                 }
 
+                field("Horas reales"; Rec."Horas curso")
+                {
+                    ApplicationArea = All;
+                    Caption = 'Real hours',
+                    Comment = 'es="Horas reales"';
+                    ToolTip = 'The amount of hours that are counted towards the course'' weekly progression',
+                    Comment = 'es="Horas reales que tiene el curso respecto su progresion durante la semana"';
+                    Importance = Additional;
+                }
+
             }
             group("Profesor")
             {

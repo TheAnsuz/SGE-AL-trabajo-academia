@@ -75,9 +75,18 @@ table 50104 "Tabla cursos"
             ));
         }
 
+        field(1002; "Horas curso"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count("Tabla horarios" where(
+                "Día horario" = field("Filtro fecha dia curso"),
+                "Id curso" = field("Id curso")
+            ));
+        }
+
         field(100; "Filtro fecha dia curso"; Enum "Dia enumerador")
         {
-            DataClassification = ToBeClassified;
+            FieldClass = FlowFilter;
         }
     }
 
