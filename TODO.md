@@ -13,7 +13,7 @@
 - Asignar "ayudantes". Profesor tiene "Num.ayudantes"
 - Nº Cursos impartidos por cada profesor
 - Promedio tarifa de laboratorio de departamento
-- Nuevo campo calculado que user Flow Filter
+- Nuevo campo calculado que user Flow Filter. (Tabla Curso tiene num. profesores)
 
 ### Apartado 3: Matrículas 
 - - -

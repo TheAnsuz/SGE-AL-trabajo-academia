@@ -8,8 +8,9 @@ page 50111 "Ficha profesores"
     {
         area(Content)
         {
-            group(GroupName)
+            group(General)
             {
+                Caption = 'General', comment = 'es="General"';
                 field("Id profesor"; Rec."Id profesor")
                 {
                     ApplicationArea = All;
@@ -32,6 +33,11 @@ page 50111 "Ficha profesores"
                     comment = 'es="Dirección"';
                     ToolTip = 'Dirección del profesor';
                 }
+            }
+            group(Laboral)
+            {
+                Caption = 'Work', comment = 'es="Laboral"';
+
                 field("Fecha contratacion profesor"; Rec."Fecha contratacion profesor")
                 {
                     ApplicationArea = All;
@@ -64,6 +70,17 @@ page 50111 "Ficha profesores"
 
                     ToolTip = 'Despacho del profesor';
                 }
+            }
+        }
+        area(FactBoxes)
+        {
+
+            part("Estadisticas"; "Estadisticas Profesor FactBox")
+            {
+                Caption = 'Statistics',
+                Comment = 'es="Estadísticas"';
+
+                SubPageView = sorting("Id profesor");
             }
         }
     }

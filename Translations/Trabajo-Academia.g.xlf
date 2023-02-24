@@ -358,16 +358,6 @@
           <note from="Developer" annotates="general" priority="2">es="Estudiantes"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Cue secretaria pagina - Control Estudiantes - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1986346482 - Control 2674532316 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Studients</source>
-          <note from="Developer" annotates="general" priority="2">es="Estudiantes"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Cue secretaria pagina - Control Estudiantes hombre - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1986346482 - Control 2399042974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Female</source>
-          <note from="Developer" annotates="general" priority="2">es="Mujeres"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Cue secretaria pagina - Control Estudiantes mujer - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Page 1986346482 - Control 3774414985 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Workers</source>
           <note from="Developer" annotates="general" priority="2">es="Trabajadores"</note>
@@ -1462,6 +1452,26 @@
           <source>Course's schedule</source>
           <note from="Developer" annotates="general" priority="2">es="Horario curso"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Subpagina Horarios - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4043861665 - Control 3291451408 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Day</source>
+          <note from="Developer" annotates="general" priority="2">es="Dia"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Subpagina Horarios - Control Dia horario - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4043861665 - Control 1808557476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Finish time</source>
+          <note from="Developer" annotates="general" priority="2">es="Hora final"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Subpagina Horarios - Control Hora final horario - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4043861665 - Control 1047269193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start time</source>
+          <note from="Developer" annotates="general" priority="2">es="Hora inicio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Subpagina Horarios - Control Hora inicio horario - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4043861665 - Control 1536212479 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ID</source>
+          <note from="Developer" annotates="general" priority="2">es="ID"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Subpagina Horarios - Control Id horario - Property Caption</note>
         </trans-unit>
         <trans-unit id="Profile 741752195 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Secretary</source>
