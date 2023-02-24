@@ -87,7 +87,7 @@ page 50117 "Cue secretaria pagina"
                 {
                     Caption = 'Helpers',
                     Comment = 'es="Ayudantes"';
-                    DrillDownPageId = "Pagina profesores";
+                    DrillDownPageId = "Pagina trabajadores";
                 }
 
                 field("Trabajadores"; Rec.Trabajadores)
