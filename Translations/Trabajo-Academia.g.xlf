@@ -358,6 +358,11 @@
           <note from="Developer" annotates="general" priority="2">es="Estudiantes"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Cue secretaria pagina - Control Estudiantes - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1986346482 - Control 2198244493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Female</source>
+          <note from="Developer" annotates="general" priority="2">es="Mujeres"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cue secretaria pagina - Control Mujeres - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1986346482 - Control 3774414985 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Workers</source>
           <note from="Developer" annotates="general" priority="2">es="Trabajadores"</note>

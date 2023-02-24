@@ -50,24 +50,6 @@ page 50117 "Cue secretaria pagina"
                     DrillDownPageId = "Pagina estudiantes";
 
                 }
-                /*
-                                field("Estudiantes mujer"; Rec."Estudiantes mujer")
-                                {
-                                    Caption = 'Female',
-                                    Comment = 'es="Mujeres"';
-
-                                    DrillDownPageId = "Pagina estudiantes";
-
-                                }
-                                field("Estudiantes hombre"; Rec."Estudiantes hombre")
-                                {
-                                    Caption = 'Male',
-                                    Comment = 'es="Hombres"';
-
-                                    DrillDownPageId = "Pagina estudiantes";
-
-                                }
-                */
             }
 
             cuegroup("Trabajadores grupo")
