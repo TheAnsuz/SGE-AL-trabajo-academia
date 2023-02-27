@@ -5,7 +5,7 @@ page 50100 "Pagina trabajadores"
     UsageCategory = Lists;
     SourceTable = "Tabla trabajadores";
     CardPageId = "Ficha trabajadores";
-    Caption = 'Trabajadores';
+    Caption = 'Trabajadores', Comment = 'es="Workers"';
 
     layout
     {
@@ -53,16 +53,28 @@ page 50100 "Pagina trabajadores"
                     Caption = 'Role',
                     Comment = 'es="Puesto"';
                     ToolTip = 'Puesto en el que trabaja el trabajador';
+
+                    trigger OnValidate()
+                    begin
+                        UsaAyudante := Rec."Puesto trabajador" = Enum::"Role enum"::Ayudante;
+                    end;
                 }
                 field("Profesor asignado"; Rec."Profesor asignado")
                 {
+                    Enabled = UsaAyudante;
                     ApplicationArea = All;
                     Caption = 'Assigned teacher',
                     Comment = 'es="Profesor asignado"';
 
                     ToolTip = 'El profesor que tiene asignado en caso de que este trabajador sea un ayudante de profesor';
+
+                    DrillDown = true;
+                    DrillDownPageId = "Pagina profesores";
                 }
             }
         }
     }
+
+    var
+        UsaAyudante: Boolean;
 }

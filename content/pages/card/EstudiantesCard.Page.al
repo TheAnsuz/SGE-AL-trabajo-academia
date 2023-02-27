@@ -3,7 +3,7 @@ page 50108 "Ficha estudiantes"
     PageType = Card;
     UsageCategory = None;
     SourceTable = "Tabla estudiantes";
-    Caption = 'Studients',
+    Caption = 'Students',
     Comment = 'es="Estudantes"';
     PromotedActionCategories = 'Actions,Navigate',
     Comment = 'es="Acciones,Navegar"';
@@ -21,7 +21,7 @@ page 50108 "Ficha estudiantes"
                     ApplicationArea = All;
                     Caption = 'ID',
                     Comment = 'es="ID"';
-                    ToolTip = 'Studient ID',
+                    ToolTip = 'Student ID',
                     Comment = 'es="ID del estudiante"';
                     Importance = Promoted;
 
@@ -31,7 +31,7 @@ page 50108 "Ficha estudiantes"
                     ApplicationArea = All;
                     Caption = 'Name',
                     Comment = 'es="Nombre"';
-                    ToolTip = 'Studient name',
+                    ToolTip = 'Student name',
                     Comment = 'es="Nombre del estudiante"';
                     Importance = Standard;
 
@@ -41,7 +41,7 @@ page 50108 "Ficha estudiantes"
                     ApplicationArea = All;
                     Caption = 'Gender',
                     Comment = 'es="Género"';
-                    ToolTip = 'Studient''s gender',
+                    ToolTip = 'Student''s gender',
                     Comment = 'es="Género del estudiante"';
                     Importance = Additional;
 
@@ -52,7 +52,7 @@ page 50108 "Ficha estudiantes"
                     ApplicationArea = All;
                     Caption = 'Born date',
                     Comment = 'es="Fecha de nacimiento"';
-                    ToolTip = 'Studient''s born date',
+                    ToolTip = 'Student''s born date',
                     Comment = 'es="Fecha de nacimiento del estudiante"';
                     Importance = Standard;
                 }
@@ -67,7 +67,7 @@ page 50108 "Ficha estudiantes"
                     ApplicationArea = All;
                     Caption = 'Address',
                     Comment = 'es="Dirección"';
-                    ToolTip = 'Studient'' residential address',
+                    ToolTip = 'Student'' residential address',
                     Comment = 'es="Dirección de residencia del estudiante"';
                     Importance = Standard;
                 }
@@ -76,7 +76,7 @@ page 50108 "Ficha estudiantes"
                     ApplicationArea = All;
                     Caption = 'Phone no.',
                     Comment = 'es="Teléfono"';
-                    ToolTip = 'Studient''s phone number',
+                    ToolTip = 'Student''s phone number',
                     Comment = 'es="Telefono del estudiante"';
                     Importance = Standard;
 

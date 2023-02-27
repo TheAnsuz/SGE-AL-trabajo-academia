@@ -24,7 +24,7 @@ enum 50101 "Dia enumerador"
 
     value(4; "Jueves dia")
     {
-        Caption = 'Thrusday',
+        Caption = 'Thursday',
         Comment = 'es="Jueves"';
     }
 

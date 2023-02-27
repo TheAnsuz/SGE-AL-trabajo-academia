@@ -4,13 +4,14 @@ page 50101 "Pagina profesores"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "Tabla profesores";
-    Caption = 'Profesores';
+    CardPageId = "Ficha profesores";
+    Caption = 'Profesores', Comment = 'es="Teachers"';
 
     layout
     {
         area(Content)
         {
-            repeater(GroupName)
+            repeater(Informacion)
             {
                 field("Id profesor"; Rec."Id profesor")
                 {
@@ -61,6 +62,9 @@ page 50101 "Pagina profesores"
                     Comment = 'es="Departamento"';
                     ToolTip = 'Department where the teacher works',
                     Comment = 'es="Departamento donde trabaja el profesor"';
+
+                    DrillDown = true;
+                    DrillDownPageId = "Pagina departamentos";
 
                 }
                 field("Despacho profesor"; Rec."Despacho profesor")

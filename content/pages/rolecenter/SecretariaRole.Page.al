@@ -51,7 +51,7 @@ page 50115 "Secretaria Role Center"
 
             action(CrearEstudiantes)
             {
-                Caption = 'Studient',
+                Caption = 'Student',
                 Comment = 'es="Estudiante"';
 
                 RunObject = page "Ficha estudiantes";
@@ -72,6 +72,15 @@ page 50115 "Secretaria Role Center"
                 Comment = 'es="Trabajador"';
 
                 RunObject = page "Ficha trabajadores";
+                RunPageMode = Create;
+            }
+
+            action(CrearCurso)
+            {
+                Caption = 'Course',
+                Comment = 'es="Curso"';
+
+                RunObject = page "Pagina cursos";
                 RunPageMode = Create;
             }
 
@@ -103,10 +112,64 @@ page 50115 "Secretaria Role Center"
 
                 action(VerEstudiantes)
                 {
-                    Caption = 'Studient',
-                Comment = 'es="Estudiante"';
+                    Caption = 'Students',
+                    Comment = 'es="Estudiantes"';
 
-                    RunObject = page "Ficha estudiantes";
+                    RunObject = page "Pagina estudiantes";
+                    RunPageMode = View;
+                }
+
+                action(VerProfesores)
+                {
+                    Caption = 'Teachers',
+                    Comment = 'es="Estudiantes"';
+
+                    RunObject = page "Pagina profesores";
+                    RunPageMode = View;
+                }
+
+                action(VerTrabajadores)
+                {
+                    Caption = 'Workers',
+                    Comment = 'es="Trabajadores"';
+
+                    RunObject = page "Pagina trabajadores";
+                    RunPageMode = View;
+                }
+
+                action(VerCursos)
+                {
+                    Caption = 'Courses',
+                    Comment = 'es="Cursos"';
+
+                    RunObject = page "Pagina cursos";
+                    RunPageMode = View;
+                }
+
+                action(VerDepartamentos)
+                {
+                    Caption = 'Departments',
+                    Comment = 'es="Departamentos"';
+
+                    RunObject = page "Pagina departamentos";
+                    RunPageMode = View;
+                }
+
+                action(VerMatriculas)
+                {
+                    Caption = 'Enrollments',
+                    Comment = 'es="Matriculas"';
+
+                    RunObject = page "Pagina matriculas";
+                    RunPageMode = View;
+                }
+
+                action(VerHorarios)
+                {
+                    Caption = 'Schedules',
+                    Comment = 'es="Horarios"';
+
+                    RunObject = page "Pagina horarios";
                     RunPageMode = View;
                 }
             }

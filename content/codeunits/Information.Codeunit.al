@@ -3,27 +3,27 @@ codeunit 50103 "Information codeunit"
 
     procedure estudiantesPorGenero(Gender: Enum "Genero enumeracion")
     var
-        Studients: Record "Tabla estudiantes";
-        StudientsPageID: Integer;
+        Students: Record "Tabla estudiantes";
+        StudentsPageID: Integer;
     begin
-        StudientsPageID := Page::"Pagina estudiantes";
+        StudentsPageID := Page::"Pagina estudiantes";
 
-        Studients.SetCurrentKey("Id estudiante");
-        Studients.SetFilter("Genero estudiante", Format(Gender));
+        Students.SetCurrentKey("Id estudiante");
+        Students.SetFilter("Genero estudiante", Format(Gender));
 
-        Page.Run(StudientsPageID, Studients);
+        Page.Run(StudentsPageID, Students);
     end;
 
     procedure cantidadEstudiantesPorGenero(Gender: Enum "Genero enumeracion") Cantidad: Integer
     var
-        Studients: Record "Tabla estudiantes";
-        StudientsPageID: Integer;
+        Students: Record "Tabla estudiantes";
+        StudentsPageID: Integer;
     begin
-        StudientsPageID := Page::"Pagina estudiantes";
+        StudentsPageID := Page::"Pagina estudiantes";
 
-        Studients.SetCurrentKey("Id estudiante");
-        Studients.SetFilter("Genero estudiante", Format(Gender));
+        Students.SetCurrentKey("Id estudiante");
+        Students.SetFilter("Genero estudiante", Format(Gender));
 
-        Cantidad := Studients.Count;
+        Cantidad := Students.Count;
     end;
 }

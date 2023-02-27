@@ -43,7 +43,7 @@ table 50106 "Cue secretaria table"
         field(7; "Ayudantes"; Integer)
         {
             FieldClass = FlowField;
-            CalcFormula = count("Tabla trabajadores" where("Puesto trabajador" = const('Ayudante')));
+            CalcFormula = count("Tabla trabajadores" where("Puesto trabajador" = const(Ayudante)));
         }
         field(8; "Trabajadores"; Integer)
         {

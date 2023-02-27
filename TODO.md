@@ -110,3 +110,16 @@ página asociada “Ficha matrícula”.
 - - -
 - Comprobar que las cosas funcionan usando datos de ejemplo
 - Solucionar el proyecto falla al publicarse (no al copilarse)
+
+### Arreglar
+- Traducciones no cuidadas y faltan algunas.
+- - Las traducciones del headline no funcionan a pesar de estar el labl + comment y archivo de traducciones
+- Página RC sin acceso a funcionalidades.
+- CUE promedio laboratorio no funciona.
+- FlowField nº cursos por profe no hecho.
+- Flowfield horas por curso sin drill.
+- Lista prorfesores sin CardPage entonces no se puede ver la ficha profesor.
+- FlowField Cursos sin drill y link
+- Navegar profesores no funciona en Departamentos.
+
+- - Las lineas de CursosListPart desaparecen al recargar (Hay que pasar la ID del departamento para cuando se crea desde la sublista de la card Departamento)

@@ -4,7 +4,7 @@ page 50126 "Pagina matriculas"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "Tabla matriculas";
-    Caption = 'Matriculas';
+    Caption = 'Matriculas', Comment = 'es="Enrollments"';
     CardPageId = "Ficha matriculas";
 
     layout
@@ -16,9 +16,12 @@ page 50126 "Pagina matriculas"
                 field("Id Estudiante"; Rec."Id Estudiante")
                 {
                     ApplicationArea = All;
-                    Caption = 'Studient''s ID',
+                    Caption = 'Student''s ID',
                     Comment = 'es="ID del estudiante"';
                     ToolTip = 'ID del estudiante matriculado';
+
+                    DrillDown = true;
+                    DrillDownPageId = "Pagina estudiantes";
                 }
 
                 field("Id Curso"; Rec."Id Curso")
@@ -27,6 +30,9 @@ page 50126 "Pagina matriculas"
                     Caption = 'Course ID',
                     comment = 'es="ID Curso"';
                     ToolTip = 'ID del curso en el que esta matriculado el alumno';
+
+                    DrillDown = true;
+                    DrillDownPageId = "Pagina cursos";
                 }
 
                 field("Fecha matriculacion"; Rec."Fecha matriculacion")
@@ -36,6 +42,8 @@ page 50126 "Pagina matriculas"
                     comment = 'es="Fecha de matriculación"';
 
                     ToolTip = 'Fecha en la que se realizó la matriculación';
+
+
                 }
                 field("Hora matriculacion"; Rec."Hora matriculacion")
                 {

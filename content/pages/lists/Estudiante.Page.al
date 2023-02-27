@@ -4,8 +4,8 @@ page 50103 "Pagina estudiantes"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "Tabla estudiantes";
-    Caption = 'Estudiantes';
     CardPageId = "Ficha estudiantes";
+    Caption = 'Estudiantes', Comment = 'es="Students"';
 
     layout
     {
@@ -25,7 +25,6 @@ page 50103 "Pagina estudiantes"
                     ApplicationArea = All;
                     Caption = 'Name',
                     comment = 'es="Nombre"';
-                    ToolTip = 'Nombre del estudiante';
 
                 }
                 field("Genero estudiante"; Rec."Genero estudiante")
@@ -33,7 +32,6 @@ page 50103 "Pagina estudiantes"
                     ApplicationArea = All;
                     Caption = 'Genre',
                     comment = 'es="Género"';
-                    ToolTip = 'Género del estudiante (Masculino / Femenino)';
 
                 }
                 field("Direccion estudiante"; Rec."Direccion estudiante")
@@ -64,6 +62,4 @@ page 50103 "Pagina estudiantes"
             }
         }
     }
-
-
 }

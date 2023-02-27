@@ -52,6 +52,9 @@ page 50104 "Pagina cursos"
                     Caption = 'Assigned teacher',
                     comment = 'es="Profesor asignado"';
                     ToolTip = 'Profesor asignado al curso';
+
+                    DrillDown = true;
+                    DrillDownPageId = "Ficha profesores";
                 }
                 field("Departamento curso"; Rec."Departamento curso")
                 {
@@ -59,6 +62,9 @@ page 50104 "Pagina cursos"
                     Caption = 'Department',
                     comment = 'es="Departamento"';
                     ToolTip = 'Departamento en el que se impartirá el curso';
+
+                    DrillDown = true;
+                    DrillDownPageId = "Ficha departamentos";
                 }
                 field("Nº Minutos curso"; Rec."Nº Minutos curso")
                 {
@@ -73,6 +79,9 @@ page 50104 "Pagina cursos"
                     Caption = 'Hour by day',
                     comment = 'es="Horas por día"';
                     ToolTip = 'Horas según el día';
+
+                    DrillDown = true;
+                    DrillDownPageId = "Pagina horarios";
                 }
             }
 

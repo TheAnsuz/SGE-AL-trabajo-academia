@@ -62,7 +62,7 @@ table 50101 "Tabla profesores"
             FieldClass = FlowField;
             CalcFormula = count("Tabla trabajadores" WHERE(
                 "Profesor asignado" = field("Id profesor"),
-                "Puesto trabajador" = const('Ayudante')
+                "Puesto trabajador" = const(Ayudante)
                 ));
             // Trabajador WHERE("Profesor asignado" = field("Id profesor"))
         }

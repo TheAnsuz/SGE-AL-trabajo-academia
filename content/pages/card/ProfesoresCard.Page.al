@@ -60,6 +60,7 @@ page 50111 "Ficha profesores"
                     Caption = 'Department',
                     comment = 'es="Departamento"';
                     ToolTip = 'Departamento en el que trabaja el profesor';
+                    DrillDownPageId = "Ficha departamentos";
 
                 }
                 field("Despacho profesor"; Rec."Despacho profesor")
@@ -83,5 +84,56 @@ page 50111 "Ficha profesores"
                 SubPageView = sorting("Id profesor");
             }
         }
+
     }
+    actions
+    {
+
+        area(Reporting)
+        {
+            action("Salario medio")
+            {
+                Caption = 'Check average salary',
+                Comment = 'es="Ver salario promedio"';
+
+                trigger OnAction()
+                begin
+                    salarioMedio();
+                end;
+            }
+        }
+    }
+
+    procedure salarioMedio()
+    var
+        SalarioTotal: Decimal;
+        Contados: Integer;
+        Message: Text;
+        SalarioPromedio: Decimal;
+        Profesores: Record "Tabla profesores";
+    begin
+
+        Contados := 0;
+        SalarioPromedio := 0;
+        Message := Msg1;
+
+        if Profesores.FindSet() then
+            repeat begin
+
+                if Profesores."Salario profesor" <> 0 then begin
+                    SalarioTotal := SalarioTotal + Profesores."Salario profesor";
+                    Contados := Contados + 1;
+                end;
+            end until Profesores.Next() = 0;
+
+        if Contados <> 0 then begin
+            SalarioPromedio := SalarioTotal / Contados;
+        end;
+        Message(Message, SalarioPromedio);
+
+    end;
+
+    var
+        Msg1: Label 'Average salary: %1 €',
+                Comment = 'es="El salario promedio es de %1 €"';
 }

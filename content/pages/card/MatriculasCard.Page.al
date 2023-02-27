@@ -21,10 +21,11 @@ page 50106 "Ficha matriculas"
                 field("Id Estudiante"; Rec."Id Estudiante")
                 {
                     ApplicationArea = All;
-                    Caption = 'Studient ID',
+                    Caption = 'Student ID',
                     Comment = 'es="ID Estudiante"';
-                    ToolTip = 'ID of the studient',
+                    ToolTip = 'ID of the Student',
                     Comment = 'es="ID del estudiante"';
+
                     Importance = Standard;
                 }
 
@@ -51,7 +52,7 @@ page 50106 "Ficha matriculas"
 
                     ToolTip = 'Date in wich the enrollment was registered',
                     Comment = 'es="Fecha en la que se realizó la matriculación"';
-                    
+
                     Importance = Standard;
                 }
                 field("Hora matriculacion"; Rec."Hora matriculacion")
@@ -62,7 +63,7 @@ page 50106 "Ficha matriculas"
 
                     ToolTip = 'Hour of day in wich the enrollment was registered',
                     Comment = 'es="Hora en la que se realizó la matriculación"';
-                    
+
                     Importance = Standard;
                 }
             }

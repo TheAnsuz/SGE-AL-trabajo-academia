@@ -42,6 +42,8 @@ page 50102 "Pagina departamentos"
                     Caption = 'Boss',
                     comment = 'es="Jefe"';
                     ToolTip = 'Profesor encargado del departamento';
+                    DrillDown = true;
+                    DrillDownPageId = "Ficha profesores";
 
                 }
                 field("Promedio tarifa departamento"; Rec."Promedio tarifa departamento")

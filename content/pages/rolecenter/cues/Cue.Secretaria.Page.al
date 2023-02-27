@@ -38,13 +38,13 @@ page 50117 "Cue secretaria pagina"
 
             cuegroup("Estudiantes grupo")
             {
-                Caption = 'Studients',
+                Caption = 'Students',
                 Comment = 'es="Estudiantes"';
                 ShowCaption = true;
 
                 field("Estudiantes"; Rec.Estudiantes)
                 {
-                    Caption = 'Studients',
+                    Caption = 'Students',
                     Comment = 'es="Estudiantes"';
 
                     DrillDownPageId = "Pagina estudiantes";
@@ -100,14 +100,14 @@ page 50117 "Cue secretaria pagina"
                 Image = View;
             }
 
-            action("Create Studients")
+            action("Create Students")
             {
                 RunObject = page "Pagina estudiantes";
                 RunPageMode = Create;
                 Image = Add;
             }
 
-            action("Visit Studients")
+            action("Visit Students")
             {
                 RunObject = page "Pagina estudiantes";
                 RunPageMode = View;

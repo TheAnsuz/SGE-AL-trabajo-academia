@@ -14,26 +14,32 @@ page 50112 "Subpagina cursos"
             {
                 field("Id curso"; Rec."Id curso")
                 {
-                    Caption = 'Course''s ID',
+                    Caption = 'ID',
                     Comment = 'es="ID Curso"';
                     ApplicationArea = All;
                 }
                 field("Dia horario"; Rec."Nombre curso")
                 {
-                    Caption = 'Course''s name',
-                    Comment = 'es="Nombre Curso"';
+                    Caption = 'Name',
+                    Comment = 'es="Nombre"';
                     ApplicationArea = All;
                 }
-                field("Hora inicio horario"; Rec."Departamento curso")
+                field("Descripcion curso"; Rec."Descripcion curso")
                 {
-                    Caption = 'Course''s Description',
+                    Caption = 'Description',
                     Comment = 'es="Descripcion del curso"';
                     ApplicationArea = All;
                 }
-                field("Hora final horario"; Rec."Profesor curso")
+                field("Profesor curso"; Rec."Profesor curso")
                 {
-                    Caption = 'Course''s Techer',
-                    Comment = 'es="Profesor Curso"';
+                    Caption = 'Teacher',
+                    Comment = 'es="Profesor"';
+                    ApplicationArea = All;
+                }
+                field("Extra"; Rec."Tarifa laboratorio curso")
+                {
+                    Caption = 'Fee',
+                    Comment = 'es="Tarifa"';
                     ApplicationArea = All;
                 }
             }
@@ -71,4 +77,10 @@ page 50112 "Subpagina cursos"
 
         }
     }
+
+
+    trigger OnNewRecord(BelowxRec: Boolean)
+    begin
+        Rec."Departamento curso" := //Poner de algun modo la ID del departamento desde el que se esta creando//;
+    end;
 }

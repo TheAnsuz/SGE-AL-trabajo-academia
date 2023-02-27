@@ -8,8 +8,9 @@ page 50114 "Ficha trabajadores"
     {
         area(Content)
         {
-            group(GroupName)
+            group(General)
             {
+                Caption = 'General', Comment = 'es="General"';
                 field("Id trabajador"; Rec."Id Trabajador")
                 {
                     ApplicationArea = All;
@@ -47,32 +48,24 @@ page 50114 "Ficha trabajadores"
                     Caption = 'Role',
                     comment = 'es="Puesto"';
                     ToolTip = 'Puesto en el que trabaja el trabajador';
+                    trigger OnValidate()
+                    begin
+                        UsaAyudante := Rec."Puesto trabajador" = Enum::"Role enum"::Ayudante;
+                    end;
                 }
                 field("Profesor asignado"; Rec."Profesor asignado")
                 {
+                    Enabled = UsaAyudante;
                     ApplicationArea = All;
                     Caption = 'Assigned teacher',
                     comment = 'es="Profesor asignado"';
+                    DrillDownPageId = "Ficha profesores";
                     ToolTip = 'El profesor que tiene asignado en caso de que este trabajador sea un ayudante de profesor';
                 }
             }
         }
     }
 
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                ApplicationArea = All;
-
-                trigger OnAction()
-                begin
-
-                end;
-            }
-        }
-    }
-
+    var
+        UsaAyudante: Boolean;
 }

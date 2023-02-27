@@ -58,7 +58,7 @@ page 50110 "Ficha departamentos"
                     ApplicationArea = All;
                     Caption = 'Average fee',
                     comment = 'es="Tarifa promedio"';
-                    
+
                     ToolTip = 'El promedio de la tarifa del departamento';
                 }
             }
@@ -109,6 +109,20 @@ page 50110 "Ficha departamentos"
 
                 RunObject = page "Ficha profesores";
                 RunPageLink = "Id profesor" = field("Jefe departamento");
+                RunPageMode = View;
+            }
+
+            action(Cursos)
+            {
+                Caption = 'Courses',
+                Comment = 'es="Cursos"';
+
+                Promoted = True;
+                PromotedCategory = New;
+                PromotedOnly = True;
+
+                RunObject = page "Pagina cursos";
+                RunPageLink = "Departamento curso" = field("Id departamento");
                 RunPageMode = View;
             }
         }

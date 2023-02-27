@@ -40,7 +40,7 @@ table 50102 "Tabla departamentos"
             FieldClass = FlowField;
             Editable = false;
             CalcFormula = average("Tabla cursos"."Tarifa laboratorio curso"
-                         where("Departamento curso" = field("Despacho departamento")));
+                         where("Departamento curso" = field("Id departamento")));
         }
     }
 
