@@ -79,8 +79,8 @@ table 50104 "Tabla cursos"
         {
             FieldClass = FlowField;
             CalcFormula = count("Tabla horarios" where(
-                "Día horario" = field("Filtro fecha dia curso"),
-                "Id curso" = field("Id curso")
+                "Id curso" = field("Id curso"),
+                "Día horario" = field("Filtro fecha dia curso")
             ));
         }
 

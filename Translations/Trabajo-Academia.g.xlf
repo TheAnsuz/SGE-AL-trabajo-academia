@@ -933,6 +933,16 @@
           <note from="Developer" annotates="general" priority="2">es="Descripción"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Pagina cursos - Control Descripcion curso - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 228877365 - Control 1221792419 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Horas según el día</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Pagina cursos - Control Horas filtradas dia curso - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 228877365 - Control 1221792419 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hour by day</source>
+          <note from="Developer" annotates="general" priority="2">es="Horas por día"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Pagina cursos - Control Horas filtradas dia curso - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 228877365 - Control 1239911589 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Horas totales que se imparten en el curso</source>
           <note from="Developer" annotates="general" priority="2"></note>

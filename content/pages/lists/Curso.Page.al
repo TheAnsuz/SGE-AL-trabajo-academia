@@ -67,6 +67,13 @@ page 50104 "Pagina cursos"
                     comment = 'es="Minutos totales"';
                     ToolTip = 'Tiempo total dedicado al curso en minutos';
                 }
+                field("Horas filtradas dia curso"; Rec."Horas curso")
+                {
+                    ApplicationArea = All;
+                    Caption = 'Hour by day',
+                    comment = 'es="Horas por día"';
+                    ToolTip = 'Horas según el día';
+                }
             }
 
         }
