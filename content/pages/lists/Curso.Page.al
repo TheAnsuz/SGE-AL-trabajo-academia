@@ -4,7 +4,7 @@ page 50104 "Pagina cursos"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "Tabla cursos";
-    Caption = 'Cursos';
+    Caption = 'Courses', Comment = 'es="Cursos"';
     CardPageId = "Ficha cursos";
     layout
     {

@@ -5,7 +5,7 @@ page 50102 "Pagina departamentos"
     UsageCategory = Lists;
     SourceTable = "Tabla departamentos";
     CardPageId = "Ficha departamentos";
-    Caption = 'Departamentos';
+    Caption = 'Departments', Comment = 'es="Departamentos"';
 
     layout
     {

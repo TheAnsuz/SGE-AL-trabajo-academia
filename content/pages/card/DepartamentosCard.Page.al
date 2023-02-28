@@ -5,6 +5,7 @@ page 50110 "Ficha departamentos"
     SourceTable = "Tabla departamentos";
     PromotedActionCategories = 'Navigate',
     Comment = 'es="Navegar"';
+    Caption = 'Departamento', Comment = 'es="Departamentos"';
 
     layout
     {
@@ -51,6 +52,9 @@ page 50110 "Ficha departamentos"
                     Caption = 'Boss',
                     comment = 'es="Jefe"';
                     ToolTip = 'Profesor encargado del departamento';
+
+                    DrillDown = true;
+                    DrillDownPageId = "Ficha profesores";
 
                 }
                 field("Promedio tarifa departamento"; Rec."Promedio tarifa departamento")

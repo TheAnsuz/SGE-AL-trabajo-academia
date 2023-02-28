@@ -79,8 +79,10 @@ page 50112 "Subpagina cursos"
     }
 
 
-    trigger OnNewRecord(BelowxRec: Boolean)
-    begin
-        Rec."Departamento curso" := //Poner de algun modo la ID del departamento desde el que se esta creando//;
-    end;
+    /*
+     trigger OnNewRecord(BelowxRec: Boolean)
+     begin
+         Rec."Departamento curso" := //Poner de algun modo la ID del departamento desde el que se esta creando//;
+     end;
+     */
 }

@@ -3,6 +3,7 @@ page 50114 "Ficha trabajadores"
     PageType = Card;
     UsageCategory = None;
     SourceTable = "Tabla trabajadores";
+    Caption = 'Worker', Comment = 'es="Trabajador"';
 
     layout
     {
@@ -59,6 +60,8 @@ page 50114 "Ficha trabajadores"
                     ApplicationArea = All;
                     Caption = 'Assigned teacher',
                     comment = 'es="Profesor asignado"';
+                    
+                    DrillDown = true;
                     DrillDownPageId = "Ficha profesores";
                     ToolTip = 'El profesor que tiene asignado en caso de que este trabajador sea un ayudante de profesor';
                 }

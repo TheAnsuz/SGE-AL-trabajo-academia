@@ -3,8 +3,8 @@ page 50108 "Ficha estudiantes"
     PageType = Card;
     UsageCategory = None;
     SourceTable = "Tabla estudiantes";
-    Caption = 'Students',
-    Comment = 'es="Estudantes"';
+    Caption = 'Student',
+    Comment = 'es="Estudiante"';
     PromotedActionCategories = 'Actions,Navigate',
     Comment = 'es="Acciones,Navegar"';
 

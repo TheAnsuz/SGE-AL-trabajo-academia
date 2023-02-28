@@ -3,6 +3,7 @@ page 50111 "Ficha profesores"
     PageType = Card;
     UsageCategory = None;
     SourceTable = "Tabla profesores";
+    Caption = 'Teacher', Comment = 'es="Profesor"';
 
     layout
     {
@@ -17,6 +18,7 @@ page 50111 "Ficha profesores"
                     Caption = 'ID';
                     ToolTip = 'ID del profesor';
 
+
                 }
                 field("Nombre profesor"; Rec."Nombre profesor")
                 {
@@ -24,6 +26,8 @@ page 50111 "Ficha profesores"
                     Caption = 'Name',
                     comment = 'es="Nombre"';
                     ToolTip = 'Nombre del profesor';
+
+
 
                 }
                 field("Direccion profesor"; Rec."Direccion profesor")
@@ -60,6 +64,8 @@ page 50111 "Ficha profesores"
                     Caption = 'Department',
                     comment = 'es="Departamento"';
                     ToolTip = 'Departamento en el que trabaja el profesor';
+                    
+                    DrillDown = true;
                     DrillDownPageId = "Ficha departamentos";
 
                 }
@@ -70,6 +76,18 @@ page 50111 "Ficha profesores"
                     comment = 'es="Despacho"';
 
                     ToolTip = 'Despacho del profesor';
+                }
+
+                field("Nº Cursos profesor"; Rec."Nº Cursos")
+                {
+                    ApplicationArea = All;
+                    Caption = 'Courses No.',
+                    Comment = 'es="Nº Cursos"';
+                    ToolTip = 'Number of courses of the teacher',
+                    Comment = 'es="Nº de cursos del profesor"';
+
+                    DrillDown = true;
+                    DrillDownPageId = "Pagina cursos";
                 }
             }
         }

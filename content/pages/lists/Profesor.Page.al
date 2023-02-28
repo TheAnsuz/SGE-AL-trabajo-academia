@@ -19,6 +19,7 @@ page 50101 "Pagina profesores"
                     Caption = 'ID';
                     ToolTip = 'ID del profesor';
 
+
                 }
                 field("Nombre profesor"; Rec."Nombre profesor")
                 {
@@ -74,6 +75,18 @@ page 50101 "Pagina profesores"
                     Comment = 'es="Despacho"';
                     ToolTip = 'Teacher'' Office',
                     Comment = 'es="Despacho del profesor"';
+                }
+
+                field("Nº Cursos profesor"; Rec."Nº Cursos")
+                {
+                    ApplicationArea = All;
+                    Caption = 'Courses No.',
+                    Comment = 'es="Nº Cursos"';
+                    ToolTip = 'Number of courses of the teacher',
+                    Comment = 'es="Nº de cursos del profesor"';
+
+                    DrillDown = true;
+                    DrillDownPageId = "Pagina cursos";
                 }
             }
         }

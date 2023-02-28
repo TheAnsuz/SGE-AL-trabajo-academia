@@ -5,7 +5,7 @@ page 50106 "Ficha matriculas"
     DataCaptionExpression = 'Matricula ' + Rec."Id estudiante" + ' -' + Rec."Id Curso";
     SourceTable = "Tabla matriculas";
     Caption = 'Enrollments',
-    Comment = 'es="Matriculas"';
+    Comment = 'es="Matrícula"';
 
     PromotedActionCategories = 'Information,Student',
     Comment = 'es="Información,Estudiante"';
@@ -26,6 +26,9 @@ page 50106 "Ficha matriculas"
                     ToolTip = 'ID of the Student',
                     Comment = 'es="ID del estudiante"';
 
+                    DrillDown = true;
+                    DrillDownPageId = "Ficha estudiantes";
+
                     Importance = Standard;
                 }
 
@@ -37,6 +40,10 @@ page 50106 "Ficha matriculas"
                     Comment = 'es="ID Curso"';
                     ToolTip = 'The ID of the course that this enrollment',
                     Comment = 'es="ID del curso en el que esta matriculado el alumno"';
+
+                    DrillDown = true;
+                    DrillDownPageId = "Ficha cursos";
+
                     Importance = Standard;
                 }
             }
