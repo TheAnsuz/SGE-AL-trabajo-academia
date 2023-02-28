@@ -70,6 +70,7 @@ page 50110 "Ficha departamentos"
             part("Lista Cursos"; "Subpagina cursos")
             {
                 ApplicationArea = All;
+                // Preguntar a Macarena como organizarla
                 Editable = true;
                 SubPageLink = "Departamento curso" = field("Id departamento");
                 UpdatePropagation = Both;

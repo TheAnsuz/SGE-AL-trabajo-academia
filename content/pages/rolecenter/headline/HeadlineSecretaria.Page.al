@@ -71,6 +71,7 @@ page 50116 "Cabecera secretaría"
         femaleText: Text;
         maleText: Text;
         otherText: Text;
+
         departmentsHeadline: Label 'There %p %i department%s', Comment = 'es="Hay %i departamento%s registrado%s"';
         studentsHeadline: Label 'There %p %i student%s', Comment = 'es="Hay %i estudiante%s registrado%s"';
         coursesHeadline: Label 'There %p %i active course%s', Comment = 'es="Hay %i curso%s activo%s"';

@@ -5,7 +5,7 @@ page 50101 "Pagina profesores"
     UsageCategory = Lists;
     SourceTable = "Tabla profesores";
     CardPageId = "Ficha profesores";
-    Caption = 'Profesores', Comment = 'es="Teachers"';
+    Caption = 'Teachers', Comment = 'es="Profesores"';
 
     layout
     {

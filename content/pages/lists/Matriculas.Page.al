@@ -4,7 +4,7 @@ page 50126 "Pagina matriculas"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "Tabla matriculas";
-    Caption = 'Matriculas', Comment = 'es="Enrollments"';
+    Caption = 'Enrollments', Comment = 'es="Matriculas"';
     CardPageId = "Ficha matriculas";
 
     layout

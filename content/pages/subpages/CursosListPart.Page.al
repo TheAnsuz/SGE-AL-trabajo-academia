@@ -42,6 +42,7 @@ page 50112 "Subpagina cursos"
                     Comment = 'es="Tarifa"';
                     ApplicationArea = All;
                 }
+
             }
         }
     }
@@ -77,6 +78,7 @@ page 50112 "Subpagina cursos"
 
         }
     }
+
 
 
     /*

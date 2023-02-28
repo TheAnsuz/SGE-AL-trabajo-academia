@@ -5,7 +5,7 @@ page 50103 "Pagina estudiantes"
     UsageCategory = Lists;
     SourceTable = "Tabla estudiantes";
     CardPageId = "Ficha estudiantes";
-    Caption = 'Estudiantes', Comment = 'es="Students"';
+    Caption = 'Students', Comment = 'es="Estudiantes"';
 
     layout
     {

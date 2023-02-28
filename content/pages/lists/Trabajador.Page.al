@@ -5,7 +5,7 @@ page 50100 "Pagina trabajadores"
     UsageCategory = Lists;
     SourceTable = "Tabla trabajadores";
     CardPageId = "Ficha trabajadores";
-    Caption = 'Trabajadores', Comment = 'es="Workers"';
+    Caption = 'Workers', Comment = 'es="Trabajadores"';
 
     layout
     {
