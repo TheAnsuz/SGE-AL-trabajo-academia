@@ -293,35 +293,55 @@
           <note from="Developer" annotates="general" priority="2">es="Cabecera secretaría"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 757987171 - NamedType 3409567052" size-unit="char" translate="yes" xml:space="preserve">
-          <source>There %p %i active course%s</source>
-          <note from="Developer" annotates="general" priority="2">es="Hay %i curso%s activo%s"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - NamedType coursesHeadline</note>
+        <trans-unit id="Page 757987171 - Method 1504214850 - NamedType 3655800271" size-unit="char" translate="yes" xml:space="preserve">
+          <source>are</source>
+          <note from="Developer" annotates="general" priority="2">es=""</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method formatText - NamedType pluralTranslation</note>
         </trans-unit>
-        <trans-unit id="Page 757987171 - NamedType 4107994275" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 757987171 - Method 1504214850 - NamedType 2552014192" size-unit="char" translate="yes" xml:space="preserve">
+          <source>s</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method formatText - NamedType pluralIndicatorTranslation</note>
+        </trans-unit>
+        <trans-unit id="Page 757987171 - Method 1504214850 - NamedType 921620518" size-unit="char" translate="yes" xml:space="preserve">
+          <source>is</source>
+          <note from="Developer" annotates="general" priority="2">es=""</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method formatText - NamedType singularTranslation</note>
+        </trans-unit>
+        <trans-unit id="Page 757987171 - Method 1504214850 - NamedType 3481250461" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method formatText - NamedType singularIndicatorTranslation</note>
+        </trans-unit>
+        <trans-unit id="Page 757987171 - Method 1805157428 - NamedType 4107994275" size-unit="char" translate="yes" xml:space="preserve">
           <source>There %p %i department%s</source>
           <note from="Developer" annotates="general" priority="2">es="Hay %i departamento%s registrado%s"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - NamedType departmentsHeadline</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method loadTexts - NamedType departmentsHeadline</note>
         </trans-unit>
-        <trans-unit id="Page 757987171 - NamedType 3428269105" size-unit="char" translate="yes" xml:space="preserve">
-          <source>There %p %i female student%s</source>
-          <note from="Developer" annotates="general" priority="2">es="Hay %i estudiante%s femenino%s"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - NamedType genderFemaleHeadline</note>
-        </trans-unit>
-        <trans-unit id="Page 757987171 - NamedType 1637407016" size-unit="char" translate="yes" xml:space="preserve">
-          <source>There %p %i male student%s</source>
-          <note from="Developer" annotates="general" priority="2">es="Hay %i estudiante%s masculinos%s"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - NamedType genderMaleHeadline</note>
-        </trans-unit>
-        <trans-unit id="Page 757987171 - NamedType 1938183144" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 757987171 - Method 1805157428 - NamedType 1938183144" size-unit="char" translate="yes" xml:space="preserve">
           <source>There %p %i student%s</source>
           <note from="Developer" annotates="general" priority="2">es="Hay %i estudiante%s registrado%s"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - NamedType studentsHeadline</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method loadTexts - NamedType studentsHeadline</note>
         </trans-unit>
-        <trans-unit id="Page 757987171 - NamedType 2089420798" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 757987171 - Method 1805157428 - NamedType 3409567052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There %p %i active course%s</source>
+          <note from="Developer" annotates="general" priority="2">es="Hay %i curso%s activo%s"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method loadTexts - NamedType coursesHeadline</note>
+        </trans-unit>
+        <trans-unit id="Page 757987171 - Method 1805157428 - NamedType 3428269105" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There %p %i female student%s</source>
+          <note from="Developer" annotates="general" priority="2">es="Hay %i estudiante%s femenino%s"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method loadTexts - NamedType genderFemaleHeadline</note>
+        </trans-unit>
+        <trans-unit id="Page 757987171 - Method 1805157428 - NamedType 1637407016" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There %p %i male student%s</source>
+          <note from="Developer" annotates="general" priority="2">es="Hay %i estudiante%s masculinos%s"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method loadTexts - NamedType genderMaleHeadline</note>
+        </trans-unit>
+        <trans-unit id="Page 757987171 - Method 1805157428 - NamedType 2089420798" size-unit="char" translate="yes" xml:space="preserve">
           <source>Welcome to reception!</source>
           <note from="Developer" annotates="general" priority="2">es="¡Bienvenido/a a secretaría!"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - NamedType welcome</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method loadTexts - NamedType welcome</note>
         </trans-unit>
         <trans-unit id="Page 1986346482 - Control 3475015850 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Departments</source>
@@ -339,8 +359,8 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Cue secretaria pagina - Control Departamentos sin jefe - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1986346482 - Control 1896247508 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Department fees (total)</source>
-          <note from="Developer" annotates="general" priority="2">es="Total tarifas departamentos"</note>
+          <source>Courses fees (total)</source>
+          <note from="Developer" annotates="general" priority="2">es="Total tarifas de cursos"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Cue secretaria pagina - Control Tarifa departamentos - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1986346482 - Control 273343300 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">

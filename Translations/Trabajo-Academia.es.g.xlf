@@ -294,41 +294,63 @@
           <note from="Developer" annotates="general" priority="2">es="Cabecera secretaría"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 757987171 - NamedType 3409567052" size-unit="char" translate="yes" xml:space="preserve">
-          <source>There %p %i active course%s</source>
-          <target state="translated">Hay %i curso%s activo%s</target>
-          <note from="Developer" annotates="general" priority="2">es="Hay %i curso%s activo%s"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - NamedType coursesHeadline</note>
+        <trans-unit id="Page 757987171 - Method 1504214850 - NamedType 3655800271" size-unit="char" translate="yes" xml:space="preserve">
+          <source>are</source>
+          <target state="translated"/>
+          <note from="Developer" annotates="general" priority="2">es=""</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method formatText - NamedType pluralTranslation</note>
         </trans-unit>
-        <trans-unit id="Page 757987171 - NamedType 4107994275" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 757987171 - Method 1504214850 - NamedType 2552014192" size-unit="char" translate="yes" xml:space="preserve">
+          <source>s</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method formatText - NamedType pluralIndicatorTranslation</note>
+        </trans-unit>
+        <trans-unit id="Page 757987171 - Method 1504214850 - NamedType 921620518" size-unit="char" translate="yes" xml:space="preserve">
+          <source>is</source>
+          <target state="translated"/>
+          <note from="Developer" annotates="general" priority="2">es=""</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method formatText - NamedType singularTranslation</note>
+        </trans-unit>
+        <trans-unit id="Page 757987171 - Method 1504214850 - NamedType 3481250461" size-unit="char" translate="yes" xml:space="preserve">
+          <source/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method formatText - NamedType singularIndicatorTranslation</note>
+        </trans-unit>
+        <trans-unit id="Page 757987171 - Method 1805157428 - NamedType 4107994275" size-unit="char" translate="yes" xml:space="preserve">
           <source>There %p %i department%s</source>
           <target state="translated">Hay %i departamento%s registrado%s</target>
           <note from="Developer" annotates="general" priority="2">es="Hay %i departamento%s registrado%s"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - NamedType departmentsHeadline</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method loadTexts - NamedType departmentsHeadline</note>
         </trans-unit>
-        <trans-unit id="Page 757987171 - NamedType 3428269105" size-unit="char" translate="yes" xml:space="preserve">
-          <source>There %p %i female student%s</source>
-          <target state="translated">Hay %i estudiante%s femenino%s</target>
-          <note from="Developer" annotates="general" priority="2">es="Hay %i estudiante%s femenino%s"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - NamedType genderFemaleHeadline</note>
-        </trans-unit>
-        <trans-unit id="Page 757987171 - NamedType 1637407016" size-unit="char" translate="yes" xml:space="preserve">
-          <source>There %p %i male student%s</source>
-          <target state="translated">Hay %i estudiante%s masculinos%s</target>
-          <note from="Developer" annotates="general" priority="2">es="Hay %i estudiante%s masculinos%s"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - NamedType genderMaleHeadline</note>
-        </trans-unit>
-        <trans-unit id="Page 757987171 - NamedType 1938183144" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 757987171 - Method 1805157428 - NamedType 1938183144" size-unit="char" translate="yes" xml:space="preserve">
           <source>There %p %i student%s</source>
           <target state="translated">Hay %i estudiante%s registrado%s</target>
           <note from="Developer" annotates="general" priority="2">es="Hay %i estudiante%s registrado%s"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - NamedType studentsHeadline</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method loadTexts - NamedType studentsHeadline</note>
         </trans-unit>
-        <trans-unit id="Page 757987171 - NamedType 2089420798" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 757987171 - Method 1805157428 - NamedType 3409567052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There %p %i active course%s</source>
+          <target state="translated">Hay %i curso%s activo%s</target>
+          <note from="Developer" annotates="general" priority="2">es="Hay %i curso%s activo%s"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method loadTexts - NamedType coursesHeadline</note>
+        </trans-unit>
+        <trans-unit id="Page 757987171 - Method 1805157428 - NamedType 3428269105" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There %p %i female student%s</source>
+          <target state="translated">Hay %i estudiante%s femenino%s</target>
+          <note from="Developer" annotates="general" priority="2">es="Hay %i estudiante%s femenino%s"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method loadTexts - NamedType genderFemaleHeadline</note>
+        </trans-unit>
+        <trans-unit id="Page 757987171 - Method 1805157428 - NamedType 1637407016" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There %p %i male student%s</source>
+          <target state="translated">Hay %i estudiante%s masculinos%s</target>
+          <note from="Developer" annotates="general" priority="2">es="Hay %i estudiante%s masculinos%s"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method loadTexts - NamedType genderMaleHeadline</note>
+        </trans-unit>
+        <trans-unit id="Page 757987171 - Method 1805157428 - NamedType 2089420798" size-unit="char" translate="yes" xml:space="preserve">
           <source>Welcome to reception!</source>
           <target state="translated">¡Bienvenido/a a secretaría!</target>
           <note from="Developer" annotates="general" priority="2">es="¡Bienvenido/a a secretaría!"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - NamedType welcome</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cabecera secretaría - Method loadTexts - NamedType welcome</note>
         </trans-unit>
         <trans-unit id="Page 1986346482 - Control 3475015850 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Departments</source>
@@ -349,9 +371,9 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Cue secretaria pagina - Control Departamentos sin jefe - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1986346482 - Control 1896247508 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Department fees (total)</source>
-          <target state="translated">Total tarifas departamentos</target>
-          <note from="Developer" annotates="general" priority="2">es="Total tarifas departamentos"</note>
+          <source>Courses fees (total)</source>
+          <target state="translated">Total tarifas de cursos</target>
+          <note from="Developer" annotates="general" priority="2">es="Total tarifas de cursos"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Cue secretaria pagina - Control Tarifa departamentos - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1986346482 - Control 273343300 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -452,14 +474,14 @@
         </trans-unit>
         <trans-unit id="Page 508169914 - Control 1647778637 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>The amount of hours that are counted towards the course' weekly progression</source>
-          <target state="translated">Horas reales que tiene el curso respecto su progresion durante la semana</target>
-          <note from="Developer" annotates="general" priority="2">es="Horas reales que tiene el curso respecto su progresion durante la semana"</note>
+          <target state="translated">Horas que tiene el curso respecto su progresion durante la semana</target>
+          <note from="Developer" annotates="general" priority="2">es="Horas que tiene el curso respecto su progresion durante la semana"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Ficha cursos - Control Horas reales - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 508169914 - Control 1647778637 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Real hours</source>
-          <target state="translated">Horas reales</target>
-          <note from="Developer" annotates="general" priority="2">es="Horas reales"</note>
+          <source>Weekly hours</source>
+          <target state="translated">Horas semanales</target>
+          <note from="Developer" annotates="general" priority="2">es="Horas semanales"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Ficha cursos - Control Horas reales - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 508169914 - Control 1239911589 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
@@ -553,7 +575,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Ficha cursos - Control Tarifa laboratorio curso - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 508169914 - Control 4165916983 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Total matriculations</source>
+          <source>Enrollments</source>
           <target state="translated">Matriculaciones</target>
           <note from="Developer" annotates="general" priority="2">es="Matriculaciones"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Ficha cursos - Control Matriculaciones - Property Caption</note>
