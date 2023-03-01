@@ -2,7 +2,7 @@ page 50107 "Ficha cursos"
 {
     PageType = Card;
     UsageCategory = None;
-    DataCaptionExpression = 'Course' + ' ' + Rec."Id Curso";
+    //DataCaptionExpression = 'Course' + ' ' + Rec."Id Curso";
     SourceTable = "Tabla cursos";
     Caption = 'Course',
     Comment = 'es="Curso"';
@@ -57,10 +57,10 @@ page 50107 "Ficha cursos"
                 field("Horas reales"; Rec."Horas curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Real hours',
-                    Comment = 'es="Horas reales"';
+                    Caption = 'Weekly hours',
+                    Comment = 'es="Horas semanales"';
                     ToolTip = 'The amount of hours that are counted towards the course'' weekly progression',
-                    Comment = 'es="Horas reales que tiene el curso respecto su progresion durante la semana"';
+                    Comment = 'es="Horas que tiene el curso respecto su progresion durante la semana"';
                     Importance = Additional;
                 }
 
@@ -108,7 +108,10 @@ page 50107 "Ficha cursos"
 
                     ToolTip = 'Total time in minutes dedicated to this course alone',
                     Comment = 'es="Tiempo total en minutos dedicado al curso en minutos"';
-                    Importance = Standard;
+                    Importance = Additional;
+
+                    DrillDown = true;
+                    DrillDownPageId = "Pagina horarios";
                 }
             }
 
@@ -128,7 +131,7 @@ page 50107 "Ficha cursos"
 
             part("Matriculaciones"; "Estadisticas Cursos FactBox")
             {
-                Caption = 'Total matriculations',
+                Caption = 'Enrollments',
                 Comment = 'es="Matriculaciones"';
                 //Provider = Matriculaciones;
                 SubPageLink = "Id curso" = field("Id curso");

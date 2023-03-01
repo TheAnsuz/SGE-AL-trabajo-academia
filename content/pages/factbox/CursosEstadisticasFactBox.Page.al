@@ -21,7 +21,7 @@ page 50109 "Estadisticas Cursos FactBox"
             field("Profesores curso"; Rec."Profesores curso")
             {
                 Caption = 'Teachers', comment = 'es="Profesores"';
-                DrillDownPageId = "Pagina cursos";
+                DrillDownPageId = "Pagina profesores";
                 ApplicationArea = All;
             }
         }

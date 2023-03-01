@@ -16,6 +16,8 @@ page 50112 "Subpagina cursos"
                 {
                     Caption = 'ID',
                     Comment = 'es="ID Curso"';
+                    DrillDown = true;
+                    DrillDownPageId = "Ficha cursos";
                     ApplicationArea = All;
                 }
                 field("Dia horario"; Rec."Nombre curso")
@@ -34,6 +36,8 @@ page 50112 "Subpagina cursos"
                 {
                     Caption = 'Teacher',
                     Comment = 'es="Profesor"';
+                    DrillDown = true;
+                    DrillDownPageId = "Ficha profesores";
                     ApplicationArea = All;
                 }
                 field("Extra"; Rec."Tarifa laboratorio curso")
@@ -47,6 +51,8 @@ page 50112 "Subpagina cursos"
                     Editable = false;
                     Caption = 'Department',
                     Comment = 'es="Departamento"';
+                    DrillDown = true;
+                    DrillDownPageId = "Ficha departamentos";
                     ApplicationArea = All;
                     Importance = Additional;
                 }
@@ -94,6 +100,7 @@ page 50112 "Subpagina cursos"
     trigger OnAfterGetCurrRecord()
     begin
         // No es lo mas eficiente pero arregla el fallo
-        Rec."Departamento curso" := Fix.GetDepartment(); //Poner de algun modo la ID del departamento desde el que se esta creando//;
+        if (Rec."Departamento curso" = '') then
+            Rec."Departamento curso" := Fix.GetDepartment(); //Poner de algun modo la ID del departamento desde el que se esta creando//;
     end;
 }

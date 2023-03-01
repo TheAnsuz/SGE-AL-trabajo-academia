@@ -132,14 +132,13 @@ page 50111 "Ficha profesores"
     var
         SalarioTotal: Decimal;
         Contados: Integer;
-        Message: Text;
+        Msg: Text;
         SalarioPromedio: Decimal;
         Profesores: Record "Tabla profesores";
     begin
 
         Contados := 0;
         SalarioPromedio := 0;
-        Message := Msg1;
 
         if Profesores.FindSet() then
             repeat begin
@@ -153,7 +152,10 @@ page 50111 "Ficha profesores"
         if Contados <> 0 then begin
             SalarioPromedio := SalarioTotal / Contados;
         end;
-        Message(Message, SalarioPromedio);
+
+        Msg := StrSubstNo(Msg1, SalarioPromedio);
+
+        Message(Msg);
 
     end;
 

@@ -24,7 +24,7 @@ page 50100 "Pagina trabajadores"
                 {
                     ApplicationArea = All;
                     Caption = 'Name',
-                    Comment = 'es="Name"';
+                    Comment = 'es="Nombre"';
 
                     ToolTip = 'Nombre del trabajador';
 
@@ -69,7 +69,7 @@ page 50100 "Pagina trabajadores"
                     ToolTip = 'El profesor que tiene asignado en caso de que este trabajador sea un ayudante de profesor';
 
                     DrillDown = true;
-                    DrillDownPageId = "Pagina profesores";
+                    DrillDownPageId = "Ficha profesores";
                 }
             }
         }

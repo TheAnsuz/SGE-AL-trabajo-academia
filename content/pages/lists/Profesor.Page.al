@@ -25,7 +25,7 @@ page 50101 "Pagina profesores"
                 {
                     ApplicationArea = All;
                     Caption = 'Name',
-                    Comment = 'es="Name"';
+                    Comment = 'es="Nombre"';
 
                     ToolTip = 'Nombre del profesor';
 

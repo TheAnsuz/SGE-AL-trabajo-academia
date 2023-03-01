@@ -3,7 +3,7 @@ page 50110 "Ficha departamentos"
     PageType = Card;
     UsageCategory = None;
     SourceTable = "Tabla departamentos";
-    DataCaptionExpression = 'Departamento ' + Rec."Id departamento";
+    //DataCaptionExpression = 'Departamento ' + Rec."Id departamento";
     PromotedActionCategories = 'Navigate',
     Comment = 'es="Navegar"';
     Caption = 'Departamento', Comment = 'es="Departamentos"';
@@ -65,8 +65,6 @@ page 50110 "Ficha departamentos"
                     ApplicationArea = All;
                     Caption = 'Average fee',
                     comment = 'es="Tarifa promedio"';
-
-                    ToolTip = 'El promedio de la tarifa del departamento';
                 }
             }
 
@@ -99,12 +97,28 @@ page 50110 "Ficha departamentos"
                 RunObject = page "Pagina profesores";
                 RunPageLink = "Departamento profesor" = field("Id departamento");
                 RunPageMode = View;
+
+                /*
+                trigger OnAction()
+                var
+                    Teacher: record "Tabla profesores";
+                    Courses: record "Tabla cursos";
+                    TeachersPageID: Integer;
+                begin
+
+                    Courses."Profesor curso"
+
+                    TeachersPageID := Page::"Pagina profesores";
+
+                    Page.Run(TeachersPageID, Teacher);
+                end;
+                */
             }
 
             action(Coordenador)
             {
-                Caption = 'Coordination',
-                Comment = 'es="Coordenador"';
+                Caption = 'Coordinator',
+                Comment = 'es="Coordinador"';
 
                 Promoted = True;
                 PromotedCategory = New;
@@ -136,6 +150,6 @@ page 50110 "Ficha departamentos"
 
     trigger OnOpenPage()
     begin
-        Fix.SetDepartment('');
+        Fix.SetDepartment(Rec."Id departamento");
     end;
 }

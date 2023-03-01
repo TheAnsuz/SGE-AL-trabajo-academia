@@ -100,6 +100,7 @@ page 50108 "Ficha estudiantes"
                 PromotedCategory = New;
 
                 RunObject = page "Ficha matriculas";
+                RunPageLink = "Id Estudiante" = field("Id estudiante");
                 RunPageMode = Create;
 
                 Image = CreateForm;

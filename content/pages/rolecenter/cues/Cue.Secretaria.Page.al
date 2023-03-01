@@ -22,8 +22,8 @@ page 50117 "Cue secretaria pagina"
 
                 field("Tarifa departamentos"; Rec."Suma tarifa departamentos")
                 {
-                    Caption = 'Department fees (total)',
-                    Comment = 'es="Total tarifas departamentos"';
+                    Caption = 'Courses fees (total)',
+                    Comment = 'es="Total tarifas de cursos"';
                     DrillDownPageId = "Pagina departamentos";
                 }
 

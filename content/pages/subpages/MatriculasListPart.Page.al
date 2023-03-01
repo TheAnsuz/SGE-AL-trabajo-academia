@@ -16,12 +16,16 @@ page 50120 "Subpagina matriculas"
                 {
                     Caption = 'Course ID',
                     Comment = 'es="ID Curso"';
+                    DrillDown = true;
+                    DrillDownPageId = "Ficha cursos";
                     ApplicationArea = All;
                 }
                 field("Id estudiante"; Rec."Id Estudiante")
                 {
                     Caption = 'Student ID',
                     Comment = 'es="ID Estudiante"';
+                    DrillDown = true;
+                    DrillDownPageId = "Ficha estudiantes";
                     ApplicationArea = All;
                 }
                 field("Fecha matriculacion"; Rec."Fecha matriculacion")

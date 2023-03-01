@@ -3,7 +3,7 @@ page 50106 "Ficha matriculas"
     PageType = Card;
     UsageCategory = None;
     // No se pueden traducir
-    DataCaptionExpression = 'Matricula ' + Rec."Id estudiante" + ' -' + Rec."Id Curso";
+    DataCaptionExpression = Rec."Id estudiante" + ' -' + Rec."Id Curso";
     SourceTable = "Tabla matriculas";
     Caption = 'Enrollments',
     Comment = 'es="Matrícula"';

@@ -16,6 +16,8 @@ page 50118 "Subpagina departamentos"
                 {
                     Caption = 'Department''s ID',
                     Comment = 'es="ID Departamento"';
+                    DrillDown = true;
+                    DrillDownPageId = "Ficha departamentos";
                     ApplicationArea = All;
                 }
                 field("Nombre departamento"; Rec."Nombre departamento")
