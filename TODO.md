@@ -123,3 +123,9 @@ página asociada “Ficha matrícula”.
 - Navegar profesores no funciona en Departamentos. (LISTO)
 
 - - Las lineas de CursosListPart desaparecen al recargar (Hay que pasar la ID del departamento para cuando se crea desde la sublista de la card Departamento)
+
+
+**Procedures mejorados**
+Codeunit -> Information.Codeunit.al (no envia a la pagina filtrando por genero sino)
+Page -> Headline.Secretaria.al (convertir los textos segun su dato en plural y singular)
+Table -> Estudiante.Table.al (validar numero de telefono español)
