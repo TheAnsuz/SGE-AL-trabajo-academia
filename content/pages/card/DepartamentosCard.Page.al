@@ -20,6 +20,12 @@ page 50110 "Ficha departamentos"
                     ApplicationArea = All;
                     Caption = 'ID';
                     ToolTip = 'ID del departamento';
+
+                    trigger OnValidate()
+                    begin
+                        //Message(Rec."Id departamento");
+                        Fix.SetDepartment(Rec."Id departamento");
+                    end;
                 }
 
                 field("Despacho departamento"; Rec."Despacho departamento")
@@ -96,11 +102,6 @@ page 50110 "Ficha departamentos"
                 RunObject = page "Pagina profesores";
                 RunPageLink = "Departamento profesor" = field("Id departamento");
                 RunPageMode = View;
-
-                trigger OnAction()
-                begin
-
-                end;
             }
 
             action(Coordenador)
@@ -133,4 +134,11 @@ page 50110 "Ficha departamentos"
         }
     }
 
+    var
+        Fix: Codeunit "Course fix codeunit";
+
+    trigger OnOpenPage()
+    begin
+        Fix.SetDepartment('');
+    end;
 }

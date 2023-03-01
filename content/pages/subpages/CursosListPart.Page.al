@@ -42,7 +42,14 @@ page 50112 "Subpagina cursos"
                     Comment = 'es="Tarifa"';
                     ApplicationArea = All;
                 }
-
+                field("Id departamento"; Rec."Departamento curso")
+                {
+                    Editable = false;
+                    Caption = 'Department',
+                    Comment = 'es="Departamento"';
+                    ApplicationArea = All;
+                    Importance = Additional;
+                }
             }
         }
     }
@@ -81,12 +88,13 @@ page 50112 "Subpagina cursos"
         }
     }
 
+    var
+        Fix: Codeunit "Course fix codeunit";
+        DepartmentID: Code[20];
 
-
-    /*
-     trigger OnNewRecord(BelowxRec: Boolean)
-     begin
-         Rec."Departamento curso" := //Poner de algun modo la ID del departamento desde el que se esta creando//;
-     end;
-     */
+    trigger OnAfterGetCurrRecord()
+    begin
+        // No es lo mas eficiente pero arregla el fallo
+        Rec."Departamento curso" := Fix.GetDepartment(); //Poner de algun modo la ID del departamento desde el que se esta creando//;
+    end;
 }
