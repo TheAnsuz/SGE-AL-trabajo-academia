@@ -63,7 +63,7 @@ page 50112 "Subpagina cursos"
                     RunPageLink = "Id Curso" = field("Id curso");
                     RunPageMode = View;
 
-
+                    Image = View;
                 }
                 action(Datos)
                 {
@@ -73,6 +73,8 @@ page 50112 "Subpagina cursos"
                     RunObject = page "Ficha cursos";
                     RunPageLink = "Id Curso" = field("Id curso");
                     RunPageMode = View;
+
+                    Image = View;
                 }
             }
 

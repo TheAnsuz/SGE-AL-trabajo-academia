@@ -38,6 +38,13 @@ page 50115 "Secretaria Role Center"
                     Caption = 'Departments',
                     Comment = 'es="Departamentos"';
                 }
+
+                part("Lista matriculaciones"; "Subpagina matriculas")
+                {
+                    Editable = false;
+                    Caption = 'Enrollments',
+                    Comment = 'es="Matriculaciones"';
+                }
             }
 
         }
@@ -56,6 +63,8 @@ page 50115 "Secretaria Role Center"
 
                 RunObject = page "Ficha estudiantes";
                 RunPageMode = Create;
+
+                Image = Create;
             }
             action(CrearProfesores)
             {
@@ -64,6 +73,8 @@ page 50115 "Secretaria Role Center"
 
                 RunObject = page "Ficha profesores";
                 RunPageMode = Create;
+
+                Image = Create;
             }
 
             action(CrearTrabajadores)
@@ -73,6 +84,8 @@ page 50115 "Secretaria Role Center"
 
                 RunObject = page "Ficha trabajadores";
                 RunPageMode = Create;
+
+                Image = Create;
             }
 
             action(CrearCurso)
@@ -82,6 +95,8 @@ page 50115 "Secretaria Role Center"
 
                 RunObject = page "Pagina cursos";
                 RunPageMode = Create;
+
+                Image = Create;
             }
 
             action(CrearMatriculas)
@@ -91,6 +106,8 @@ page 50115 "Secretaria Role Center"
 
                 RunObject = page "Ficha matriculas";
                 RunPageMode = Create;
+
+                Image = Create;
             }
 
             action(CrearDepartamentos)
@@ -100,6 +117,8 @@ page 50115 "Secretaria Role Center"
 
                 RunObject = page "Ficha departamentos";
                 RunPageMode = Create;
+
+                Image = Create;
             }
         }
 
@@ -117,6 +136,8 @@ page 50115 "Secretaria Role Center"
 
                     RunObject = page "Pagina estudiantes";
                     RunPageMode = View;
+
+                    Image = View;
                 }
 
                 action(VerProfesores)
@@ -126,6 +147,8 @@ page 50115 "Secretaria Role Center"
 
                     RunObject = page "Pagina profesores";
                     RunPageMode = View;
+
+                    Image = View;
                 }
 
                 action(VerTrabajadores)
@@ -135,6 +158,8 @@ page 50115 "Secretaria Role Center"
 
                     RunObject = page "Pagina trabajadores";
                     RunPageMode = View;
+
+                    Image = View;
                 }
 
                 action(VerCursos)
@@ -144,6 +169,8 @@ page 50115 "Secretaria Role Center"
 
                     RunObject = page "Pagina cursos";
                     RunPageMode = View;
+
+                    Image = View;
                 }
 
                 action(VerDepartamentos)
@@ -153,6 +180,8 @@ page 50115 "Secretaria Role Center"
 
                     RunObject = page "Pagina departamentos";
                     RunPageMode = View;
+
+                    Image = View;
                 }
 
                 action(VerMatriculas)
@@ -162,6 +191,8 @@ page 50115 "Secretaria Role Center"
 
                     RunObject = page "Pagina matriculas";
                     RunPageMode = View;
+
+                    Image = View;
                 }
 
                 action(VerHorarios)
@@ -171,6 +202,8 @@ page 50115 "Secretaria Role Center"
 
                     RunObject = page "Pagina horarios";
                     RunPageMode = View;
+
+                    Image = View;
                 }
             }
 
