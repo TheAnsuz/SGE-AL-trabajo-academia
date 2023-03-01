@@ -68,6 +68,7 @@ page 50101 "Pagina profesores"
                     DrillDownPageId = "Pagina departamentos";
 
                 }
+                /*
                 field("Despacho profesor"; Rec."Despacho profesor")
                 {
                     ApplicationArea = All;
@@ -76,7 +77,7 @@ page 50101 "Pagina profesores"
                     ToolTip = 'Teacher'' Office',
                     Comment = 'es="Despacho del profesor"';
                 }
-
+                */
                 field("Nº Cursos profesor"; Rec."Nº Cursos")
                 {
                     ApplicationArea = All;

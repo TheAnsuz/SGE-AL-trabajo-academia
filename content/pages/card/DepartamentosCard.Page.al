@@ -3,6 +3,7 @@ page 50110 "Ficha departamentos"
     PageType = Card;
     UsageCategory = None;
     SourceTable = "Tabla departamentos";
+    DataCaptionExpression = 'Departamento ' + Rec."Id departamento";
     PromotedActionCategories = 'Navigate',
     Comment = 'es="Navegar"';
     Caption = 'Departamento', Comment = 'es="Departamentos"';

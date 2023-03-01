@@ -34,6 +34,7 @@ table 50100 "Tabla trabajadores"
         }
         field(6; "Profesor asignado"; Code[20])
         {
+            TableRelation = "Tabla profesores";
             DataClassification = ToBeClassified;
         }
 

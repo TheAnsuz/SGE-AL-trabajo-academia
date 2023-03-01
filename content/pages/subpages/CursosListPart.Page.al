@@ -57,7 +57,6 @@ page 50112 "Subpagina cursos"
     {
         area(Processing)
         {
-
             group(Curso)
             {
                 action(Matriculas)

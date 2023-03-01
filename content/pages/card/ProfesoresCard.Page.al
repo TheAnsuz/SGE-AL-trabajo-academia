@@ -64,11 +64,11 @@ page 50111 "Ficha profesores"
                     Caption = 'Department',
                     comment = 'es="Departamento"';
                     ToolTip = 'Departamento en el que trabaja el profesor';
-                    
+
                     DrillDown = true;
                     DrillDownPageId = "Ficha departamentos";
-
                 }
+                /*
                 field("Despacho profesor"; Rec."Despacho profesor")
                 {
                     ApplicationArea = All;
@@ -77,7 +77,7 @@ page 50111 "Ficha profesores"
 
                     ToolTip = 'Despacho del profesor';
                 }
-
+                */
                 field("Nº Cursos profesor"; Rec."Nº Cursos")
                 {
                     ApplicationArea = All;

@@ -40,7 +40,7 @@ table 50101 "Tabla profesores"
             DataClassification = ToBeClassified;
             TableRelation = "Tabla departamentos";
         }
-        field(8; "Despacho profesor"; Code[20])
+        /*field(8; "Despacho profesor"; Code[20])
         {
             DataClassification = ToBeClassified;
             trigger OnValidate()
@@ -55,7 +55,7 @@ table 50101 "Tabla profesores"
                     Error('Formato incorrecto (XXXNN)');
             end;
         }
-
+*/
         field(9; "Nº Ayudantes"; Integer)
         {
             Editable = false;

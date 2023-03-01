@@ -4,7 +4,7 @@ page 50105 "Pagina horarios"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "Tabla horarios";
-    Caption = 'Schedules', Comment = 'es="Horarios"';
+    Caption = 'Schedules page', Comment = 'es="Pagina horarios"';
     layout
     {
         area(Content)
