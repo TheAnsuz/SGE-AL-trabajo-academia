@@ -113,7 +113,7 @@ page 50115 "Secretaria Role Center"
             action(CrearDepartamentos)
             {
                 Caption = 'Department',
-                Comment = 'es="Departamentos"';
+                Comment = 'es="Departamento"';
 
                 RunObject = page "Ficha departamentos";
                 RunPageMode = Create;

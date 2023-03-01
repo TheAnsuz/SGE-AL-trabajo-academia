@@ -344,8 +344,8 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Cue secretaria pagina - Control Departamentos sin jefe - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1986346482 - Control 1896247508 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Department fees</source>
-          <note from="Developer" annotates="general" priority="2">es="Tarifas departamentos"</note>
+          <source>Department fees (total)</source>
+          <note from="Developer" annotates="general" priority="2">es="Total tarifas departamentos"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Cue secretaria pagina - Control Tarifa departamentos - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1986346482 - Control 273343300 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -1562,6 +1562,11 @@
           <source>ID</source>
           <note from="Developer" annotates="general" priority="2">es="ID Curso"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Subpagina cursos - Control Id curso - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2053859969 - Control 113467201 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Department</source>
+          <note from="Developer" annotates="general" priority="2">es="Departamento"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Subpagina cursos - Control Id departamento - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2053859969 - Control 2575644196 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Teacher</source>
