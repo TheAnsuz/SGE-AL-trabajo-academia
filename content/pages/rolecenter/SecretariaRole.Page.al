@@ -143,7 +143,7 @@ page 50115 "Secretaria Role Center"
                 action(VerProfesores)
                 {
                     Caption = 'Teachers',
-                    Comment = 'es="Trabajadores"';
+                    Comment = 'es="Profesores"';
 
                     RunObject = page "Pagina profesores";
                     RunPageMode = View;
