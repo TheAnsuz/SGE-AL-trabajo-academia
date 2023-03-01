@@ -58,5 +58,4 @@ table 50126 "Tabla matriculas"
         "Fecha matriculacion" := DT2Date(FechaYHora);
         "Hora matriculacion" := DT2Time(FechaYHora);
     end;
-
 }

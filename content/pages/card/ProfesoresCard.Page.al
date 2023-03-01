@@ -98,8 +98,14 @@ page 50111 "Ficha profesores"
             {
                 Caption = 'Statistics',
                 Comment = 'es="Estadísticas"';
+                //Provider = Estadisticas;
+                ApplicationArea = All;
 
-                SubPageView = sorting("Id profesor");
+                SubPageLink = "Id profesor" = field("Id profesor");
+                //SubPageLink = "Id profesor" = field("Id profesor"),
+                //"Nº Cursos" = field("Nº Cursos"),
+                //"Nº Ayudantes" = field("Nº Ayudantes");
+                //SubPageView = sorting("Id profesor");
             }
         }
 

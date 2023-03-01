@@ -2,6 +2,7 @@ page 50107 "Ficha cursos"
 {
     PageType = Card;
     UsageCategory = None;
+    DataCaptionExpression = 'Course' + ' ' + Rec."Id Curso";
     SourceTable = "Tabla cursos";
     Caption = 'Course',
     Comment = 'es="Curso"';
@@ -103,7 +104,7 @@ page 50107 "Ficha cursos"
                 {
                     ApplicationArea = All;
                     Caption = 'Total time (minutes)',
-                    Comment = 'es ="Minutos totales"';
+                    Comment = 'es="Minutos totales"';
 
                     ToolTip = 'Total time in minutes dedicated to this course alone',
                     Comment = 'es="Tiempo total en minutos dedicado al curso en minutos"';
@@ -129,8 +130,9 @@ page 50107 "Ficha cursos"
             {
                 Caption = 'Total matriculations',
                 Comment = 'es="Matriculaciones"';
-
-                SubPageView = sorting("Id curso");
+                //Provider = Matriculaciones;
+                SubPageLink = "Id curso" = field("Id curso");
+                //SubPageView = sorting("Id curso");
             }
         }
     }

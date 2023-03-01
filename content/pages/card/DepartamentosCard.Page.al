@@ -20,7 +20,6 @@ page 50110 "Ficha departamentos"
                 {
                     ApplicationArea = All;
                     Caption = 'ID';
-                    ToolTip = 'ID del departamento';
 
                     trigger OnValidate()
                     begin
@@ -32,9 +31,8 @@ page 50110 "Ficha departamentos"
                 field("Despacho departamento"; Rec."Despacho departamento")
                 {
                     ApplicationArea = All;
-                    Caption = 'Despacho',
-                    comment = 'es="Office"';
-                    ToolTip = 'Despacho asignado para el departamento';
+                    Caption = 'Office',
+                    comment = 'es="Despacho"';
 
                 }
 
@@ -42,15 +40,14 @@ page 50110 "Ficha departamentos"
                 {
                     ApplicationArea = All;
                     Caption = 'Name',
-                    comment = 'es="Name"';
-                    ToolTip = 'Nombre que recibe el departamento';
+                    comment = 'es="Nombre"';
 
                 }
             }
             group(Comunicacion)
             {
                 Caption = 'Contact',
-                Comment = 'es = "Comunicacion"';
+                Comment = 'es = "Informacion de contacto"';
 
 
                 field("Jefe departamento"; Rec."Jefe departamento")
@@ -58,7 +55,6 @@ page 50110 "Ficha departamentos"
                     ApplicationArea = All;
                     Caption = 'Boss',
                     comment = 'es="Jefe"';
-                    ToolTip = 'Profesor encargado del departamento';
 
                     DrillDown = true;
                     DrillDownPageId = "Ficha profesores";
