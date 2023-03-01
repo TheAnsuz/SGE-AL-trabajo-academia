@@ -103,14 +103,18 @@ page 50116 "Cabecera secretaría"
     var
         pluralPrefix: Text;
         pluralIndicator: Text;
+        pluralTranslation: Label 'are', Comment = 'es=""';
+        pluralIndicatorTranslation: Label 's';
+        singularTranslation: Label 'is', Comment = 'es=""';
+        singularIndicatorTranslation: Label '';
     begin
         if (Number < -1) or (Number > 1) or (Number = 0) then begin
-            pluralPrefix := 'are';
-            pluralIndicator := 's';
+            pluralPrefix := pluralTranslation;
+            pluralIndicator := pluralIndicatorTranslation;
         end
         else begin
-            pluralPrefix := 'is';
-            pluralIndicator := '';
+            pluralPrefix := singularTranslation;
+            pluralIndicator := singularIndicatorTranslation;
         end;
 
         Formatted := Source.Replace('%i', Format(Number)).Replace('%p', pluralPrefix).Replace('%s', pluralIndicator);
