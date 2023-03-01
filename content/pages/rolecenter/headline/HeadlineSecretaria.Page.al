@@ -11,7 +11,7 @@ page 50116 "Cabecera secretaría"
 
         area(Content)
         {
-            field(Welcome; welcome) { }
+            field(Welcome; welcomeText) { }
             field(Departaments; departmentsText)
             {
                 DrillDown = true;
@@ -51,7 +51,7 @@ page 50116 "Cabecera secretaría"
                 trigger OnDrillDown()
                 var
                 begin
-                    Information.estudiantesPorGenero(Enum::"Genero enumeracion"::"Femenino genero");
+                    Information.estudiantesPorGenero(Enum::"Genero enumeracion"::"Masculino genero");
                 end;
             }
         }
@@ -70,8 +70,10 @@ page 50116 "Cabecera secretaría"
 
         femaleText: Text;
         maleText: Text;
-        otherText: Text;
+        welcomeText: Text;
 
+    local procedure loadTexts()
+    var
         departmentsHeadline: Label 'There %p %i department%s', Comment = 'es="Hay %i departamento%s registrado%s"';
         studentsHeadline: Label 'There %p %i student%s', Comment = 'es="Hay %i estudiante%s registrado%s"';
         coursesHeadline: Label 'There %p %i active course%s', Comment = 'es="Hay %i curso%s activo%s"';
@@ -79,9 +81,6 @@ page 50116 "Cabecera secretaría"
         genderFemaleHeadline: Label 'There %p %i female student%s', Comment = 'es="Hay %i estudiante%s femenino%s"';
         genderMaleHeadline: Label 'There %p %i male student%s', Comment = 'es="Hay %i estudiante%s masculinos%s"';
         welcome: Label 'Welcome to reception!', Comment = 'es="¡Bienvenido/a a secretaría!"';
-
-    local procedure loadTexts()
-    var
         Departamentos: Record "Tabla departamentos";
         Estudiantes: Record "Tabla estudiantes";
         Cursos: Record "Tabla cursos";
@@ -97,6 +96,7 @@ page 50116 "Cabecera secretaría"
 
         Cantidad := Information.cantidadEstudiantesPorGenero(Enum::"Genero enumeracion"::"Masculino genero");
         maleText := formatText(genderMaleHeadline, Cantidad);
+        welcomeText := StrSubstNo(welcome);
     end;
 
     local procedure formatText(Source: Text; Number: Integer) Formatted: Text
