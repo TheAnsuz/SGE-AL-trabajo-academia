@@ -31,6 +31,12 @@ table 50100 "Tabla trabajadores"
         field(5; "Puesto trabajador"; Enum "Role enum")
         {
             DataClassification = ToBeClassified;
+
+            trigger OnValidate()
+            begin
+                if ("Puesto trabajador" <> Enum::"Role enum"::Ayudante) then
+                    "Profesor asignado" := '';
+            end;
         }
         field(6; "Profesor asignado"; Code[20])
         {

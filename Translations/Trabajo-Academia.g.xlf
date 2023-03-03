@@ -763,11 +763,6 @@
           <note from="Developer" annotates="general" priority="2">es="Profesor"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Ficha profesores - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2095137149 - NamedType 1720702668" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Average salary: %1 €</source>
-          <note from="Developer" annotates="general" priority="2">es="El salario promedio es de %1 €"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Ficha profesores - NamedType Msg1</note>
-        </trans-unit>
         <trans-unit id="Page 2095137149 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>General</source>
           <note from="Developer" annotates="general" priority="2">es="General"</note>
@@ -852,11 +847,6 @@
           <source>Statistics</source>
           <note from="Developer" annotates="general" priority="2">es="Estadísticas"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Ficha profesores - Control Estadisticas - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2095137149 - Action 2635959403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Check average salary</source>
-          <note from="Developer" annotates="general" priority="2">es="Ver salario promedio"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Ficha profesores - Action Salario medio - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 744941599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Worker</source>
@@ -1697,6 +1687,11 @@
           <source>Helper</source>
           <note from="Developer" annotates="general" priority="2">es="Ayudante"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum Role enum - EnumValue Ayudante - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 273442481 - EnumValue 797779080 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No role</source>
+          <note from="Developer" annotates="general" priority="2">es="Sin cargo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Role enum - EnumValue Sin cargo - Property Caption</note>
         </trans-unit>
       </group>
     </body>

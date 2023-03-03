@@ -17,8 +17,6 @@ page 50111 "Ficha profesores"
                     ApplicationArea = All;
                     Caption = 'ID';
                     ToolTip = 'ID del profesor';
-
-
                 }
                 field("Nombre profesor"; Rec."Nombre profesor")
                 {

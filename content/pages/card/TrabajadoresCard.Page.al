@@ -60,7 +60,7 @@ page 50114 "Ficha trabajadores"
                     ApplicationArea = All;
                     Caption = 'Assigned teacher',
                     comment = 'es="Profesor asignado"';
-                    
+
                     DrillDown = true;
                     DrillDownPageId = "Ficha profesores";
                     ToolTip = 'El profesor que tiene asignado en caso de que este trabajador sea un ayudante de profesor';
@@ -68,6 +68,12 @@ page 50114 "Ficha trabajadores"
             }
         }
     }
+
+    trigger OnOpenPage()
+    begin
+        if (Rec."Puesto trabajador" = Enum::"Role enum"::Ayudante) then
+            UsaAyudante := true;
+    end;
 
     var
         UsaAyudante: Boolean;
